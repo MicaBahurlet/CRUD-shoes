@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle` //siempre la svastik. Y adentro v
     :root{
         --background-body: #FDFDFD;
         --background-card: #F1EDED;
+        --background-nav: #F9F2F2;
         --btn-principal: linear-gradient(82deg,#ffa100,#fb103d);
         --btn-principal-hover: linear-gradient(82deg,#fb103d,#ffa100);
         --btn-secondary: linear-gradient(140deg,#3b3022,#3b2329);

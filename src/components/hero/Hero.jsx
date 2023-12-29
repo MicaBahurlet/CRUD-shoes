@@ -5,7 +5,7 @@ function Hero() {
   return (
    <HeroContainerStyles>
     <HeroTextContainerStyles>
-    <h1>Disfruta de tus canciones favoritas</h1>
+    <h1>Viví tú música.</h1>
     <h2>Tus auriculares importan</h2>
     <p>El mejor sonido a tu disposición. Comprá rápido, comprá calidad, comprá facil. </p>
     </HeroTextContainerStyles>

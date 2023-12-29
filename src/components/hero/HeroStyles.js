@@ -11,6 +11,7 @@ export const HeroContainerStyles = styled.div`
 
     h1{
         margin-bottom: 2rem;
+        text-shadow: 0.8px 0.8px 0.8px #000;
 
     }
 
@@ -28,13 +29,17 @@ export const HeroTextContainerStyles = styled.div`
     h1{
         font-size: 4rem;
         margin: 10px 0;
+        font-family: var(--font-family);
     }
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 10px 0;
+        font-family: var(--font-family);
     }
     p{
         font-size: 1.2rem;
+        font-family: var(--font-family);
+        line-height: 1.2;
     }
 
 
@@ -53,7 +58,7 @@ export const HeroImageContainerStyles = styled.div`
         width: 100%;
         max-width: 400px;
         padding-bottom: 75px;
-        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     }
 
     @media (max-width: 968px) {
