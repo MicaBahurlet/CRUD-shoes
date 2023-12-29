@@ -1,8 +1,9 @@
-import React from 'react'
-
-function Layout() {
+import { LayoutWrapper } from "./LayoutStyles"
+function Layout( {children} ) {
   return (
-    <div>Layout</div>
+    <LayoutWrapper>
+      {children}
+    </LayoutWrapper>
   )
 }
 
