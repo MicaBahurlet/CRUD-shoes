@@ -22,6 +22,11 @@ export const CategoriasContainer = styled.div`
     align-items: center;
     gap: 20px;
     user-select:none;
+
+    img{ //esto es lo que toque para la img de la cart producto
+        max-width: 150px;
+        border-radius: 15px;
+    }
     
 `;
 
@@ -32,12 +37,13 @@ export const CardCategoria = styled.div` //Acá tenía un motion que supuestamen
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    width: 150px;
+    width: 200px;
     padding: 2rem 0.5rem;
     background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
-    border-radius: 50px;
+    border-radius: 100px;
     cursor: pointer;
     font-family: var(--font-family);
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     h2{
         font-size: 1rem;
         font-family: var(--font-family);
@@ -49,7 +55,8 @@ export const CardCategoria = styled.div` //Acá tenía un motion que supuestamen
         }
     }
     img{
-        max-width: 30px;
+        max-width: 100px;
+        filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     }
 
 `;

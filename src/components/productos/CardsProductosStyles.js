@@ -53,6 +53,11 @@ export const CardProducto = styled.div` //Acá tenía un motion que supuestament
         }
     }
 
+    img{
+        max-width: 100px;
+        border-radius: 15px;
+    }
+
 `;
 
 export const BorderDecorationProducto = styled.div`
