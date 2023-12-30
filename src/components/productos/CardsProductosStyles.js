@@ -4,11 +4,11 @@ export const ProductosWrapper = styled.div`
 
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 15px;
     font-family: var(--font-family);
-    margin-top: 10rem;
+    margin-top: 12rem;
     @media (max-width:768px){
         padding-top: 30px;
         text-align: center;
@@ -36,12 +36,13 @@ export const CardProducto = styled.div` //Acá tenía un motion que supuestament
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    width: 150px;
+    width: 180px;
     padding: 2rem 0.5rem;
     background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
     border-radius: 50px;
     cursor: pointer;
     font-family: var(--font-family);
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     h2{
         font-size: 1rem;
         font-family: var(--font-family);
@@ -57,6 +58,9 @@ export const CardProducto = styled.div` //Acá tenía un motion que supuestament
         max-width: 100px;
         border-radius: 15px;
     }
+    p{
+        text-align: center;
+    }
 
 `;
 
@@ -66,4 +70,5 @@ export const BorderDecorationProducto = styled.div`
     width: 30%;
     background-color: greenyellow;
     border-radius: 15px;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
 `;

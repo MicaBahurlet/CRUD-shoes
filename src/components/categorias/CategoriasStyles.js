@@ -4,7 +4,7 @@ export const CategoriasWrapper = styled.div`
 
     display: flex;
     flex-direction: column;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 15px;
     font-family: var(--font-family);
     @media (max-width:768px){
@@ -37,8 +37,9 @@ export const CardCategoria = styled.div` //Acá tenía un motion que supuestamen
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    width: 200px;
+    width: 220px;
     padding: 2rem 0.5rem;
+    
     background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
     border-radius: 100px;
     cursor: pointer;

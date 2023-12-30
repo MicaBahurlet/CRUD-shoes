@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NavbarContainerStyled = styled.div`
 
-    height: 100%;
+    height: 6rem;
     background-color: var(--background-nav);
     display: flex;
     justify-content: space-between;
@@ -11,6 +11,7 @@ export const NavbarContainerStyled = styled.div`
     border-bottom: solid 1px black;
 
     img{
+        margin-top: 3px;
         max-width: 160px;
     }
 
@@ -37,6 +38,8 @@ export const LinksContainersStyled = styled.div`
         align-items: center;
         gap: 5px;
         padding: 1rem;
+        color: black;
+        filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     }
 
 `;
