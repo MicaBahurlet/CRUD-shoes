@@ -1,7 +1,9 @@
+import inEarImg from './imgProducts/In-EARcategory.png';
+
 export const categorias = [
     {
         id: 1,
-        img: ".data/imgProducts/In-EARcategory.png",
+        img: inEarImg,
         title: "In-ear",
         category: "In-ear",
     },

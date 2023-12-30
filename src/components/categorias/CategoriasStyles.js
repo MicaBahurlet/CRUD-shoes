@@ -48,6 +48,9 @@ export const CardCategoria = styled.div` //Acá tenía un motion que supuestamen
             padding-bottom: 7px;
         }
     }
+    img{
+        max-width: 30px;
+    }
 
 `;
 
@@ -58,3 +61,5 @@ export const BorderDecoration = styled.div`
     background-color: green;
     border-radius: 15px;
 `;
+
+

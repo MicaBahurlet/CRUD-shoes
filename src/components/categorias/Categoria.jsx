@@ -1,6 +1,8 @@
 import { BorderDecoration, CardCategoria } from "./CategoriasStyles"
 
 function Categoria( {img,title,category}) {
+
+
   return (
     <CardCategoria>
         <img src={img} alt={category} />
