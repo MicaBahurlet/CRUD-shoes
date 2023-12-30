@@ -1,7 +1,7 @@
 export const productos = [
     {
         id: 1,
-        title: "Kotion Each Gamer",
+        title: "Kotion Each",
         image: "./data/imgProducts/ProductGamer.png",
         category: "Gamer",
         desc: "Gamer sin fin",
@@ -62,5 +62,37 @@ export const productos = [
         category: "Classic",
         desc: "Bajos calidad premium",
         price: 2000,
+    },
+    {
+        id: 9,
+        title: "Pilip´s",
+        image: "./data/imgProducts/ClasicProduct3.png",
+        category: "Classic",
+        desc: "El cásico de siempre",
+        price: 1000,
+    },
+    {
+        id: 10,
+        title: "MaAirpod´s",
+        image: "./data/imgProducts/ClasicProduct3.png",
+        category: "In-ear",
+        desc: "Original´s",
+        price: 1000,
+    },
+    {
+        id: 11,
+        title: "ziaomi",
+        image: "./data/imgProducts/ClasicProduct3.png",
+        category: "In-ear",
+        desc: "5hs batería",
+        price: 1000,
+    },
+    {
+        id: 12,
+        title: "JVL",
+        image: "./data/imgProducts/ClasicProduct3.png",
+        category: "In-ear",
+        desc: "Resistentes al agua",
+        price: 1000,
     }
 ]

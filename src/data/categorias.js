@@ -1,7 +1,7 @@
 export const categorias = [
     {
         id: 1,
-        img: "./data/imgProducts/In-EARcategory.png,",
+        img: ".data/imgProducts/In-EARcategory.png",
         title: "In-ear",
         category: "In-ear",
     },

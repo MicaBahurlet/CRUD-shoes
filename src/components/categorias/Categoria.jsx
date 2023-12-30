@@ -1,9 +1,13 @@
-import React from 'react'
+import { BorderDecoration, CardCategoria } from "./CategoriasStyles"
 
-function categoria() {
+function Categoria( {img,title,category}) {
   return (
-    <div>categoria</div>
+    <CardCategoria>
+        <img src={img} alt={category} />
+        <h3>{title}</h3>
+        <BorderDecoration />
+    </CardCategoria>
   )
 }
 
-export default categoria
+export default Categoria

@@ -1,9 +1,9 @@
-//import  Categorias  from "./components/categorias/Categorias.jsx";
+import  Categorias  from "./components/categorias/Categorias.jsx";
 //import  Footer  from "./components/footer/Footer.jsx";
 import  Hero  from "./components/hero/Hero.jsx";
 import  Navbar  from "./components/navbar/NavBar.jsx";
 import Layout from "./components/layout/Layout.jsx";
-//import CardsProductos from "./components/productos/CardsProductos.jsx";
+import CardsProductos from "./components/productos/CardsProductos.jsx";
 
 
 
@@ -15,8 +15,8 @@ function App() {
       <Navbar />
       <Layout>
         <Hero/>
-        {/*<Categorias />*/}
-        {/*<CardsProductos />*/}
+        <Categorias/>
+        <CardsProductos/>
       </Layout>
       {/*<Footer/>*/}
       

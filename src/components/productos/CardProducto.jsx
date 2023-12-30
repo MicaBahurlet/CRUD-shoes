@@ -1,9 +1,16 @@
-import React from 'react'
 
-function CardProducto() {
+import { CardProducto, BorderDecorationProducto } from "./CardsProductosStyles"
+
+function Productos ( {img,title,category,price,des}) {
   return (
-    <div>CardProducto</div>
+    <CardProducto>
+        <img src={img} alt={category} />
+        <h3>{title}</h3>
+        <p>{des}</p>
+        <p>${price}</p>
+        <BorderDecorationProducto />
+    </CardProducto>
   )
 }
 
-export default CardProducto
+export default Productos
