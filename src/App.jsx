@@ -4,6 +4,8 @@ import  Hero  from "./components/hero/Hero.jsx";
 import  Navbar  from "./components/navbar/NavBar.jsx";
 import Layout from "./components/layout/Layout.jsx";
 import CardsProductos from "./components/productos/CardsProductos.jsx";
+//import StyledButton from "./components/UI/Boton.jsx";
+
 
 
 
@@ -15,6 +17,7 @@ function App() {
       <Navbar />
       <Layout>
         <Hero/>
+        {/*<StyledButton/>*/}
         <Categorias/>
         <CardsProductos/>
       </Layout>

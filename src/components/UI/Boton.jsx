@@ -1,9 +1,11 @@
-import React from 'react'
+import StyledButton from "./BotonStyles.js";
 
 function Boton() {
   return (
-    <div>Boton</div>
+    <div>
+      <StyledButton>Comprar</StyledButton>
+    </div>
   )
-}
+};
 
 export default Boton

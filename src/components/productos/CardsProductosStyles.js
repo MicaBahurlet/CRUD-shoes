@@ -4,11 +4,11 @@ export const ProductosWrapper = styled.div`
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     max-width: 1200px;
-    margin: 0 15px;
+    margin: 0 15px; // ver acá para que queden alineados los dos Wrapper´s (category and products)
     font-family: var(--font-family);
-    margin-top: 12rem;
+    margin-top: 10rem;
     @media (max-width:768px){
         padding-top: 30px;
         text-align: center;
@@ -36,7 +36,7 @@ export const CardProducto = styled.div` //Acá tenía un motion que supuestament
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    width: 180px;
+    width: 170px;
     padding: 2rem 0.5rem;
     background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
     border-radius: 50px;
