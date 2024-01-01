@@ -9,6 +9,7 @@ export const ProductosWrapper = styled.div`
     margin: 0 15px; // ver acá para que queden alineados los dos Wrapper´s (category and products)
     font-family: var(--font-family);
     margin-top: 10rem;
+   
     @media (max-width:768px){
         padding-top: 30px;
         text-align: center;
@@ -26,6 +27,7 @@ export const ProductosContainer = styled.div`
     align-items: center;
     gap: 20px;
     user-select:none;
+    margin-bottom: 4rem;
     
 `;
 
@@ -47,12 +49,7 @@ export const CardProducto = styled.div` //Acá tenía un motion que supuestament
         font-size: 1rem;
         font-family: var(--font-family);
     }
-    :firts-child{
-        img{
-            padding-top: 7px;
-            padding-bottom: 7px;
-        }
-    }
+    
 
     img{
         max-width: 100px;
@@ -66,7 +63,7 @@ export const CardProducto = styled.div` //Acá tenía un motion que supuestament
 
 export const BorderDecorationProducto = styled.div`
 
-    height: 5px;
+    height: 7px;
     width: 30%;
     background-color: greenyellow;
     border-radius: 15px;

@@ -3,6 +3,7 @@ import {productos} from "../../data/productos.js";
 import { ProductosContainer, ProductosWrapper } from './CardsProductosStyles.js';
 import CardProducto from './CardProducto.jsx';
 
+
 function CardsProductos() {
   return (
     <ProductosWrapper>
@@ -14,8 +15,8 @@ function CardsProductos() {
       </ProductosContainer>
 
 
-
     </ProductosWrapper>
+
   )
 }
 

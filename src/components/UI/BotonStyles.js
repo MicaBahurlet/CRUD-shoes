@@ -10,10 +10,11 @@ const StyledButton = styled.button`
   border-radius: 10px;
   cursor: pointer;
   color: black;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
 
   /* Estilo al pasar el ratón por encima */
   &:hover {
-    background-color: #2980b9;
+    background-color: green;
   }
 `;
 
