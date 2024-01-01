@@ -7,6 +7,8 @@ export const CategoriasWrapper = styled.div`
     max-width: 1200px;
     margin: 0 15px;
     font-family: var(--font-family);
+
+
     @media (max-width:768px){
         padding-top: 30px;
         text-align: center;
@@ -18,7 +20,7 @@ export const CategoriasContainer = styled.div`
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-araund;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
     user-select:none;
@@ -49,12 +51,6 @@ export const CardCategoria = styled.div` //Acá tenía un motion que supuestamen
         font-size: 1rem;
         font-family: var(--font-family);
     }
-    :firts-child{
-        img{
-            padding-top: 7px;
-            padding-bottom: 7px;
-        }
-    }
     img{
         max-width: 100px;
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
@@ -66,8 +62,9 @@ export const BorderDecoration = styled.div`
 
     height: 5px;
     width: 30%;
-    background-color: green;
+   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     border-radius: 15px;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
 `;
 
 

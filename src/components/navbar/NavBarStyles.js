@@ -31,7 +31,7 @@ export const LinksContainersStyled = styled.div`
         padding: 1 rem 1.5rem;
     }
     a:first-child{
-        background-color: greenyellow;
+        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
         border-radius: 1rem;
         display: flex;
         justify-content: center;
@@ -40,6 +40,9 @@ export const LinksContainersStyled = styled.div`
         padding: 1rem;
         color: black;
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+    }
+    a:first-child:hover{
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     }
 
 `;
