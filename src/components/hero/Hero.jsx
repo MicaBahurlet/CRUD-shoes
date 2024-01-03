@@ -8,8 +8,8 @@ function Hero() {
    <HeroContainerStyles>
     <HeroTextContainerStyles>
     <h1>Viví tú música.</h1>
-    <h2>Tus auriculares importan</h2>
-    <p>El mejor sonido a tu disposición. Comprá rápido, comprá calidad, comprá facil. </p>
+    <h2><strong>Tus auriculares importan</strong></h2>
+    <p><strong> El mejor sonido</strong> a tu disposición. Comprá <b>rápido</b>, comprá <b>calidad</b>, comprá <b>facil.</b> </p>
     <Fade duration={3000} >
         <StyledButton/>
     </Fade>    

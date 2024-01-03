@@ -9,11 +9,7 @@ export const HeroContainerStyles = styled.div`
     margin: 0 auto;
     gap: 30px;
 
-    h1{
-        margin-bottom: 2rem;
-        text-shadow: 0.8px 0.8px 0.8px #000;
-
-    }
+    
 
     @media (max-width: 968px) {
         flex-direction: column;
@@ -30,9 +26,12 @@ export const HeroTextContainerStyles = styled.div`
         font-size: 4rem;
         margin: 10px 0;
         font-family: var(--font-family);
+        text-shadow: 1px 1px 1px #000;
+
     }
+    
     h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 10px 0;
         font-family: var(--font-family);
     }
