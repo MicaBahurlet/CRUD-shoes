@@ -6,6 +6,12 @@ import { LinkContainerStyled,
   SpanStyled, 
   MenuContainerStyled, 
   HomeContainerStyled,
+  AboutMeStyled,
+  AboutMeContainer,
+  ProductsStyled,
+  ProductContainer
+
+  
   
 } from "./NavBarStyles"
 
@@ -50,10 +56,29 @@ function NavBar() {
           <AiOutlineMenu/>
         </MenuContainerStyled>
 
+        
 
 
+        <AboutMeContainer>
+          <AboutMeStyled>
+            <a href="#"> 
+              Nosotros
+            </a>  
+          </AboutMeStyled>
+        </AboutMeContainer>
+
+        <ProductContainer>
+            <ProductsStyled>
+              <a href="#">
+                Productos 
+              </a>  
+            </ProductsStyled>
+        </ProductContainer>
+        
       
       </LinksContainersStyled>
+
+      
 
     </NavbarContainerStyled>
   )
