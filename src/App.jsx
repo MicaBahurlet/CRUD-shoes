@@ -12,6 +12,7 @@ import Nopage from "./pags/noPage/Nopage.jsx";
 import About from "./pags/About/About.jsx";
 import Home from "./pags/Home/Home.jsx";
 import Contact from "./pags/Contacto/Contacto.jsx";
+import Products from "./pags/Products/Products.jsx";
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route index element={<Home/>}/>
             <Route path="about" element={<About/>}/>
             <Route path="*" element={<Nopage/>}/>
+            <Route path="products" element={<Products/>}/>
             <Route path="contact" element={<Contact/>}/>
             
           </Route>

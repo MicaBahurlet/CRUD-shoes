@@ -4,7 +4,7 @@ export const ContactoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ajusta según tus necesidades */
+  height: 100vh; 
 `;
 
 export const Formulario = styled.form`
@@ -19,24 +19,29 @@ export const Formulario = styled.form`
 `;
 
 export const Etiqueta = styled.label`
-  margin-bottom: 8px; /* Agrega espacio entre las etiquetas para mejorar la apariencia */
+  margin-bottom: 8px; 
   font-family: var(--font-family);
   
 `;
 
 export const Input = styled.input`
   border-radius: 10px;
-  margin-bottom: 16px; /* Agrega espacio entre los inputs para mejorar la apariencia */
+  margin-bottom: 16px; 
+  padding: 0.5rem;
 `;
 
 export const Textarea = styled.textarea`
-  /* Estilos adicionales para las áreas de texto si es necesario */
-  margin-bottom: 16px; /* Agrega espacio entre las áreas de texto para mejorar la apariencia */
+
+  margin-bottom: 16px; 
   border-radius: 10px;
 `;
 
 export const Boton = styled.button`
-  /* Estilos adicionales para los botones si es necesario */
+  border-radius: 10px;
+  max-width: 8rem;
+  font-family: var(--font-family);
+  padding: 0.5rem;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 `;
 
 export const GrupoEtiquetaInput = styled.div`
