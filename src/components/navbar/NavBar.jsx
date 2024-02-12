@@ -51,9 +51,12 @@ function NavBar() {
 
             <UserNavStyled>
               <UserContainerStyled>
-                <FaUserAlt/>
+                
                 <SpanStyled>
                   <Link to="/about"> 
+                    <LinkContainerStyled >
+                    <FaUserAlt/>
+                  </LinkContainerStyled>  
                     About
                   </Link>  
                 </SpanStyled>
