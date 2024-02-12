@@ -30,7 +30,7 @@ function NavBar() {
   return (
     
     <div>
-      <nav>
+      <nav> 
         <NavbarContainerStyled>
           <div>
               <a href="#"> 
@@ -79,7 +79,7 @@ function NavBar() {
 
             <ContactContainer>
                 <ContactStyled>
-                  <Link to="/products">
+                  <Link to="/Contact">
                     Contacto 
                   </Link>  
                 </ContactStyled>
