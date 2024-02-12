@@ -1,6 +1,7 @@
 import React from 'react'
 import { NoPage } from './Nopage'
 import Footer from '../../components/footer/Footer.jsx'
+import Errorimg from '../../data/imgProducts/Error.png'
 
 
 export function Nopage() {
@@ -9,7 +10,7 @@ export function Nopage() {
       <NoPage>
 
           <div>
-            <img src="./src/data/imgProducts/Error.png" alt=" error 404" />
+            <img src= {Errorimg} alt=" error 404" />
           </div>
 
           <div>
