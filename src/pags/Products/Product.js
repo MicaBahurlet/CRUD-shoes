@@ -74,9 +74,6 @@ export const CardProducto = styled.div`
         text-align: center;
     }
 
-    &:hover {
-        transform: scale(1.1); 
-    }
 
     img:hover {
         transform: scale(1.2); 

@@ -27,7 +27,7 @@ function About() {
                     
                             <AboutTextContainerStyles>
                                 <h2>Quienes somos?</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur in rerum doloribus doloremque, quos nisi aliquid, dignissimos quis, id autem qui! Possimus, et asperiores consequatur rem debitis eligendi, quam, qui hic totam dolore sapiente? Cum, harum voluptates et alias fuga quibusdam rem! Accusantium ratione doloremque magnam. Quas aut architecto reiciendis?</p>
+                                <p>Un grupo de amigos, la decición de emprender y el amor por la música fueron los desencadenantes. Desde hace 4 años decidimos crear un e-comerce que permita a las personas acceder de manera simple a comprar sus auriculares, de manera simple y sin letra chica. </p>
                             </AboutTextContainerStyles>
 
                 </AboutContainer>
@@ -35,12 +35,16 @@ function About() {
             
                 <HistoriaAbout>
                     <h3>Filosofía de la empresa</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium id ipsa repellat fuga explicabo in, officia hic itaque eos praesentium velit. Ipsum soluta cum temporibus dolorem molestias earum iste, at reprehenderit ipsam nulla, est delectus repellat repellendus sapiente necessitatibus ea! Expedita commodi est ab? Veritatis tempora excepturi quod consectetur rerum sunt aliquid, iusto alias sint consequuntur neque nemo quidem quasi, inventore dolor adipisci perferendis id. Asperiores possimus excepturi odio porro?</p>
+                    <p>Para disfrutar y vivir la música se necesitan unos BUENOS auriculares, la calidad del sonido es fundamental para la apreciación musical. Queremos que cualquier persona pueda acceder de manera online a la compra de sus auriculares.
+                        <br /> Queremos que sea fácil, simple y rápido.
+                    </p>
+                    
                 </HistoriaAbout>
 
                 <MisionAbout>
                     <h3>Nuestra misión</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores. Quas facere, numquam quibusdam consequuntur, corrupti suscipit eaque sed tenetur vitae, saepe incidunt natus dolorem earum ut! Nostrum, sint enim.</p>
+                    <p>Que puedas encontrar los auriculares que estás buscando en nuestra tienda, que pagues por ellos lo que verdaderamente cuestan y que lleguen a tu casa, vos no te moves, sólo esperas a que llegue el paquete.
+                    </p>
                 </MisionAbout>
 
                 <Footer/>

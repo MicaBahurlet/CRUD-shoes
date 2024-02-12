@@ -94,7 +94,7 @@ export const HistoriaAbout = styled.div`
     p{
         font-size: 1.2rem;
         font-family: var(--font-family);
-        line-height: 1.2;
+        line-height: 1.8;
     }
 
     @media (max-width: 968px) {
@@ -128,7 +128,7 @@ export const MisionAbout = styled.div`
     p{
         font-size: 1.2rem;
         font-family: var(--font-family);
-        line-height: 1.2;
+        line-height: 1.8;
     }
 
     @media (max-width: 968px) {
