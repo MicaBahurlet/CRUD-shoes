@@ -11,7 +11,7 @@ export const NavbarContainerStyled = styled.div`
     border-bottom: solid 1px black;
 
     h1 {
-        color: white;
+        color: #FFFFFF;
         font-family: var(--font-family);
         font-size: 4rem;
         padding: 0.5rem;
