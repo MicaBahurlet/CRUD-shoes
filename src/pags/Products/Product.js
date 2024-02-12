@@ -67,7 +67,7 @@ export const CardProducto = styled.div`
         max-width: 100px;
         border-radius: 15px;
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
-        transition: transform 0.7s ease; /* Agregamos la misma transición para suavizar el efecto */
+        transition: transform 0.7s ease;
     }
 
     p {
@@ -75,11 +75,11 @@ export const CardProducto = styled.div`
     }
 
     &:hover {
-        transform: scale(1.1); /* Aplicamos un escalamiento en hover */
+        transform: scale(1.1); 
     }
 
     img:hover {
-        transform: scale(1.2); /* Aplicamos un escalamiento específicamente para la imagen en hover */
+        transform: scale(1.2); 
     }
     
 
