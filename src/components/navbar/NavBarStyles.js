@@ -3,16 +3,19 @@ import styled from "styled-components";
 export const NavbarContainerStyled = styled.div`
 
     height: 6rem;
-    background-color: var(--background-nav);
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 4rem;
     border-bottom: solid 1px black;
 
-    img{
-        margin-top: 3px;
-        max-width: 160px;
+    h1 {
+        color: white;
+        font-family: var(--font-family);
+        font-size: 4rem;
+        padding: 0.5rem;
+        border-radius: 10px;
     }
 
     @media (max-width: 968px) {
@@ -77,8 +80,10 @@ export const MenuContainerStyled = styled (LinkContainerStyled)`
     align-items: center;
     font-size: 2rem;
     cursor: pointer;
+    color: white;
     @media(max-width: 768px){
         display: flex;
+        color: white;
     }
 `;
 

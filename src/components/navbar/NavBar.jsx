@@ -33,9 +33,7 @@ function NavBar() {
       <nav>  
         <NavbarContainerStyled>
           <div>
-              <a href="#"> 
-                <img src="./src/data/imgProducts/LOGO.png" alt="Logo Auris"/>
-              </a> 
+              <h1>Auris.</h1>
           </div>
 
           <LinksContainersStyled>

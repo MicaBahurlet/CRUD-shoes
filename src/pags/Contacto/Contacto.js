@@ -4,14 +4,15 @@ export const ContactoContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh; 
-  margin: 0 auto;
+  
+  margin: 5rem auto;
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
   img {
     max-width:350px;
     border-radius: 10px;
+    margin-top: 5rem;
   }
 
   @media (max-width: 768px) {
@@ -19,6 +20,11 @@ export const ContactoContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
+    img {
+      max-width: 200px;
+      margin-bottom: 4rem;
+    }
   }
 `;
 
@@ -33,7 +39,8 @@ export const Formulario = styled.form`
   font-family: var(--font-family);
 
   @media (max-width: 768px) {
-    margin-top: 15rem;
+    margin-top: 3rem;
+    max-width: 300px;
   }
 `;
 

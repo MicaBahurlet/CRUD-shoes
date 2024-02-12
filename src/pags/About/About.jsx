@@ -27,7 +27,7 @@ function About() {
                     
                             <AboutTextContainerStyles>
                                 <h2>Quienes somos?</h2>
-                                <p>Un grupo de amigos, la decición de emprender y el amor por la música fueron los desencadenantes. Desde hace 4 años decidimos crear un e-comerce que permita a las personas acceder de manera simple a comprar sus auriculares, de manera simple y sin letra chica. </p>
+                                <p>Un grupo de amigos, la decición de emprender y el amor por la música fueron los desencadenantes. Desde hace 4 años decidimos crear un e-comerce que permita a las personas  comprar sus auriculares, de <strong> manera simple y sin letra chica.</strong> </p>
                             </AboutTextContainerStyles>
 
                 </AboutContainer>
