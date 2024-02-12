@@ -30,7 +30,7 @@ function NavBar() {
   return (
     
     <div>
-      <nav> 
+      <nav>  
         <NavbarContainerStyled>
           <div>
               <a href="#"> 
@@ -62,7 +62,7 @@ function NavBar() {
             </UserNavStyled>
 
 
-            <MenuContainerStyled> //Menú Hamburguesa que está display none en desktop
+            <MenuContainerStyled> 
               <AiOutlineMenu/>
             </MenuContainerStyled>
 

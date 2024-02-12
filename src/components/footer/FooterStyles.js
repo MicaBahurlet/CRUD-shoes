@@ -7,7 +7,7 @@ export const FooterContainerStyles = styled.div`
     align-items: center;
     border-top: 1px solid black;
     padding: 1rem 4rem;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-color: black;
     height: 5rem;
 
     img{
@@ -19,6 +19,7 @@ export const FooterContainerStyles = styled.div`
         font-family: var(--font-family);
         font-size: large;
         font-weight: bold;
+        color: white;
     }
     @media (max-width: 768px) {
         flex-direction: column;

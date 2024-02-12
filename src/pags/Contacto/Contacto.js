@@ -2,9 +2,24 @@ import styled from 'styled-components';
 
 export const ContactoContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100vh; 
+  margin: 0 auto;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  img {
+    max-width:350px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 `;
 
 export const Formulario = styled.form`
@@ -16,6 +31,10 @@ export const Formulario = styled.form`
   height : auto ;
   max-width: 500px;
   font-family: var(--font-family);
+
+  @media (max-width: 768px) {
+    margin-top: 15rem;
+  }
 `;
 
 export const Etiqueta = styled.label`
