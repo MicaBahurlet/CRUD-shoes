@@ -11,6 +11,7 @@ import CardsProductos from "./components/productos/CardsProductos.jsx";
 import Nopage from "./pags/noPage/Nopage.jsx"; 
 import About from "./pags/About/About.jsx";
 import Home from "./pags/Home/Home.jsx";
+import Contact from "./pags/Contacto/Contacto.jsx";
 
 
 
@@ -26,6 +27,8 @@ function App() {
             <Route index element={<Home/>}/>
             <Route path="about" element={<About/>}/>
             <Route path="*" element={<Nopage/>}/>
+            <Route path="contact" element={<Contact/>}/>
+            
           </Route>
           
         </Routes>

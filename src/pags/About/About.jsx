@@ -2,9 +2,13 @@ import {
     AboutContainer, 
     AboutTextContainerStyles,
     AboutImageContainerStyles,
-    AboutHistoria,
+    HistoriaAbout,
+    MisionAbout,
+    
 
 } from "./About";
+
+import Footer from "../../components/footer/Footer";
 
 
 
@@ -13,27 +17,37 @@ function About() {
     
     return (
 
-            <AboutContainer>
+            <div>
+                <AboutContainer>
 
-            <AboutTextContainerStyles >
-                <h1>Quienes somos?</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error impedit quisquam rem eveniet, cupiditate repudiandae laboriosam quos! Eum commodi, expedita nemo, provident ducimus hic excepturi sit tempora repudiandae vero error!
-                </p>
-            </AboutTextContainerStyles>
+                            <AboutImageContainerStyles>
+                                <img src="./src/data/imgProducts/About.png" alt="Logo"/>
+                            </AboutImageContainerStyles>
 
-            <AboutImageContainerStyles>
-                <img src="../../data/imgProducts/HEROAuris.png" alt="Auriculares Hero"/>
-            </AboutImageContainerStyles>
+                    
+                            <AboutTextContainerStyles>
+                                <h2>Quienes somos?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur in rerum doloribus doloremque, quos nisi aliquid, dignissimos quis, id autem qui! Possimus, et asperiores consequatur rem debitis eligendi, quam, qui hic totam dolore sapiente? Cum, harum voluptates et alias fuga quibusdam rem! Accusantium ratione doloremque magnam. Quas aut architecto reiciendis?</p>
+                            </AboutTextContainerStyles>
 
-            <AboutHistoria>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, tempora. Id pariatur eveniet tempora perferendis voluptatum a sapiente dolores quis. Repellendus maiores consequuntur minus autem cum nemo rem impedit ducimus non, quis deserunt neque nobis. Officiis sit quasi praesentium debitis et alias rem nobis, nulla perferendis nam in illo rerum consectetur quisquam perspiciatis quae. Provident tenetur dolor dolore ipsa nemo totam consequatur excepturi quibusdam aut cumque ipsam iure id, placeat iste! Quidem adipisci magni a possimus eius aperiam iste? Iusto vero voluptatibus molestias, dolores voluptates fuga quam laboriosam libero, eos, quidem sint error. Cum consequatur, modi atque eveniet velit odit.</p>
+                </AboutContainer>
 
-            </AboutHistoria>
+            
+                <HistoriaAbout>
+                    <h3>Filosofía de la empresa</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium id ipsa repellat fuga explicabo in, officia hic itaque eos praesentium velit. Ipsum soluta cum temporibus dolorem molestias earum iste, at reprehenderit ipsam nulla, est delectus repellat repellendus sapiente necessitatibus ea! Expedita commodi est ab? Veritatis tempora excepturi quod consectetur rerum sunt aliquid, iusto alias sint consequuntur neque nemo quidem quasi, inventore dolor adipisci perferendis id. Asperiores possimus excepturi odio porro?</p>
+                </HistoriaAbout>
 
-        </AboutContainer> 
-        
+                <MisionAbout>
+                    <h3>Nuestra misión</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores. Quas facere, numquam quibusdam consequuntur, corrupti suscipit eaque sed tenetur vitae, saepe incidunt natus dolorem earum ut! Nostrum, sint enim.</p>
+                </MisionAbout>
 
+                <Footer/>
+
+            </div>
+     
+     
 
     )
 

@@ -166,3 +166,27 @@ export const ProductsStyled = styled.div`
 
 
 `;
+
+export const ContactContainer = styled (LinkContainerStyled)`
+
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+`;
+
+
+export const ContactStyled = styled.div`
+
+    display: flex;
+    color : black;
+    font-family:var(--font-family);
+    font-size: 1.2rem;
+
+
+`;
+
+
