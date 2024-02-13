@@ -6,8 +6,6 @@ import { LinkContainerStyled,
   SpanStyled, 
   MenuContainerStyled, 
   HomeContainerStyled,
-  AboutMeStyled,
-  AboutMeContainer,
   ProductsStyled,
   ProductContainer,
   ContactContainer,
@@ -23,6 +21,8 @@ import {HiHome} from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
 
 import { Link, Outlet } from "react-router-dom";
+
+
 
 
 
@@ -42,7 +42,7 @@ function NavBar() {
                 <LinkContainerStyled >
                   <HiHome />
                 </LinkContainerStyled>  
-                Home
+                Inicio
               </Link>
             </HomeContainerStyled>
 
@@ -55,7 +55,8 @@ function NavBar() {
                     <LinkContainerStyled >
                     <FaUserAlt/>
                   </LinkContainerStyled>  
-                    About
+                    Nosotros
+
                   </Link>  
                 </SpanStyled>
                 
@@ -92,7 +93,7 @@ function NavBar() {
         </NavbarContainerStyled>  
       </nav>  
 
-      <Outlet />
+      <Outlet /> 
       
     </div>
 

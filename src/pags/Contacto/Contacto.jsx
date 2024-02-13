@@ -10,15 +10,17 @@ import {
 } from './Contacto';
 import imgForm from '../../data/imgProducts/Contacto.jpg';
 import Footer from '../../components/footer/Footer.jsx';
+import { Fade } from "react-awesome-reveal"
+
 
 export default function Contacto() {
   return (
     <div>
       <ContactoContainer>
 
-        <div>
-            <img src={imgForm} alt="Img Formulario" />
-        </div>
+        <Fade direction="left"  duration={3000} >
+         <img src={imgForm} alt="Img Formulario" />
+        </Fade>  
         
         <Formulario action="/ruta-de-envio" method="post">
           <h2>Contactate con nosotros:</h2>

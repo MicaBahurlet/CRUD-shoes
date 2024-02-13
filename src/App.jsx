@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 /*  import  Categorias  from "./components/categorias/Categorias.jsx";
@@ -24,13 +25,12 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>}> //No debería traer también Layout? 
+          <Route path="/" element={<Home/>}> 
             <Route index element={<Home/>}/>
             <Route path="about" element={<About/>}/>
-            <Route path="*" element={<Nopage/>}/>
             <Route path="products" element={<Products/>}/>
             <Route path="contact" element={<Contact/>}/>
-            
+            <Route path="*" element={<Nopage/>}/>
           </Route>
           
         </Routes>

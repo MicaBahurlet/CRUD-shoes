@@ -15,6 +15,10 @@ export const FooterContainerStyles = styled.div`
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
         margin-top: 3px;
     }
+    h2 {
+        font-family: var(--font-family);
+        color: white;
+    }
     p{
         font-family: var(--font-family);
         font-size: large;

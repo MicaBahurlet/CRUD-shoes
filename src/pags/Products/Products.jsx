@@ -11,26 +11,33 @@ import {
 
 import CardProductos from "./CardProductos.jsx"
 
+import Footer from "../../components/footer/Footer.jsx"
+
 
 
 function CardsProductos() {
   return (
-    <ProductosWrapper>
+    <div>
+      <ProductosWrapper>
 
-        <TextProductos>
-            <h2>La casa es chica pero el corazón es grande.</h2>
-            <h3>Nuestros productos serán pocos, pero ofrecemos calidad y garantía.</h3>
-            <p>Tan simple como seleccionar un producto y agregar al carrito. No dudes, el mejor precio está en <strong>Auris.</strong> </p>
-        </TextProductos>    
+          <TextProductos>
+              <h2>La casa es chica pero el corazón es grande.</h2>
+              <h3>Nuestros productos serán pocos, pero ofrecemos calidad y garantía.</h3>
+              <p>Tan simple como seleccionar un producto y agregar al carrito. No dudes, el mejor precio está en <strong>Auris.</strong> </p>
+          </TextProductos>    
 
-      <ProductosContainer>
-        {productos.map(prod =>(
-          <CardProductos key={prod.id} {...prod} />
-        ))}
-      </ProductosContainer>
+        <ProductosContainer>
+          {productos.map(prod =>(
+            <CardProductos key={prod.id} {...prod} />
+          ))}
+        </ProductosContainer>
 
 
-    </ProductosWrapper>
+      </ProductosWrapper>
+        
+        <Footer/>
+
+    </div>       
 
   )
 }

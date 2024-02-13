@@ -2,6 +2,7 @@ import React from 'react'
 import { NoPage } from './Nopage'
 import Footer from '../../components/footer/Footer.jsx'
 import Errorimg from '../../data/imgProducts/Error.png'
+import Botons from '../../components/UI/Boton.jsx'
 
 
 export function Nopage() {

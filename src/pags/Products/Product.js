@@ -6,7 +6,7 @@ export const ProductosWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     max-width: 1200px;
-    margin: 0 auto; // ver acá para que queden alineados los dos Wrapper´s (category and products)
+    margin: 0 auto; 
     font-family: var(--font-family);
     margin-top: 6rem;
   
@@ -26,6 +26,12 @@ export const TextProductos = styled.div`
         text-align: start;
         margin-bottom: 2rem;
 
+    @media (max-width:768px){
+        padding-top: 30px;
+        text-align: start;
+        max-width: 300px;
+        margin: 0 auto;
+    };
 
 `;
 

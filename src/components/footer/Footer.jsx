@@ -1,11 +1,11 @@
-import {FooterContainerStyles} from './FooterStyles.js' // para importar SIEMPRE tengo que poner el estilo en {}
-import logoFooter from '../../data/imgProducts/LOGO.png'
+import {FooterContainerStyles} from './FooterStyles.js' 
+
 
 function footer() {
   return (
     <FooterContainerStyles>
       <div>
-      <img src= {logoFooter} alt="Logo Auris" />
+      <h2>Auris.</h2> 
       </div>
 
       <div>
