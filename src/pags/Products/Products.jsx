@@ -12,12 +12,14 @@ import {
 import CardProductos from "./CardProductos.jsx"
 
 import Footer from "../../components/footer/Footer.jsx"
+import NavBar from "../../components/navbar/NavBar";
 
 
 
 function CardsProductos() {
   return (
     <div>
+      <NavBar/>
       <ProductosWrapper>
 
           <TextProductos>

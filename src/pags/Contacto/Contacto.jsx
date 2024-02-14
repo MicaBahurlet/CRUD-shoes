@@ -11,11 +11,13 @@ import {
 import imgForm from '../../data/imgProducts/Contacto.jpg';
 import Footer from '../../components/footer/Footer.jsx';
 import { Fade } from "react-awesome-reveal"
+import NavBar from '../../components/navbar/NavBar.jsx';
 
 
 export default function Contacto() {
   return (
     <div>
+      <NavBar/>
       <ContactoContainer>
 
         <Fade direction="left"  duration={3000} >

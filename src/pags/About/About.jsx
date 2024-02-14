@@ -10,6 +10,7 @@ import {
 
 import Footer from "../../components/footer/Footer";
 import ImgAbout from "../../data/imgProducts/About.png";
+import NavBar from "../../components/navbar/NavBar";
 
 
 
@@ -19,6 +20,7 @@ function About() {
     return (
 
             <div>
+                <NavBar/>
                 <AboutContainer>
 
                             <AboutImageContainerStyles>
