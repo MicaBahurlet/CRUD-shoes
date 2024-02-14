@@ -11,6 +11,7 @@ import {
 import Footer from "../../components/footer/Footer";
 import ImgAbout from "../../data/imgProducts/About.png";
 import NavBar from "../../components/navbar/NavBar";
+import { Fade } from "react-awesome-reveal"
 
 
 
@@ -22,11 +23,14 @@ function About() {
             <div>
                 <NavBar/>
                 <AboutContainer>
-
+          
+                        
                             <AboutImageContainerStyles>
-                                <img src={ImgAbout} alt="About"/>
+                                <Fade direction="left"  duration={3000} >
+                                    <img src={ImgAbout} alt="About"/>
+                                </Fade>
                             </AboutImageContainerStyles>
-
+                        
                     
                             <AboutTextContainerStyles>
                                 <h2>Quienes somos?</h2>
