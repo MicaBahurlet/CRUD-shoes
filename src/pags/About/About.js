@@ -16,6 +16,8 @@ export const AboutContainer = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
+        
     }
 
 `;
@@ -44,14 +46,16 @@ export const AboutTextContainerStyles = styled.div`
     p{
         font-size: 1.2rem;
         font-family: var(--font-family);
-        line-height: 1.2;
+        line-height: 1.8;
     }
 
 
     @media (max-width: 968px) {
-        align-items: center;
-        text-align: center;
-        width: 80;
+        align-items: start;
+        text-align: start;
+        width: 100%;
+        height: auto;
+        max-width: 380px;
     }
 
 `;
@@ -69,7 +73,7 @@ export const AboutImageContainerStyles = styled.div`
     }
 
     @media (max-width: 968px) {
-        display: none;
+        max-width: 200px;
     }
 
 `;
@@ -101,6 +105,13 @@ export const HistoriaAbout = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: start;
+        
+        p {
+            width: 100%;
+            height: auto;
+            max-width: 380px;
+        }
     }
 
 
@@ -135,8 +146,14 @@ export const MisionAbout = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: start;
+        
+        p {
+            width: 100%;
+            height: auto;
+            max-width: 380px;
+        }
     }
-
 
 
 `;
