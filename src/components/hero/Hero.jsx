@@ -2,6 +2,7 @@
 import { HeroContainerStyles, HeroTextContainerStyles, HeroImageContainerStyles } from "./HeroStyles"
 import StyledButton from "../UI/Boton.jsx" 
 import { Fade } from "react-awesome-reveal"
+import IMGHero from "../../data/imgProducts/HEROAuris.png"
 
 function Hero() {
   return (
@@ -16,7 +17,7 @@ function Hero() {
     </HeroTextContainerStyles>
     <HeroImageContainerStyles>
       <Fade direction="left"  duration={3000} >
-         <img src="./src/data/imgProducts/HEROAuris.png" alt="Auriculares Hero"/>
+         <img src= {IMGHero} alt="Auriculares Hero"/>
       </Fade>   
     </HeroImageContainerStyles>
    </HeroContainerStyles>

@@ -9,6 +9,7 @@ import {
 } from "./About";
 
 import Footer from "../../components/footer/Footer";
+import ImgAbout from "../../data/imgProducts/About.png";
 
 
 
@@ -21,7 +22,7 @@ function About() {
                 <AboutContainer>
 
                             <AboutImageContainerStyles>
-                                <img src="./src/data/imgProducts/About.png" alt="Logo"/>
+                                <img src={ImgAbout} alt="About"/>
                             </AboutImageContainerStyles>
 
                     
