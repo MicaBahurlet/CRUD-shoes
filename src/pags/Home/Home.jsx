@@ -15,7 +15,7 @@ export function Home() {
                 <Layout>
                     <Hero/>
                     <Categorias/>
-                    <button onClick={() => window.location.href = "/products"}>Ver Productos</button>
+                    <button onClick={() => window.location.href = "/Products"}>Ver Productos</button>
                 </Layout>
                 <Footer/>
             </HomeContainer>
