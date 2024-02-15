@@ -47,7 +47,9 @@ export const LinksContainersStyled = styled.div`
     }
     a:first-child:hover{
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        text-decoration: none;
     }
+   
 
 `;
 
@@ -56,13 +58,11 @@ export const LinkContainerStyled = styled.div`
     font-size: 1.2rem;
     
     color: ${(props) => (props.home ? "black" : "black")};
+
+   
 `;
 
-export const UserContainerStyled = styled (LinkContainerStyled)`
 
-    display: flex;
-    align-items: center;
-`;
 
 export const HomeContainerStyled = styled (LinkContainerStyled)`
 
@@ -75,18 +75,14 @@ export const HomeContainerStyled = styled (LinkContainerStyled)`
 
 `;
 
-export const MenuContainerStyled = styled (LinkContainerStyled)`
 
-    display: none;
+export const UserContainerStyled = styled (LinkContainerStyled)`
+
+    display: flex;
     align-items: center;
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
-    @media(max-width: 768px){
-        display: flex;
-        color: white;
-    }
+
 `;
+
 
 export const UserNavStyled = styled.div`
     gap: 15px;
@@ -115,10 +111,7 @@ export const SpanStyled = styled.span`
     color: black;
     font-family:var(--font-family);
     margin-left: 8px;
-    &:hover{
-        text-decoration: underline;
-    }
-
+  
 `;
 
 
@@ -192,7 +185,39 @@ export const ContactStyled = styled.div`
     font-family:var(--font-family);
     font-size: 1.2rem;
 
+`;
+
+
+
+export const MenuContainerStyled = styled (LinkContainerStyled)`
+
+    display: none;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    @media(max-width: 768px){
+        display: flex;
+        color: white;
+    }
+`;
+
+export const MenuContainerClosed = styled (LinkContainerStyled)`
+
+    display: none;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    @media(max-width: 768px){
+        display: flex;
+        color: white;
+
+        display: none;
+    }
 
 `;
+
+
 
 

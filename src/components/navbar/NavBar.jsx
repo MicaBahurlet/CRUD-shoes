@@ -10,6 +10,7 @@ import { LinkContainerStyled,
   ProductContainer,
   ContactContainer,
   ContactStyled,
+  MenuContainerClosed,
 
 
   
@@ -19,8 +20,11 @@ import { LinkContainerStyled,
 import {FaUserAlt} from "react-icons/fa";
 import {HiHome} from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 import { Link, Outlet } from "react-router-dom";
+
+import { createContext, useContext, useState } from 'react';
 
 
 
@@ -37,6 +41,8 @@ function NavBar() {
           </div>
 
           <LinksContainersStyled>
+
+
             <HomeContainerStyled>
               <Link to="/">
                 <LinkContainerStyled >
@@ -49,26 +55,18 @@ function NavBar() {
 
             <UserNavStyled>
               <UserContainerStyled>
-                
                 <SpanStyled>
                   <Link to="/about"> 
                     <LinkContainerStyled >
                     <FaUserAlt/>
                   </LinkContainerStyled>  
                     Nosotros
-
                   </Link>  
-                </SpanStyled>
-                
+                </SpanStyled> 
               </UserContainerStyled>
             </UserNavStyled>
 
 
-            <MenuContainerStyled> 
-              <AiOutlineMenu/>
-            </MenuContainerStyled>
-
-            
 
             <ProductContainer>
                 <ProductsStyled>
@@ -87,7 +85,16 @@ function NavBar() {
                 </ContactStyled>
             </ContactContainer>
 
-          
+
+
+            <MenuContainerStyled> 
+              <AiOutlineMenu/>
+            </MenuContainerStyled>
+
+            <MenuContainerClosed> 
+              <AiOutlineClose/>
+            </MenuContainerClosed>
+            
           </LinksContainersStyled>
 
         </NavbarContainerStyled>  
@@ -104,6 +111,9 @@ function NavBar() {
 }
 
 export default NavBar
+
+
+
 
 
 

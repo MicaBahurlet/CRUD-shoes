@@ -29,7 +29,7 @@ export const CategoriasContainer = styled.div`
     gap: 20px;
     user-select:none;
 
-    img{ //esto es lo que toque para la img de la cart producto
+    img{ 
         max-width: 150px;
         border-radius: 15px;
     }
