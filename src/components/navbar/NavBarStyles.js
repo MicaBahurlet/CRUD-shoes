@@ -17,6 +17,7 @@ export const NavbarContainerStyled = styled.div`
         padding: 0.5rem;
         border-radius: 10px;
     }
+   
 
     @media (max-width: 968px) {
         padding: 1rem 2rem;

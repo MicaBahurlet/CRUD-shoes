@@ -46,6 +46,7 @@ export const ProductosContainer = styled.div`
     gap: 20px;
     user-select:none;
     margin-bottom: 4rem;
+    margin-top: 6rem;
     
 `;
 
