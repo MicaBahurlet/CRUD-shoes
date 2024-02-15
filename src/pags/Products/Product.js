@@ -24,8 +24,10 @@ export const TextProductos = styled.div`
         display: flex;
         flex-direction: column;
         text-align: start;
+        margin: 3rem auto;
         margin-bottom: 2rem;
 
+        
     @media (max-width:768px){
         padding-top: 30px;
         text-align: start;
@@ -86,7 +88,7 @@ export const CardProducto = styled.div`
         transform: scale(1.2); 
     }
     
-
+    
 
 `;
 
@@ -94,6 +96,17 @@ export const BorderDecorationProducto = styled.div`
 
     height: 7px;
     width: 30%;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    border-radius: 15px;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+`;
+
+export const BorderSeparacion = styled.div`
+
+    height: 7px;
+    width: 70%;
+    margin:  6rem auto;
+    margin-bottom: 2rem;
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
     border-radius: 15px;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));

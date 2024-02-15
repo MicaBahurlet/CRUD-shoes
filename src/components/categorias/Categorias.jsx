@@ -5,7 +5,7 @@ import Categoria from './Categoria.jsx'; //acá tengo la ruta de la img en una m
 function Categorias() {
   return (
     <CategoriasWrapper>  
-      <h2>Categorías</h2> 
+      <h2>Categorías:</h2> 
       <CategoriasContainer> 
         {categorias.map(cat =>( //hago un map para poder leer el archivo categorias.js dentro de data
 

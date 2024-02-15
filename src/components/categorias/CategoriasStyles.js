@@ -8,6 +8,10 @@ export const CategoriasWrapper = styled.div`
     margin: 0 15px;
     font-family: var(--font-family);
 
+    h2 {
+        margin-bottom: 3rem;
+    }
+
 
     @media (max-width:768px){
         padding-top: 30px;
@@ -54,6 +58,10 @@ export const CardCategoria = styled.div` //Acá tenía un motion que supuestamen
     img{
         max-width: 100px;
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+        transition: transform 0.7s ease;
+    }
+    img:hover {
+        transform: scale(1.2); 
     }
 
 `;
