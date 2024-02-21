@@ -115,35 +115,6 @@ export const SpanStyled = styled.span`
 `;
 
 
-
-
-
-
-// ABOUT ME // 
-
-
-
-export const AboutMeContainer = styled (LinkContainerStyled)`
-
-    display: flex;
-    align-items: center;
-    font-family: var(--font-family);
-    @media (max-width: 768px) {
-        display: none;
-    }
-
-`;
-
-export const AboutMeStyled = styled.div`
-
-    display: flex;
-    color: black;
-    font-family:var(--font-family);
-    font-size: 1.2rem;
-
-
-`;
-
 export const ProductContainer = styled (LinkContainerStyled)`
 
     display: flex;

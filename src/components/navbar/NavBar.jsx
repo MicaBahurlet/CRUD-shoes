@@ -11,10 +11,6 @@ import { LinkContainerStyled,
   ContactContainer,
   ContactStyled,
   MenuContainerClosed,
-
-
-  
-  
 } from "./NavBarStyles"
 
 import {FaUserAlt} from "react-icons/fa";
@@ -24,7 +20,6 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import { Link, Outlet } from "react-router-dom";
 
-import { createContext, useContext, useState } from 'react';
 
 
 
