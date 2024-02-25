@@ -65,6 +65,7 @@ export const AboutTextContainerStyles = styled.div`
 export const AboutImageContainerStyles = styled.div`
 
     width: 40%;
+    z-index: -2;
     img{
         width: 100%;
         max-width: 300px;

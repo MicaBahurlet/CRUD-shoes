@@ -51,6 +51,10 @@ export const CardCategoria = styled.div` //Acá tenía un motion que supuestamen
     cursor: pointer;
     font-family: var(--font-family);
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+    z-index: -2;
+
+
+    
     h2{
         font-size: 1rem;
         font-family: var(--font-family);

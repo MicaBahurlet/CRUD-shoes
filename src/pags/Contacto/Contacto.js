@@ -9,6 +9,7 @@ export const ContactoContainer = styled.div`
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
+  
   img {
     max-width:350px;
     border-radius: 10px;
@@ -37,6 +38,8 @@ export const Formulario = styled.form`
   height : auto ;
   max-width: 500px;
   font-family: var(--font-family);
+
+  z-index: -2; 
 
   @media (max-width: 768px) {
     margin-top: 3rem;

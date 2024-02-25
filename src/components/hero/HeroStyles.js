@@ -65,6 +65,7 @@ export const HeroImageContainerStyles = styled.div`
         max-width: 400px;
         padding-bottom: 75px;
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+        
     }
 
     @media (max-width: 968px) {

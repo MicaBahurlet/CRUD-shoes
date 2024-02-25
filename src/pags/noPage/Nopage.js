@@ -11,6 +11,15 @@ export const NoPage = styled.div`
     max-width: 1200px;
     margin: 0 auto;
 
+    z-index: 3;
+
+    img {
+        max-width: 500px;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        
+    }
+
     h2 {
         font-family: var(--font-family);
     }
@@ -30,6 +39,38 @@ export const NoPage = styled.div`
         font-weight: bold;
         cursor: pointer;
         margin-bottom: 5rem;
+        
+        /* debería quedarme abajo */
+       
     }
+
+    @media (max-width: 768px) {
+        
+        img {
+            max-width: 350px;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            z-index: -2;
+        }
+        p {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            margin: 1 auto;
+        }
+
+        @media (min-width: 768px) { 
+            img {
+                max-width: 350px;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+
+                z-index: -2;
+            }
+
+        }
+  }
+
+    /* z-index: -2; */
 `;
 
