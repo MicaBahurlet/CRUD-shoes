@@ -3,7 +3,7 @@ import StyledButton from "./BotonStyles.js";
 function Boton() {
   return (
     <div>
-      <StyledButton>Comprar</StyledButton>
+      <StyledButton onClick={() => window.location.href = "/products"}> Comprar</StyledButton>
     </div>
   )
 };

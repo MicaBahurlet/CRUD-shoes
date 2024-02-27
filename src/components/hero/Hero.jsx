@@ -13,7 +13,8 @@ function Hero() {
         <p><strong> El mejor sonido</strong> a tu disposición. Comprá <b>rápido</b>, comprá <b>calidad</b>, comprá <b>facil.</b> </p>
         
         <Fade duration={3000} >
-            <StyledButton/> 
+            <StyledButton Link to="/products"/>
+             
         </Fade>    
       </HeroTextContainerStyles>
       <HeroImageContainerStyles>

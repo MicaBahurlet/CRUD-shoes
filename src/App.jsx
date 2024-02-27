@@ -14,6 +14,7 @@ import About from "./pags/About/About.jsx";
 import Home from "./pags/Home/Home.jsx";
 import Contact from "./pags/Contacto/Contacto.jsx";
 import Products from "./pags/Products/Products.jsx";
+import { NavbarProvider } from  "./components/navbar/NavbarContext.jsx";
 
 
 
@@ -24,20 +25,22 @@ function App() {
   
 
   return (
-    <div> 
-      <BrowserRouter>
+    <> 
+      <NavbarProvider>
+        <BrowserRouter> {/*es un higth order component, tiene componentes dentro de el, los componentes que se ecuentren dentro tienen acceso a su información */}
 
-        <Routes>
-              <Route index element={<Home/>}/>
-              <Route path="about" element={<About/>}/>
-              <Route path="products" element={<Products/>}/>
-              <Route path="contact" element={<Contact/>}/>
-              <Route path="*" element={<Nopage/>}/>
+          <Routes> 
+                <Route index element={<Home/>}/> {/*Aquí podría usar / en vez de index */}
+                <Route path="about" element={<About/>}/>
+                <Route path="products" element={<Products/>}/>
+                <Route path="contact" element={<Contact/>}/>
+                <Route path="*" element={<Nopage/>}/>
 
-        </Routes>
-
-      </BrowserRouter>
-    </div>  
+          </Routes>
+      
+        </BrowserRouter>
+      </NavbarProvider>  
+    </>  
       
 
   )

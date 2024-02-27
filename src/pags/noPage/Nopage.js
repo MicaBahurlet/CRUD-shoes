@@ -44,6 +44,10 @@ export const NoPage = styled.div`
        
     }
 
+    button:hover {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+
     @media (max-width: 768px) {
         
         img {

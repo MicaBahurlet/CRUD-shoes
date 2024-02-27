@@ -60,6 +60,7 @@ export const HeroTextContainerStyles = styled.div`
 export const HeroImageContainerStyles = styled.div`
 
     width: 40%;
+    z-index: -2;
     img{
         width: 100%;
         max-width: 400px;
