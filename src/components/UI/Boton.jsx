@@ -1,4 +1,5 @@
 import StyledButton from "./BotonStyles.js";
+import { Link } from 'react-router-dom';
 
 function Boton() {
   return (

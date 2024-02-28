@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { useNavbarContext } from './NavbarContext';
+import { useNavbarContext } from './NavbarContext'; //importo el contexto
 
 const Navbar = () => {
   const { clicked, handleClick, closeMenu } = useNavbarContext();
@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
       </Burger>
       <Menu clicked={clicked}>
-        <Link to="/" onClick={closeMenu}>
+         <Link to="/" onClick={closeMenu}>  {/*AQUI VAN LOS LINKS, si yo usara "a" me recargaría react en cada navegación */}
           Inicio
         </Link>
         <Link to="/about" onClick={closeMenu}>
@@ -133,7 +133,7 @@ const Menu = styled.div`
     font-weight: bold;
 
     &:hover {  /* cuando pase el cursor por el link */
-      border-bottom: 2px solid greenyellow;  
+      border-bottom: 3px solid greenyellow;  
     }
   }
 
@@ -142,7 +142,7 @@ const Menu = styled.div`
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 80px;
+    top: 104px;
     left: 0;
     right: 0;
     background-color: black;
@@ -166,7 +166,7 @@ const Menu = styled.div`
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 80px;
+    top: 104px;
     left: 0;
     right: 0;
     background-color: black;

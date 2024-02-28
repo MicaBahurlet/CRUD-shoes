@@ -67,6 +67,7 @@ export const CardCategoria = styled.div` //Acá tenía un motion que supuestamen
     img:hover {
         transform: scale(1.2); 
     }
+    
 
 `;
 

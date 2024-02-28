@@ -1,17 +1,26 @@
-import InEarProduct from "./imgProducts/ProductInEar.png";
-import KotionGamer from "./imgProducts/ProductGamer.png";
-import HylasGaming from "./imgProducts/ProductGamer2.png";
-import NuwoGamer from "./imgProducts/ProductGamer3.png";
-import SportProduct from "./imgProducts/ProductDeportivo.png";
-import ClassicProduct from "./imgProducts/CassicProduct1.png";
-import genericoProduct from "./imgProducts/ClassicProduct2.png";
-import ZonnyProduct from "./imgProducts/ClasicProduct3.png";
-
+//Deportivos
 import jvlProduct from "./imgProducts/InEarFinishProduct.png";
 import ziaomiProduct from "./imgProducts/ZiaomiProduct.png";
 import PilipProduc from "./imgProducts/PilipProduct.png";
 import AirpodProduct from "./imgProducts/AirpodsProduct.png";
 
+//Gamer
+import Gamer10 from "./imgProducts/Gamer10.png";
+import InEarProduct from "./imgProducts/ProductInEar.png";
+import KotionGamer from "./imgProducts/ProductGamer.png";
+import HylasGaming from "./imgProducts/ProductGamer2.png";
+import NuwoGamer from "./imgProducts/ProductGamer3.png";
+
+//Classic
+import DeportivoProduct from "./imgProducts/DeportivoProduct.png";
+import LenoboDeportivo from "./imgProducts/LenovoDeportivo.png";
+import SportProduct from "./imgProducts/ProductDeportivo.png";
+
+//In-ear
+import ClassicProducts from "./imgProducts/ClassicProduct.png";
+import ClassicProduct from "./imgProducts/CassicProduct1.png";
+import genericoProduct from "./imgProducts/ClassicProduct2.png";
+import ZonnyProduct from "./imgProducts/ClasicProduct3.png";
 
 
 export const productos = [
@@ -110,5 +119,43 @@ export const productos = [
         category: "In-ear",
         desc: "Resistentes al agua",
         price: 1000,
-    }
+    },
+
+    {
+        id: 13,
+        title: "TWS F9-5 BTH-F9-5",
+        img: DeportivoProduct,
+        category: "Deportivo",
+        desc: "El nombre es difícil, pero suenan tremendo",
+        price: 4000,
+    },
+    {
+        id: 14,
+        title: "Lenobo Deportivo",
+        img: LenoboDeportivo,
+        category: "Deportivo",
+        desc: "Ideales para correr",
+        price: 3500,
+    },
+    {
+        id: 15,
+        title: "Classiquito ",
+        img: ClassicProducts,
+        category: "Classic",
+        desc: "Con cables, como antes!",
+        price: 2500,
+    },
+    {
+        id: 16,
+        title: "Gamer 3000 ",
+        img: Gamer10,
+        category: "Gamer",
+        desc: "Ahoora sí!, que suenen tus  headshot´s",
+        price: 10000,
+    },
+
+
+    
+
+    
 ]
