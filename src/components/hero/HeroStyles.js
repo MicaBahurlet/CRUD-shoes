@@ -9,14 +9,10 @@ export const HeroContainerStyles = styled.div`
     margin: 0 auto;
     gap: 30px;
     
-
-    
-
     @media (max-width: 968px) {
         flex-direction: column;
         flex-direction: column-reverse;
         margin-top: 4rem;
-
     }
 `;
 
