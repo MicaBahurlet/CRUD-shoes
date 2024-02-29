@@ -11,6 +11,9 @@ export const CategoriasWrapper = styled.div`
     h2 {
         margin-bottom: 3rem;
     }
+    img:hover {
+        transform: scale(1.2); 
+    }
 
 
     @media (max-width:768px){
@@ -32,6 +35,9 @@ export const CategoriasContainer = styled.div`
     img{ 
         max-width: 150px;
         border-radius: 15px;
+    }
+    img:hover {
+        transform: scale(1.2); 
     }
     
 `;
