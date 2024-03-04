@@ -17,7 +17,7 @@ export const recomendados = [
         img: Gamer10,
         title: "Gamer",
         category: "Gamer",
-        desc: "Ahoora sí!, que suenen tus  headshots",
+        desc: "¡Ahora sí! que suenen esos headshots",
         price: 10000,
     },
     {

@@ -44,8 +44,8 @@ export const RecomendadosWrapper = styled.div`
 
 export const RecomendadosContainer = styled.div`
     display: flex;
-    flex-wrap: nowrap; /* Evitar que se envuelva a la siguiente línea */
-    justify-content: center; /* Ajustado a inicio (izquierda) */
+    flex-wrap: nowrap; 
+    justify-content: center; 
     align-items: center;
    gap: 15px;
     user-select:none;
