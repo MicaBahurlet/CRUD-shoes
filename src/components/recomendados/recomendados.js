@@ -58,6 +58,12 @@ export const RecomendadosContainer = styled.div`
     img:hover {
         transform: scale(1.2); 
     }
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
 `;
 
 
