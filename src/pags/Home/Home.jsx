@@ -6,6 +6,9 @@ import Categorias from "../../components/categorias/Categorias";
 //import CardsProductos from "../../components/productos/CardsProductos"; 
 import Footer from "../../components/footer/Footer";
 
+
+import Recomendados from "../../components/recomendados/CardsRecomendados";
+
 export function Home() {
 
     return (
@@ -14,6 +17,7 @@ export function Home() {
                 <NavBar/> 
                 <Layout>
                     <Hero/>
+                    <Recomendados/>
                     <Categorias/>
                     <button onClick={() => window.location.href = "/Products"}>Ver Productos</button>
                 </Layout>

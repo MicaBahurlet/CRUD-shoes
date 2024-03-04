@@ -1,5 +1,7 @@
 import { categorias } from '../../data/categorias.js';
 import { CategoriasContainer, CategoriasWrapper } from './CategoriasStyles.js';
+
+
 import Categoria from './Categoria.jsx'; //acá tengo la ruta de la img en una misma carpeta
 
 function Categorias() {

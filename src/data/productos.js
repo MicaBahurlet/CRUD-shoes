@@ -150,7 +150,7 @@ export const productos = [
         title: "Gamer 3000 ",
         img: Gamer10,
         category: "Gamer",
-        desc: "Ahoora sí!, que suenen tus  headshot´s",
+        desc: "Ahoora sí!, que suenen tus  headshots",
         price: 10000,
     },
 

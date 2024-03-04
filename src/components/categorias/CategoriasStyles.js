@@ -11,9 +11,7 @@ export const CategoriasWrapper = styled.div`
     h2 {
         margin-bottom: 3rem;
     }
-    img:hover {
-        transform: scale(1.2); 
-    }
+    
 
 
     @media (max-width:768px){
