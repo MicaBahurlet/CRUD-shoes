@@ -10,6 +10,9 @@ export const RecomendadosWrapper = styled.div`
     font-family: var(--font-family);
     margin-bottom: 5rem;
 
+
+
+
     h2 {
         margin-bottom: 3rem;
     }
@@ -23,31 +26,15 @@ export const RecomendadosWrapper = styled.div`
 
 `;
 
-// export const RecomendadosContainer = styled.div`
 
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-//     align-items: center;
-    
-//     user-select:none;
-
-//     img{ 
-//         max-width: 150px;
-//         border-radius: 15px;
-//     }
-//     img:hover {
-//         transform: scale(1.2); 
-//     }
-    
-// `;
 
 export const RecomendadosContainer = styled.div`
     display: flex;
     flex-wrap: nowrap; 
+
     justify-content: center; 
     align-items: center;
-   gap: 15px;
+    gap: 15px;
     user-select:none;
 
     img {
@@ -74,7 +61,7 @@ export const CardRecomendados = styled.div`
   align-items: center;
 
   width: 320px;
-  height: 5.5rem;
+
   padding: 2rem 0.5rem;
 
   background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
@@ -106,7 +93,7 @@ export const CardRecomendados = styled.div`
 
   p {
     color: #666;
-    margin-bottom: 0.5rem; 
+
     font-weight: 400;
   }
 
@@ -118,19 +105,26 @@ export const CardRecomendados = styled.div`
 export const Boton = styled.button`
     display: flex;
     justify-content: center;
-  align-items: center;
-  gap : 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  
-  
-  color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+    align-items: center;
+    font-size: 9px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
   color: black;
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
   font-size: 1.2rem;
   font-weight: 200;
+`;
+
+
+export const infoCart = styled.div`
+ 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-family: var(--font-family);
 `;

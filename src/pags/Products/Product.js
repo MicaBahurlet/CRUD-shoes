@@ -5,6 +5,7 @@ export const ProductosWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: center;
     max-width: 1200px;
     margin: 0 auto; 
     font-family: var(--font-family);
@@ -92,8 +93,25 @@ export const CardProducto = styled.div`
 
 `;
 
-export const BorderDecorationProducto = styled.div`
+export const AgregarCart = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+    font-size: 1.2rem;
+    font-weight: 200;
+`;
 
+export const BorderDecorationProducto = styled.div`
+    margin-top: 0.5rem;
     height: 7px;
     width: 30%;
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
@@ -110,4 +128,46 @@ export const BorderSeparacion = styled.div`
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
     border-radius: 15px;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+`;
+
+
+export const BotonsWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 2rem;
+    margin: 2rem auto;
+`;
+
+export const Boton = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+    font-size: 1.2rem;
+    font-weight: 200;
+`;
+
+export const BotonVerMenos = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 200;
+    border: 1px solid black;
 `;

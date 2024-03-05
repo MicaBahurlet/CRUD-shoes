@@ -1,7 +1,10 @@
 
 
 
-import { CardProducto, BorderDecorationProducto } from "./Product"
+import { CardProducto, 
+  BorderDecorationProducto,
+  AgregarCart,
+ } from "./Product"
 
 
 function Productos ( {img,title,category,price,desc}) {
@@ -11,6 +14,7 @@ function Productos ( {img,title,category,price,desc}) {
         <h3>{title}</h3>
         <p>{desc}</p>
         <p>${price}</p>
+        <AgregarCart>Comprar</AgregarCart>
         <BorderDecorationProducto />
     </CardProducto>
   )

@@ -6,6 +6,9 @@ import {
     ProductosWrapper, 
     TextProductos,
     BorderSeparacion,
+    BotonsWrapper,
+    Boton,
+    BotonVerMenos,
 
 
 } from './Product.js';
@@ -44,11 +47,21 @@ function CardsProductos() {
           {productos.map(prod =>(
             <CardProductos key={prod.id} {...prod} />
           ))}
+          
+
+           {/* {Object.entries(productos).map(([,auriculares]) => 
+              auriculares.map((auris) => <CardProductos key={auris.id} {...auris} /> ) 
+           )} */}
         </ProductosContainer>
 
 
       </ProductosWrapper>
-        
+
+      <BotonsWrapper>
+
+        <BotonVerMenos>Ver menos</BotonVerMenos>
+        <Boton>Ver más</Boton>
+      </BotonsWrapper>  
       <Footer/>
 
     </div>       

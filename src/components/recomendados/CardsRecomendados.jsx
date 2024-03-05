@@ -4,7 +4,7 @@ import Recomendados from './CardRecomendado.jsx'; //acá tengo la ruta de la img
 
 import { FaAngleDoubleRight } from 'react-icons/fa';
 
-import styled from 'styled-components';
+
 
 
 function RecomendadosProduct() {
@@ -27,8 +27,3 @@ function RecomendadosProduct() {
 };
 
 export default RecomendadosProduct
-
-
-
-
-

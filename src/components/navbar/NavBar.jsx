@@ -4,7 +4,11 @@ import styled from 'styled-components';
 import { useNavbarContext } from './NavbarContext'; //importo el contexto
 import LogoImg from '../../data/imgProducts/Logo7.png';
 
-import  { FaUser, FaHome, FaShoppingCart, FaEnvelope } from 'react-icons/fa';
+import  { FaUser, FaHome, FaShoppingCart, FaEnvelope,  } from 'react-icons/fa';
+
+import { TfiShoppingCart } from "react-icons/tfi";
+
+
 
 const Navbar = () => {
   const { clicked, handleClick, closeMenu } = useNavbarContext();
@@ -50,6 +54,10 @@ const Navbar = () => {
               Contacto
           </NavLink>
 
+          <div className='CartNav'>
+          <TfiShoppingCart />
+          </div>
+
       </Menu>
     </Nav>
   );
@@ -66,6 +74,7 @@ const Nav = styled.nav`
   padding: 1rem 1.5rem;
   background-color: black;
   color: white;
+  gap: 2.5rem;
   
 
   @media (max-width: 768px) {
@@ -234,6 +243,13 @@ const Menu = styled.div`
     
     
 
+  }
+
+  .CartNav {
+    color:white;
+    font-size: x-large;
+    font-weight: 900;
+    
   }
 `;
 
