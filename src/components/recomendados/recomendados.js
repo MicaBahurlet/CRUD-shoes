@@ -94,12 +94,30 @@ export const CardRecomendados = styled.div`
   p {
     color: #666;
 
-    font-weight: 400;
+    font-weight: 700;
   }
 
   &:hover img {
     transform: scale(1.1);
   }
+`;
+
+export const BotonBuy = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 3px;
+    max-width: 7rem;
 `;
 
 export const Boton = styled.button`

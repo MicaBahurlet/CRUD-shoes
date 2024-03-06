@@ -6,7 +6,7 @@ export const recomendados = [
     {
         id: 1,
         img: jvlProduct,
-        title: "In-ear",
+        title: "JBL pro max",
         category: "In-ear",
         desc: "Resistentes al agua",
         price: 1000,
@@ -15,7 +15,7 @@ export const recomendados = [
     {
         id: 2,
         img: Gamer10,
-        title: "Gamer",
+        title: "Zony 300",
         category: "Gamer",
         desc: "¡Ahora sí! que suenen esos headshots",
         price: 10000,

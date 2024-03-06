@@ -1,6 +1,6 @@
 import {  CardRecomendados,
   infoCart,
-  Boton, 
+  BotonBuy
 
 } from "./recomendados"
 
@@ -15,7 +15,7 @@ function Recomendados( {img,title,category, desc, price}) {
       <h3>{title}</h3>
       <p>{desc}</p>
       <p>${price}</p>
-      <Boton>Comprar</Boton>
+       <BotonBuy>Comprar</BotonBuy> 
       
     </infoCart>
     
