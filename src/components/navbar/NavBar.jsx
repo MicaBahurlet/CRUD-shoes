@@ -10,15 +10,15 @@ import { TfiShoppingCart } from "react-icons/tfi";
 
 
 
-const Navbar = () => {
-  const { clicked, handleClick, closeMenu } = useNavbarContext();
+const Navbar = () => { 
+  const { clicked, handleClick, closeMenu } = useNavbarContext();  //accedo al contexto para trabajar con las fn que cree en el context.
 
   return (
     <Nav>
       <Logo>
         <img src={LogoImg} alt="Logo" />
       </Logo>
-      <Burger onClick={handleClick}>
+      <Burger onClick={handleClick}> 
         <div className={`icon ${clicked ? 'open' : ''}`}>
           <span></span>
           <span></span>
