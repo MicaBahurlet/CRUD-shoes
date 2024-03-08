@@ -10,6 +10,7 @@ import  { FaUser, FaHome, FaShoppingCart, FaEnvelope,  } from 'react-icons/fa';
 
 // import CartIcon from './CartIcon/CartIcon.jsx';
 
+<<<<<<< HEAD
 // import ModalCart from "./ModalCart/ModalCart";
 
 // import {
@@ -19,6 +20,8 @@ import  { FaUser, FaHome, FaShoppingCart, FaEnvelope,  } from 'react-icons/fa';
 
 
 
+=======
+>>>>>>> a8666c75fdfe1a5a6bce9088a93eec139f8208ed
 const Navbar = () => { 
   const { clicked, handleClick, closeMenu } = useNavbarContext();  //accedo al contexto para trabajar con las fn que cree en el context.
 
