@@ -5,11 +5,11 @@ import React, { createContext, useContext, useState } from 'react'; //desestruct
 
 const NavbarContext = createContext(); //creo el contexto
 
-<<<<<<< HEAD
+
 // proveedor del contexto del anavbar, envuelve componentes que necesitan los datos del contexto
-=======
+
 // proveedor del contexto del navbar, envuelve componentes que necesitan los datos del contexto
->>>>>>> a8666c75fdfe1a5a6bce9088a93eec139f8208ed
+
 export const NavbarProvider = ({ children }) => {
   const [clicked, setClicked] = useState(false); //para saber si el menú esta clikeado o no
 
