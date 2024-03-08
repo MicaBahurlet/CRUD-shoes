@@ -123,7 +123,7 @@ export const productos = [
 
     {
         id: 13,
-        title: "TWS F9-5 BTH-F9-5",
+        title: "TWS F9-5 BTH-F9",
         img: DeportivoProduct,
         category: "Deportivo",
         desc: "El nombre es difícil, pero suenan tremendo",
@@ -159,3 +159,5 @@ export const productos = [
 
     
 ]
+
+export const TotalProducts = productos.length; 

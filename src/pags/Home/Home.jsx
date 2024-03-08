@@ -17,9 +17,10 @@ export function Home() {
                 <NavBar/> 
                 <Layout>
                     <Hero/>
-                    <Recomendados/>
+                    
                     <Categorias/>
                     <button onClick={() => window.location.href = "/Products"}>Ver Productos</button>
+                    <Recomendados/>
                 </Layout>
                 <Footer/>
             </HomeContainer>

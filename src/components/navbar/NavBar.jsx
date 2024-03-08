@@ -6,19 +6,28 @@ import LogoImg from '../../data/imgProducts/Logo7.png';
 
 import  { FaUser, FaHome, FaShoppingCart, FaEnvelope,  } from 'react-icons/fa';
 
-import { TfiShoppingCart } from "react-icons/tfi";
+
+
+// import CartIcon from './CartIcon/CartIcon.jsx';
+
+// import ModalCart from "./ModalCart/ModalCart";
+
+// import {
+//   CartNavStyled,
+
+// } from "./CartStyles";
 
 
 
-const Navbar = () => {
-  const { clicked, handleClick, closeMenu } = useNavbarContext();
+const Navbar = () => { 
+  const { clicked, handleClick, closeMenu } = useNavbarContext();  //accedo al contexto para trabajar con las fn que cree en el context.
 
   return (
     <Nav>
       <Logo>
         <img src={LogoImg} alt="Logo" />
       </Logo>
-      <Burger onClick={handleClick}>
+      <Burger onClick={handleClick}> 
         <div className={`icon ${clicked ? 'open' : ''}`}>
           <span></span>
           <span></span>
@@ -54,9 +63,9 @@ const Navbar = () => {
               Contacto
           </NavLink>
 
-          <div className='CartNav'>
-          <TfiShoppingCart />
-          </div>
+
+
+        
 
       </Menu>
     </Nav>

@@ -1,15 +1,18 @@
 
-import {productos} from "../../data/productos.js";
+// import {productos} from "../../data/productos.js";
 import { ProductosContainer, ProductosWrapper } from './CardsProductosStyles.js';
 import CardProducto from './CardProducto.jsx';
 
+import { useSelector } from 'react-redux';
+
 
 function CardsProductos() {
+  let { products} = useSelector((state) => state.products.products)
   return (
     <ProductosWrapper>
 
       <ProductosContainer>
-        {productos.map(prod =>(
+        { products.map(prod =>( // antes estaba productos.map
           <CardProducto key={prod.id} {...prod} />
         ))}
       </ProductosContainer>

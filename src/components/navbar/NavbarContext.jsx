@@ -3,13 +3,14 @@ import React, { createContext, useContext, useState } from 'react'; //desestruct
 
 //el context es un Hight order component, 
 
-const NavbarContext = createContext(); 
+const NavbarContext = createContext(); //creo el contexto
 
+// proveedor del contexto del anavbar, envuelve componentes que necesitan los datos del contexto
 export const NavbarProvider = ({ children }) => {
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(false); //para saber si el menú esta clikeado o no
 
   const handleClick = () => {
-    setClicked(!clicked);
+    setClicked(!clicked); // negación para cambiar el estado del click, cambia el valor. 
   };
 
 
@@ -17,9 +18,9 @@ export const NavbarProvider = ({ children }) => {
 
   const closeMenu = () => {
     setClicked(false);
-  };
+  }; // para cerrar definitivamente el menú
 
-  return (
+  return ( // acá es lo que renderizo 
     <NavbarContext.Provider value={{ clicked, handleClick, closeMenu }}> 
       {children}
     </NavbarContext.Provider>
