@@ -8,9 +8,6 @@ import  { FaUser, FaHome, FaShoppingCart, FaEnvelope,  } from 'react-icons/fa';
 
 
 
-
-
-
 const Navbar = () => { 
   const { clicked, handleClick, closeMenu } = useNavbarContext();  //accedo al contexto para trabajar con las fn que cree en el context.
 
