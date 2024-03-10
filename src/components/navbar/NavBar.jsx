@@ -73,6 +73,7 @@ const Nav = styled.nav`
   background-color: black;
   color: white;
   gap: 2.5rem;
+  height: 6rem;
   
 
   @media (max-width: 768px) {

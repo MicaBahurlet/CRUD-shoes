@@ -53,6 +53,54 @@ export const HeroTextContainerStyles = styled.div`
 
 `;
 
+export const ImputContainerStyles = styled.div`
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3rem;
+    
+    gap: 2rem;
+
+    @media (max-width: 968px) {
+        flex-direction: column;
+        
+    }
+`;
+
+export const InputStyles = styled.input`
+
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-family:  var(--font-family) ;
+`;
+
+export const BotonInput = styled.div`
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    color: black;
+    font-weight: bold;
+    border: none;
+    font-family:  var(--font-family) ;
+
+    &:hover {
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+
+`;
+
+
 export const HeroImageContainerStyles = styled.div`
 
     width: 40%;

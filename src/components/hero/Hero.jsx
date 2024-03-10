@@ -1,5 +1,11 @@
 //import Boton from "../UI/Boton"
-import { HeroContainerStyles, HeroTextContainerStyles, HeroImageContainerStyles } from "./HeroStyles"
+import { HeroContainerStyles, 
+  HeroTextContainerStyles, 
+  HeroImageContainerStyles,
+  ImputContainerStyles,
+  InputStyles,
+  BotonInput
+} from "./HeroStyles"
 import StyledButton from "../UI/Boton.jsx" 
 import { Fade } from "react-awesome-reveal"
 import IMGHero from "../../data/imgProducts/HEROAuris.png"
@@ -13,10 +19,15 @@ function Hero() {
         <h2><strong>Tus auriculares importan</strong></h2>
         <p><strong> El mejor sonido</strong> a tu disposición. Comprá <b>rápido</b>, comprá <b>calidad</b>, comprá <b>facil.</b> </p>
         
-        <Fade duration={3000} >
+        <ImputContainerStyles>
+            <InputStyles type="text" placeholder="Buscá tus auris.."/>
+            <BotonInput>Buscar</BotonInput>
+        </ImputContainerStyles>
+        
+        {/* <Fade duration={3000} >
             <StyledButton Link to="/products"/>
              
-        </Fade>    
+        </Fade>     */}
       </HeroTextContainerStyles>
       <HeroImageContainerStyles>
         <Fade direction="left"  duration={3000} >

@@ -18,6 +18,10 @@ export const HomeContainer = styled.div`
         cursor: pointer;
         margin-bottom: 5rem;
         margin-top: 5rem; 
+
+        &:hover {
+            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        }
     }
 
 

@@ -14,7 +14,7 @@ const StyledButton = styled.button`
   font-size: 1.2rem;
   font-weight: 200;
 
-  /* Estilo al pasar el ratón por encima */
+  
   &:hover {
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   }
