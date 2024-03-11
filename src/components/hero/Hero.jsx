@@ -28,7 +28,7 @@ const Hero = ({doScroll}) => {
     const handlerSubmit=(e,value)=>{
       e.preventDefault();
 
-      const newCategory=value.trim().toLowerCase().split(" ").join("");
+      const newCategory=value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036F]/g, "").split(" ").join("");
 
       const selectedCategory = listOfCategories.find((category)=>category.toLowerCase()=== newCategory);
 
@@ -56,23 +56,22 @@ const Hero = ({doScroll}) => {
                 onChange={(e)=> setValue(e.target.value)}
                 type="text" 
                 placeholder="Ej. Clasicos..."
-                
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    handlerSubmit(e, value); // si se presiona la tecla enter llama a handlerSubmit
+                  }
+                }}
               
               />
               <BotonInput
                 type="submit"
-                onClick={(e) => handlerSubmit(e,value)}
-                
+                onClick={(e) => handlerSubmit(e, value)}
                 disabled={!value}
                 
               
               >Buscar</BotonInput>
           </ImputContainerStyles>
           
-          {/* <Fade duration={3000} >
-              <StyledButton Link to="/products"/>
-              
-          </Fade>     */}
         </HeroTextContainerStyles>
       <HeroImageContainerStyles>
         <Fade direction="left"  duration={3000} >

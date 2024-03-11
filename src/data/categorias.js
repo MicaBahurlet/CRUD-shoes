@@ -7,8 +7,8 @@ export const categorias = [
     {
         id: 1,
         img: inEarImg,
-        title: "In-ear",
-        category: "In-ear",
+        title: "Inalambricos",
+        category: "Inalambricos",
     },
     {
         id: 2,
@@ -25,8 +25,8 @@ export const categorias = [
     {
         id: 4,
         img: ClassicImg,
-        title: "Classic",
-        category: "Classic",
+        title: "Clasicos",
+        category: "Clasicos",
     }
 
 ]
