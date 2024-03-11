@@ -6,21 +6,28 @@ import CardProducto from './CardProducto.jsx';
 import { useSelector } from 'react-redux';
 
 
-function CardsProductos() {
-  let { products} = useSelector((state) => state.products.products)
-  return (
-    <ProductosWrapper>
+  function CardsProductos() {
+    
+    let products = useSelector((state)=> state.products.products)
+    
+    return (
+      <ProductosWrapper>
 
-      <ProductosContainer>
-        { products.map(prod =>( // antes estaba productos.map
-          <CardProducto key={prod.id} {...prod} />
-        ))}
-      </ProductosContainer>
+        <ProductosContainer>
+
+          {products.map (prod =>( 
+            <CardProducto key={prod.id} {...prod} />
+          ))}
+
+          {/* {products.map (prod =>( 
+            <CardProducto key={prod.id} {...prod} />
+          ))} */}
+        </ProductosContainer>
 
 
-    </ProductosWrapper>
+      </ProductosWrapper>
 
-  )
-}
+    );
+  }
 
 export default CardsProductos

@@ -1,5 +1,5 @@
 import {  CardRecomendados,
-  infoCart,
+  InfoCard,
   BotonBuy
 
 } from "./recomendados"
@@ -11,13 +11,13 @@ function Recomendados( {img,title,category, desc, price}) {
   return (
     <CardRecomendados>
     <img src={img} alt={category} />
-    <infoCart >
+    <InfoCard >
       <h3>{title}</h3>
       <p>{desc}</p>
       <p>${price}</p>
        <BotonBuy>Comprar</BotonBuy> 
       
-    </infoCart>
+    </InfoCard>
     
     
    

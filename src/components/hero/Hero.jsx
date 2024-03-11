@@ -6,29 +6,74 @@ import { HeroContainerStyles,
   InputStyles,
   BotonInput
 } from "./HeroStyles"
-import StyledButton from "../UI/Boton.jsx" 
+
 import { Fade } from "react-awesome-reveal"
 import IMGHero from "../../data/imgProducts/HEROAuris.png"
 
 
-function Hero() {
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { selectCategory } from "../../redux/categories/categoriesSlice";
+
+
+const Hero = ({doScroll}) => {
+  const [value,setValue]=useState("");
+
+  const listOfCategories=useSelector(
+    (state)=> state.categories.categories)
+    .map((category)=>category.category);
+
+    const dispatch =useDispatch();
+
+    const handlerSubmit=(e,value)=>{
+      e.preventDefault();
+
+      const newCategory=value.trim().toLowerCase().split(" ").join("");
+
+      const selectedCategory = listOfCategories.find((category)=>category.toLowerCase()=== newCategory);
+
+      if (selectedCategory) {
+        dispatch(selectCategory(selectedCategory));
+        doScroll();
+      } else {
+        return alert("Ups! la categoría no existe, vuelve a intentar.")
+      }
+
+      setValue("");
+    };
+
+
   return (
     <HeroContainerStyles>
-      <HeroTextContainerStyles>
-        <h1>Viví tú música.</h1>
-        <h2><strong>Tus auriculares importan</strong></h2>
-        <p><strong> El mejor sonido</strong> a tu disposición. Comprá <b>rápido</b>, comprá <b>calidad</b>, comprá <b>facil.</b> </p>
-        
-        <ImputContainerStyles>
-            <InputStyles type="text" placeholder="Auris por categoría.."/>
-            <BotonInput>Buscar</BotonInput>
-        </ImputContainerStyles>
-        
-        {/* <Fade duration={3000} >
-            <StyledButton Link to="/products"/>
-             
-        </Fade>     */}
-      </HeroTextContainerStyles>
+        <HeroTextContainerStyles>
+          <h1>Viví tú música.</h1>
+          <h2><strong>Tus auriculares importan</strong></h2>
+          <p><strong> El mejor sonido</strong> a tu disposición. Comprá <b>rápido</b>, comprá <b>calidad</b>, comprá <b>facil.</b> </p>
+          
+          <ImputContainerStyles>
+              <InputStyles 
+                value={value}
+                onChange={(e)=> setValue(e.target.value)}
+                type="text" 
+                placeholder="Ej. Clasicos..."
+                
+              
+              />
+              <BotonInput
+                type="submit"
+                onClick={(e) => handlerSubmit(e,value)}
+                
+                disabled={!value}
+                
+              
+              >Buscar</BotonInput>
+          </ImputContainerStyles>
+          
+          {/* <Fade duration={3000} >
+              <StyledButton Link to="/products"/>
+              
+          </Fade>     */}
+        </HeroTextContainerStyles>
       <HeroImageContainerStyles>
         <Fade direction="left"  duration={3000} >
           <img src= {IMGHero} alt="Auriculares Hero"/>
@@ -40,6 +85,6 @@ function Hero() {
     </HeroContainerStyles>
 
   )
-}
+};
 
 export default Hero

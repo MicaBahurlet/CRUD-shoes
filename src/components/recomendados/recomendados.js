@@ -137,7 +137,7 @@ export const Boton = styled.button`
 `;
 
 
-export const infoCart = styled.div`
+export const InfoCard = styled.div`
  
    display: flex;
    flex-direction: column;

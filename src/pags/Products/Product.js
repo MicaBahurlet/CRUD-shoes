@@ -136,7 +136,7 @@ export const BotonsWrapper = styled.div`
     align-items: center;
     justify-content:center ;
     gap: 2rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
 `;
 
 export const Boton = styled.button`

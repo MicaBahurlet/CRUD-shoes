@@ -7,7 +7,7 @@ export const ProductosWrapper = styled.div`
     max-width: 1200px;
     margin: 0 15px; // ver acá para que queden alineados los dos Wrapper´s (category and products)
     font-family: var(--font-family);
-    margin-top: 10rem;
+    margin-top: 4rem;
    
     @media (max-width:768px){
         padding-top: 30px;

@@ -23,7 +23,7 @@ const Navbar = () => {
           <span></span>
         </div>
       </Burger>
-      <Menu clicked={clicked}> {/*AQUI VAN LOS LINKS, si yo usara "a" me recargaría react en cada navegación */}
+      <Menu $clicked={clicked}> {/*AQUI VAN LOS LINKS, si yo usara "a" me recargaría react en cada navegación  $$ para agregar*/}
           <NavLink 
             className={({ isActive }) => isActive ? 'active' : ''} //si isActive es true, le pongo active, si no, no
             to="/" onClick={closeMenu} >

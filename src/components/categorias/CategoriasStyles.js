@@ -54,7 +54,7 @@ export const CardCategoria = styled.div`
   font-family: var(--font-family);
 
   background-color: ${({ selected }) =>
-    selected ? 'var(--btn-principal)' : 'var(--background-card)'};  //Aquí cambiar el color para mas style
+    selected ? 'var(--btn-principal)' : 'var(--background-card)'}; 
 
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 
@@ -69,7 +69,8 @@ export const CardCategoria = styled.div`
     max-width: 60%;
     height: auto;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
-
+    /* Eliminar la siguiente línea */
+    /* transition: transform 0.7s ease; */
   }
 
   h2 {
