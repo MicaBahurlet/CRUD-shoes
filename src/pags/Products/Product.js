@@ -51,6 +51,12 @@ export const ProductosContainer = styled.div`
     margin-bottom: 4rem;
     margin-top: 6rem;
     
+    @media (max-width:768px){
+        flex-direction: column;
+        padding-top: 30px;
+        text-align: center;
+    };
+    
 `;
 
 
@@ -88,6 +94,12 @@ export const CardProducto = styled.div`
     img:hover {
         transform: scale(1.2); 
     }
+
+    @media (max-width:768px){
+        flex-direction: column;
+        padding-top: 30px;
+        text-align: center;
+    };
     
     
 
@@ -110,14 +122,14 @@ export const AgregarCart = styled.button`
     font-weight: 200;
 `;
 
-export const BorderDecorationProducto = styled.div`
-    margin-top: 0.5rem;
-    height: 7px;
-    width: 30%;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-    border-radius: 15px;
-    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
-`;
+// export const BorderDecorationProducto = styled.div`
+//     margin-top: 0.5rem;
+//     height: 7px;
+//     width: 30%;
+//     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+//     border-radius: 15px;
+//     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+// `;
 
 export const BorderSeparacion = styled.div`
 

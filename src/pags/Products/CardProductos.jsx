@@ -2,7 +2,7 @@
 
 
 import { CardProducto, 
-  BorderDecorationProducto,
+  
   AgregarCart,
  } from "./Product"
 
@@ -15,7 +15,7 @@ function Productos ( {img,title,category,price,desc}) {
         <p>{desc}</p>
         <p>${price}</p>
         <AgregarCart>Comprar</AgregarCart>
-        <BorderDecorationProducto />
+        
     </CardProducto>
   )
 }
