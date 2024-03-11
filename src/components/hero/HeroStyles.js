@@ -72,10 +72,11 @@ export const InputStyles = styled.input`
 
     padding: 10px;
     font-size: 1.2rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
     outline: none;
     font-family:  var(--font-family) ;
+    font-style: italic;
 `;
 
 export const BotonInput = styled.div`

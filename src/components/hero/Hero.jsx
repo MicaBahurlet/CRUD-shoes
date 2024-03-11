@@ -20,7 +20,7 @@ function Hero() {
         <p><strong> El mejor sonido</strong> a tu disposición. Comprá <b>rápido</b>, comprá <b>calidad</b>, comprá <b>facil.</b> </p>
         
         <ImputContainerStyles>
-            <InputStyles type="text" placeholder="Buscá tus auris.."/>
+            <InputStyles type="text" placeholder="Auris por categoría.."/>
             <BotonInput>Buscar</BotonInput>
         </ImputContainerStyles>
         

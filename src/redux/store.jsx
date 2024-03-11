@@ -24,7 +24,7 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, reducers); // recibe la configuracion y los reducers
 
-export const store = configureStore({
+export const store = configureStore({ // acá había un problema con el persistor, hay que desactivar para los datos seriables. 
     reducer: persistedReducer,
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({

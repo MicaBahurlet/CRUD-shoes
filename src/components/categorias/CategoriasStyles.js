@@ -54,7 +54,7 @@ export const CardCategoria = styled.div`
   font-family: var(--font-family);
 
   background-color: ${({ selected }) =>
-    selected ? 'var(--btn-principal)' : 'var(--background-card)'};
+    selected ? 'var(--btn-principal)' : 'var(--background-card)'};  //Aquí cambiar el color para mas style
 
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 
