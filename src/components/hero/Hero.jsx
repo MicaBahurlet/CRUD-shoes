@@ -69,7 +69,7 @@ const Hero = ({doScroll}) => {
                 disabled={!value}
                 
               
-              >Buscar</BotonInput>
+              >BUSCAR</BotonInput>
           </ImputContainerStyles>
           
         </HeroTextContainerStyles>

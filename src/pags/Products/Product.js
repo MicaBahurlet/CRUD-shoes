@@ -50,7 +50,7 @@ export const ProductosContainer = styled.div`
     user-select:none;
     margin-bottom: 4rem;
     margin-top: 6rem;
-    
+
     @media (max-width:768px){
         flex-direction: column;
         padding-top: 30px;
@@ -151,7 +151,7 @@ export const BotonsWrapper = styled.div`
     margin: 1rem auto;
 `;
 
-export const Boton = styled.button`
+export const Boton = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,10 +165,11 @@ export const Boton = styled.button`
     color: black;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 500;
+    font-family: var(--font-family) ;
 `;
 
-export const BotonVerMenos = styled.button`
+export const BotonVerMenos = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,6 +181,7 @@ export const BotonVerMenos = styled.button`
     cursor: pointer;
     color: black;
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 500;
     border: 1px solid black;
+    font-family: var(--font-family) ;
 `;

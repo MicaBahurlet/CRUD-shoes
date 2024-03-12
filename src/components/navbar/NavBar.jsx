@@ -6,6 +6,8 @@ import LogoImg from '../../data/imgProducts/Logo7.png';
 
 import  { FaUser, FaHome, FaShoppingCart, FaEnvelope,  } from 'react-icons/fa';
 
+// import CartIcon from './CartIcon/CartIcon';
+
 
 
 const Navbar = () => { 
@@ -34,25 +36,30 @@ const Navbar = () => {
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
              to="/about" onClick={closeMenu}>
-              <FaUser className='IconsNav'/>
+              {/* <FaUser className='IconsNav'/> */}
               Nosotros
           </NavLink>
 
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
               to="/products" onClick={closeMenu}>
-              <FaShoppingCart className='IconsNav'/>
+              {/* <FaShoppingCart className='IconsNav'/> */}
               Productos
           </NavLink>
 
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
              to="/contact" onClick={closeMenu}>
-              <FaEnvelope className='IconsNav'/>
+              {/* <FaEnvelope className='IconsNav'/> */}
               Contacto
           </NavLink>
 
+          <CartNavStyled>
+               <FaShoppingCart/>
+          </CartNavStyled>
 
+
+          
 
         
 
@@ -72,7 +79,7 @@ const Nav = styled.nav`
   padding: 1rem 1.5rem;
   background-color: black;
   color: white;
-  gap: 2.5rem;
+  gap: 3rem;
   height: 6rem;
   
 
@@ -249,6 +256,29 @@ const Menu = styled.div`
     font-size: x-large;
     font-weight: 900;
     
+  }
+`;
+
+export const CartNavStyled = styled.div`
+  position: relative;
+  cursor: pointer;
+  font-size: x-large;
+
+  span {
+    position: absolute;
+    top: 0;
+
+    height: 20px;
+    width: 20px;
+    text-align: center;
+
+    
+
+    border-radius: 1rem;
+    border: 1px solid white;
+    color: white;
+    background-color: red;
+    font-size: 0.9rem;
   }
 `;
 
