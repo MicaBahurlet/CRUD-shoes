@@ -246,9 +246,6 @@ const Menu = styled.div`
 
     border-radius: 0 0 50% 0;
     
-    
-    
-
   }
 
   .CartNav {
