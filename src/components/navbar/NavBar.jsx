@@ -83,7 +83,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 1rem 3rem;
   background-color: black;
   color: white;
   gap: 3rem;
@@ -279,10 +279,13 @@ export const CartNavStyled = styled.div`
     
 
     border-radius: 1rem;
-    border: 1px solid white;
+    border: 1px solid green;
     color: white;
-    background-color: red;
-    font-size: 0.9rem;
+    background-color: greenyellow;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: black;
+    padding: 1px;
   }
 `;
 
