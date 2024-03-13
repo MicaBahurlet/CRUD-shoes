@@ -9,17 +9,21 @@ import productsReducer from "./products/productsSlice.js";
 import recommendedReducer from "./recomended/recomendedSlice.js";
 
 
+import cartReducer from "./cart/cartSlice.js"; 
+
+
 const reducers = combineReducers({ //crea un objeto con todos los reducers que yo quiera
     categories: categoriesReducer,
     products: productsReducer, 
-    recommended: recommendedReducer
+    recommended: recommendedReducer,
+    cart : cartReducer
     
 });
 
 const persistConfig = {
     key: "root",
     storage,
-    whitelist: [] // array vacio para que me almacene todo
+    whitelist: ["cart"], // array sólo con cart, que es lo que quiero persistir // todo aquello que quiero incluir en el storage.
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers); // recibe la configuracion y los reducers

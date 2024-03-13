@@ -4,17 +4,24 @@ import styled from 'styled-components';
 import { useNavbarContext } from './NavbarContext'; //importo el contexto
 import LogoImg from '../../data/imgProducts/Logo7.png';
 
-import  { FaUser, FaHome, FaShoppingCart, FaEnvelope,  } from 'react-icons/fa';
 
-// import CartIcon from './CartIcon/CartIcon';
+
+import  {FaHome } from 'react-icons/fa';
+
+import { motion } from "framer-motion";
+
+import CartIcon from './CartIcon/CartIcon';
+import ModalCart from './ModalCart/ModalCart';
 
 
 
 const Navbar = () => { 
   const { clicked, handleClick, closeMenu } = useNavbarContext();  //accedo al contexto para trabajar con las fn que cree en el context.
 
+ 
   return (
     <Nav>
+      <ModalCart />
       <Logo>
         <img src={LogoImg} alt="Logo" />
       </Logo>
@@ -55,7 +62,7 @@ const Navbar = () => {
           </NavLink>
 
           <CartNavStyled>
-               <FaShoppingCart/>
+               <CartIcon  />
           </CartNavStyled>
 
 
@@ -276,6 +283,28 @@ export const CartNavStyled = styled.div`
     color: white;
     background-color: red;
     font-size: 0.9rem;
+  }
+`;
+
+export const LinkContainerStyled = styled.div`
+  font-size: 1.2rem;
+  color: white;
+`;
+
+export const ModalOverlayStyled = styled(motion.div)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: calc(100vw - 640px);
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+
+  ${({ isHidden }) =>
+    !isHidden &&
+    `backdrop-filter: blur(8px);`
   }
 `;
 
