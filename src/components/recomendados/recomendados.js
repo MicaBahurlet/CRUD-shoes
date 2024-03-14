@@ -116,7 +116,7 @@ export const BotonBuy = styled.div`
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     font-size: 1.2rem;
     font-weight: 500;
-    padding: 5px 3px;
+    padding: 10px 10px;
     max-width: 7rem;
 `;
 

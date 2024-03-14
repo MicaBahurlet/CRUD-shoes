@@ -7,7 +7,7 @@ import storage from "redux-persist/lib/storage";
 import categoriesReducer from "./categories/categoriesSlice.js";  
 import productsReducer from "./products/productsSlice.js";
 import recommendedReducer from "./recomended/recomendedSlice.js";
-
+import opinionesReducer from "./opininones/opinionesSlice.js";
 
 import cartReducer from "./cart/cartSlice.js"; 
 
@@ -16,7 +16,8 @@ const reducers = combineReducers({ //crea un objeto con todos los reducers que y
     categories: categoriesReducer,
     products: productsReducer, 
     recommended: recommendedReducer,
-    cart : cartReducer
+    cart : cartReducer,
+    opiniones: opinionesReducer,
     
 });
 

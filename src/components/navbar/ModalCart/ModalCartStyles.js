@@ -12,7 +12,7 @@ export const ContainerStyled = styled(motion.div)`
   justify-content: space-between;
   gap: 30px;
 
-  width: 500px;
+  width: 440px;
   height: calc(100vh - 4rem);
 
   padding: 2rem;

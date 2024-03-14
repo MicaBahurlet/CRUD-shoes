@@ -282,6 +282,7 @@ export const CartNavStyled = styled.div`
     border: 1px solid green;
     color: white;
     background-color: greenyellow;
+    font-family: var(--font-family);
     font-size: 0.8rem;
     font-weight: 600;
     color: black;

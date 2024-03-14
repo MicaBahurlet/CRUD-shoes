@@ -2,8 +2,8 @@
 import { HeroContainerStyles, 
   HeroTextContainerStyles, 
   HeroImageContainerStyles,
-  ImputContainerStyles,
-  InputStyles,
+  // ImputContainerStyles,
+  // InputStyles,
   BotonInput
 } from "./HeroStyles"
 
@@ -11,36 +11,36 @@ import { Fade } from "react-awesome-reveal"
 import IMGHero from "../../data/imgProducts/HEROAuris.png"
 
 
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { selectCategory } from "../../redux/categories/categoriesSlice";
+// import { useState } from "react";
+// import { useDispatch, useSelector } from "react-redux";
+// import { selectCategory } from "../../redux/categories/categoriesSlice";
 
 
 const Hero = ({doScroll}) => {
-  const [value,setValue]=useState("");
+  // const [value,setValue]=useState("");
 
-  const listOfCategories=useSelector(
-    (state)=> state.categories.categories)
-    .map((category)=>category.category);
+  // const listOfCategories=useSelector(
+  //   (state)=> state.categories.categories)
+  //   .map((category)=>category.category);
 
-    const dispatch =useDispatch();
+  //   const dispatch =useDispatch();
 
-    const handlerSubmit=(e,value)=>{
-      e.preventDefault();
+  //   const handlerSubmit=(e,value)=>{
+  //     e.preventDefault();
 
-      const newCategory=value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036F]/g, "").split(" ").join("");
+  //     const newCategory=value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036F]/g, "").split(" ").join("");
 
-      const selectedCategory = listOfCategories.find((category)=>category.toLowerCase()=== newCategory);
+  //     const selectedCategory = listOfCategories.find((category)=>category.toLowerCase()=== newCategory);
 
-      if (selectedCategory) {
-        dispatch(selectCategory(selectedCategory));
-        doScroll();
-      } else {
-        return alert("Ups! la categoría no existe, vuelve a intentar.")
-      }
+  //     if (selectedCategory) {
+  //       dispatch(selectCategory(selectedCategory));
+  //       doScroll();
+  //     } else {
+  //       return alert("Ups! la categoría no existe, vuelve a intentar.")
+  //     }
 
-      setValue("");
-    };
+  //     setValue("");
+  //   };
 
 
   return (
@@ -49,8 +49,10 @@ const Hero = ({doScroll}) => {
           <h1>Viví tú música.</h1>
           <h2><strong>Tus auriculares importan</strong></h2>
           <p><strong> El mejor sonido</strong> a tu disposición. Comprá <b>rápido</b>, comprá <b>calidad</b>, comprá <b>facil.</b> </p>
+
+          <BotonInput onClick={() => window.location.href = "/Products"}>Ver Productos</BotonInput>
           
-          <ImputContainerStyles>
+          {/* <ImputContainerStyles>
               <InputStyles 
                 value={value}
                 onChange={(e)=> setValue(e.target.value)}
@@ -70,7 +72,7 @@ const Hero = ({doScroll}) => {
                 
               
               >BUSCAR</BotonInput>
-          </ImputContainerStyles>
+          </ImputContainerStyles> */}
           
         </HeroTextContainerStyles>
       <HeroImageContainerStyles>
@@ -79,6 +81,8 @@ const Hero = ({doScroll}) => {
         </Fade>   
       </HeroImageContainerStyles>
 
+
+        
 
 
     </HeroContainerStyles>
