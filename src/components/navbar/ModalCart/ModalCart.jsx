@@ -85,7 +85,7 @@ const ModalCart = () => {
                 fontWeight={"bold"}
                 
               >
-                <MdOutlineClose size="24px"  />
+                <MdOutlineClose size="24px"  style={{ color: "black" }}  />
               </CloseButtonStyled>
             </CloseButtonContainerStyled>
 
@@ -113,12 +113,12 @@ const ModalCart = () => {
               </SubtotalStyled>
               <EnvioStyled>
                 <p>Envio</p>
-                <span>{shippingCost}</span>
+                <span>${shippingCost}</span>
               </EnvioStyled>
               <hr />
               <TotalStyled>
                 <p>Total:</p>
-                <PriceStyled>{totalPrice + shippingCost}</PriceStyled>
+                <PriceStyled>${totalPrice + shippingCost}</PriceStyled>
               </TotalStyled>
               <ButtonContainerStyled>
                 <Submit onClick={finalizarCompra} disabled={cartItems.length === 0}

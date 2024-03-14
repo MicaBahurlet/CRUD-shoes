@@ -1,1 +1,1 @@
-export const SHIPPING_COST = 500;
+export const SHIPPING_COST = 1000;

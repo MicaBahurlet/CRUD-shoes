@@ -5,7 +5,7 @@ export const ContainerStyled = styled(motion.div)`
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 999;
 
   display: flex;
   flex-direction: column;
@@ -26,14 +26,11 @@ export const ContainerStyled = styled(motion.div)`
 export const CloseButtonContainerStyled = styled.div`
   
   height: 9rem;
-  color : black;
   font-weight: 900;
-  
 
-  
 `;
 
-export const CloseButtonStyled = styled(motion.button)`
+export const CloseButtonStyled = styled(motion.button)`  //acá es el btn de cierre
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +40,7 @@ export const CloseButtonStyled = styled(motion.button)`
   border: none;
   border-radius: 10px;
   background: var(--btn-gradient);
-  color : black;
+  color : black !important;
   font-weight: 900;
   cursor: pointer;
 
