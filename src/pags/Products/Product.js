@@ -69,10 +69,16 @@ export const CardProducto = styled.div`
     width: 220px;
     padding: 2rem 0.5rem;
     background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
-    border-radius: 50px;
+    border-radius: 20px;
     cursor: pointer;
     font-family: var(--font-family);
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
     h2{
         font-size: 1rem;
         font-family: var(--font-family);
@@ -234,4 +240,24 @@ export const BotonInput = styled.div`
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     }
 
+`;
+
+
+
+export const BotonBuy = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 10px;
+    max-width: 7rem;
 `;
