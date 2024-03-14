@@ -10,11 +10,8 @@ export const RecomendadosWrapper = styled.div`
     font-family: var(--font-family);
     margin-bottom: 5rem;
 
-
-
-
     h2 {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
     
 
@@ -42,9 +39,6 @@ export const RecomendadosContainer = styled.div`
         border-radius: 15px;
     }
 
-    img:hover {
-        transform: scale(1.2); 
-    }
     @media (max-width: 768px) {
         flex-wrap: wrap;
         justify-content: center;
@@ -62,12 +56,12 @@ export const CardRecomendados = styled.div`
 
   width: 320px;
 
-  padding: 2rem 0.5rem;
+  padding: 1rem 1rem;
 
   background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
   border-radius: 20px;
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family);
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -75,7 +69,9 @@ export const CardRecomendados = styled.div`
   
   flex-direction: row;
   text-align: left;
-  font-family: var(--font-family);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease; 
 
   img {
     max-width: 100px;
@@ -97,14 +93,14 @@ export const CardRecomendados = styled.div`
     font-weight: 700;
   }
 
-  &:hover img {
-    transform: scale(1.1);
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras al pasar el ratón */
   }
 `;
 
 export const BotonBuy = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: 14px;
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
@@ -124,25 +120,24 @@ export const Boton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 9px;
+    font-size: 7px;
     background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
     color: #ffffff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-  color: black;
-  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
-  font-size: 1.2rem;
-  font-weight: 200;
+    color: black;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+
+    font-weight: 100;
 `;
 
 
 export const InfoCard = styled.div`
  
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  font-family: var(--font-family);
 `;

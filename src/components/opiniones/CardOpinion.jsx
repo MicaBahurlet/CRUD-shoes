@@ -1,12 +1,15 @@
-import { CardRecomendados, InfoCard } from "./opinionesStyle";
+import { CardRecomendados, InfoCard} from "./opinionesStyle";
 
-function Opiniones({ img, title, desc }) {
+
+
+function Opiniones({ img, name, desc, Punt }) {
   return (
     <CardRecomendados>
-      <img src={img} alt="imagen" /> {/* Usar img o remover si no es necesario */}
+      <img src={img} alt="imagen" /> 
       <InfoCard>
-        <h3>{title}</h3>
-        <p>{desc}</p>
+        <h3>{name}</h3>
+        <p><i>"{desc}"</i></p>
+        <img src= {Punt} alt="Puntuación" />
       </InfoCard>
     </CardRecomendados>
   );

@@ -2,7 +2,7 @@ import { HomeContainer } from "./Home";
 import NavBar from "../../components/navbar/NavBar";
 import Hero from "../../components/hero/Hero";
 import Layout from "../../components/layout/Layout";
-import Categorias from "../../components/categorias/Categorias";
+// import Categorias from "../../components/categorias/Categorias";
 // import CardsProductos from "../../components/productos/CardsProductos"; 
 import Footer from "../../components/footer/Footer";
 
@@ -32,14 +32,15 @@ export function Home() {
             <HomeContainer>
                 <NavBar/> 
                 <Layout>
-                    <Hero doScroll={doScroll}/>
+                    <Hero/>
                     
-                    <Categorias/>
-                    <button onClick={() => window.location.href = "/Products"}>Ver Productos</button>
-
-                    <Recomendados/>
+                    {/* <Categorias/>
+                    <button onClick={() => window.location.href = "/Products"}>Ver Productos</button> */}
 
                     <Opiniones/>
+                    <Recomendados/>
+
+                   
 
                     {/* <ProductosWrapper ref={productsRef}>  
                         <h2>Nuestros Auris:</h2>

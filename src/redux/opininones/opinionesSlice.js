@@ -7,6 +7,7 @@ const INITIAL_STATE = {
     })
 };
 
+
 export const opinionesSlice = createSlice({
     name: "opiniones",
     initialState: INITIAL_STATE,

@@ -15,6 +15,7 @@ function RecomendadosProduct() {
   return (
     <RecomendadosWrapper>   
       <h2>Recomendados  random para ti: </h2> 
+      <h3>Probá suerte, te recomendamos en base a los más comprados.</h3>
       <RecomendadosContainer> 
         {recommended.map(cat =>(  //antes estaba recomendados.map
 
@@ -22,7 +23,7 @@ function RecomendadosProduct() {
 
         ))}
         
-        <Boton className='Boton' onClick={() => window.location.href = "/Products"}>Ver más <FaAngleDoubleRight /></Boton>
+        <Boton className='Boton' onClick={() => window.location.href = "/Products"}>Más <FaAngleDoubleRight /></Boton>
 
       </RecomendadosContainer>
 
