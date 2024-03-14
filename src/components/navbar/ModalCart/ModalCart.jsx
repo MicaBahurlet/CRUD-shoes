@@ -43,7 +43,7 @@ const ModalCart = () => {
 
   const finalizarCompra = () => {
     dispatch(finalizePurchase());
-    alert("¡Gracias por tu compra! Mañana se despachará tu pedido. Esperamos que disfrutes tus Auris.");
+    alert("¡Gracias por tu compra! Mañana despacharemos tu pedido. Esperamos que disfrutes tus Auris.");
   };
 
 

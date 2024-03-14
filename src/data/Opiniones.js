@@ -6,6 +6,10 @@ import Trabajadora1 from "../data/imgOpiniones/Trabajadora1.png"
 import Trabajadora2 from "../data/imgOpiniones/Trabajadora2.png"
 import Trabajadora3 from "../data/imgOpiniones/Trabajadora3.png"
 import Trabajadora4 from "../data/imgOpiniones/TRabajadora4.png"
+import Adolescente1 from "../data/imgOpiniones/Adolescente1.png"
+import Adolescente2 from "../data/imgOpiniones/Adolescente2.png"
+import Adolescente3 from "../data/imgOpiniones/Adolescente3.png"
+
 
 import Estrellas from "../data/imgOpiniones/Estrellas.png"
 import Estrellas2 from "../data/imgOpiniones/clasificacion.png"
@@ -66,6 +70,28 @@ export const opiniones = [
         img: Trabajadora4,
         name: "Elena Casambayou",
         desc: "No recibí el producto en el tiempo que decia, aún así volvería a comprar",
+        Punt: Estrellas2
+    },
+    {
+        id: 9,
+        img: Adolescente1,
+        name: "Lucas Rosales",
+        desc: "Se demoraron un poco en el envío, pero llegaron bien.",
+        Punt: Estrellas
+    },
+    {
+        id: 10,
+        img: Adolescente2,
+        name: "Camilo Rodriguez",
+        
+        desc: "Quedé re bien, el envío fue super rapido.",
+        Punt: Estrellas2
+    },
+    {
+        id: 11,
+        img: Adolescente3,
+        name: "Antonio Carrera",
+        desc: "Compré y a la semana bajaron todos los precios, una locura. ",
         Punt: Estrellas2
     }
  

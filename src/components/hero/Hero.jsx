@@ -50,7 +50,7 @@ const Hero = ({doScroll}) => {
           <h2><strong>Tus auriculares importan</strong></h2>
           <p><strong> El mejor sonido</strong> a tu disposición. Comprá <b>rápido</b>, comprá <b>calidad</b>, comprá <b>facil.</b> </p>
 
-          <BotonInput onClick={() => window.location.href = "/Products"}>Ver Productos</BotonInput>
+          <BotonInput onClick={() => window.location.href = "/Products"}>VER PRODUCTOS</BotonInput>
           
           {/* <ImputContainerStyles>
               <InputStyles 

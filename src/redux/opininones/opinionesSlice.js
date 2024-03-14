@@ -8,13 +8,35 @@ const INITIAL_STATE = {
 };
 
 
+// export const opinionesSlice = createSlice({
+//     name: "opiniones",
+//     initialState: INITIAL_STATE,
+//     reducers: {
+//         randomOpinion: state => {
+//             return state;
+//         },
+//     },
+// });
+
 export const opinionesSlice = createSlice({
     name: "opiniones",
     initialState: INITIAL_STATE,
     reducers: {
         randomOpinion: state => {
-            return state;
+            const uniqueOpinions = [];
+            const opinionIds = new Set();
+        
+            while (uniqueOpinions.length < 3) {
+                const randomOpinion = opiniones[Math.floor(Math.random() * opiniones.length)];
+                if (!opinionIds.has(randomOpinion.id)) {
+                    uniqueOpinions.push(randomOpinion);
+                    opinionIds.add(randomOpinion.id);
+                }
+            }
+        
+            return { ...state, opiniones: uniqueOpinions };
         },
+        
     },
 });
 

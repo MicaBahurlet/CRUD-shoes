@@ -13,6 +13,7 @@ export const HeroContainerStyles = styled.div`
         flex-direction: column;
         flex-direction: column-reverse;
         margin-top: 4rem;
+       
     }
 `;
 
@@ -39,6 +40,7 @@ export const HeroTextContainerStyles = styled.div`
         font-size: 1.2rem;
         font-family: var(--font-family);
         line-height: 1.2;
+        margin-bottom: 4rem;
     }
 
 
@@ -48,6 +50,7 @@ export const HeroTextContainerStyles = styled.div`
         width: 80;
         h1{
             margin-top: 7px;
+
         }
     }
 
@@ -57,8 +60,8 @@ export const ImputContainerStyles = styled.div`
 
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    margin-top: 3rem;
+    align-items: center;
+    margin-top: 5rem;
     
     gap: 2rem;
 
@@ -69,7 +72,8 @@ export const ImputContainerStyles = styled.div`
 `;
 
 export const InputStyles = styled.input`
-
+    align-items: center;
+    justify-content:center;
     padding: 10px;
     font-size: 1.2rem;
     border: 1px solid black;
@@ -85,7 +89,7 @@ export const BotonInput = styled.div`
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
@@ -95,11 +99,14 @@ export const BotonInput = styled.div`
     border: none;
     font-family:  var(--font-family) ;
 
+
     &:hover {
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     }
 
 `;
+
+
 
 
 export const HeroImageContainerStyles = styled.div`

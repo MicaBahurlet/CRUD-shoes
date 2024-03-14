@@ -67,12 +67,6 @@ const cartSlice = createSlice({
 
         }
 
-        // const finalizePurchase = () => (dispatch) => {
-        //     dispatch(clearCart());
-        
-
-        //     alert("¡Gracias por tu compra! Esperamos que disfrutes tus auris.");
-        // };
 
 
 });
