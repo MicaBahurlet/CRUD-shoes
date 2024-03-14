@@ -57,10 +57,10 @@ const ModalCart = () => {
   return (
     <>
       {!hiddenCart && (
-        <ModalOverlayStyled
+        <ModalOverlayStyled 
           onClick={() => dispatch(toggleHiddenCart())}
           isHidden={hiddenCart}
-        />
+        /> //este es el overlay, si toco guera se cierra. 
       )}
       <AnimatePresence>
         {!hiddenCart && (
@@ -76,6 +76,7 @@ const ModalCart = () => {
                 className="close__modal "
                 whileTap={{ scale: 0.95 }}
                 onClick={() => dispatch(toggleHiddenCart())}
+                
               >
                 <MdOutlineClose size="24px" />
               </CloseButtonStyled>
@@ -84,13 +85,13 @@ const ModalCart = () => {
             <MainContainerStyled>
               <TitleStyled>
                 <h1>Tus Productos</h1>
-                <Increase
+                {/* <Increase
                   onClick={() => dispatch(clearCart())}
                   bgColor="greenYellow"
                   disabled="true"
                 >
                   <IoMdTrash />
-                </Increase>
+                </Increase> */}
               </TitleStyled>
 
               <ProductsWrapperStyled>
@@ -99,7 +100,7 @@ const ModalCart = () => {
                       <ModalCartCard key={item.id} {...item} />
                     ))
                   ) : (
-                    <p>No hay auris en tu compra, sumamos unos?</p>
+                    <p>No hay auris en tu compra, <br/> sumamos unos?</p>
                   )}
               </ProductsWrapperStyled>
             </MainContainerStyled>
@@ -107,6 +108,7 @@ const ModalCart = () => {
             <PriceContainerStyled>
               <SubtotalStyled>
                 <p>Subtotal:</p>
+                <span>${totalPrice}</span>
                
               </SubtotalStyled>
               <EnvioStyled>

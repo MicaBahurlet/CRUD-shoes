@@ -38,7 +38,7 @@ export const CloseButtonStyled = styled(motion.button)`
   outline: none;
   border: none;
   border-radius: 10px;
-  /* background: var(--btn-gradient); */
+  background: var(--btn-gradient);
   color: black;
   cursor: pointer;
 `;
@@ -160,4 +160,7 @@ export const ButtonContainerStyled = styled(SubtotalStyled)`
 export const QuantityContainerStyled = styled.div`
   display: flex;
   align-items: center;
+  color: black;
+  font-size: larger;
+  color: black;
 `;

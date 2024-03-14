@@ -32,14 +32,15 @@ const ModalCartCard = ({img,title,desc,price,quantity,id}) => {
       <TextContainerStyled>
         <CardTitleStyled>{title}</CardTitleStyled>
         <TextStyled>{desc}</TextStyled>
-        <PriceStyled>{price}</PriceStyled>
+        <PriceStyled>${price}</PriceStyled>
       </TextContainerStyled>
       <QuantityContainerStyled>
         <Increase
           bgColor="greenyellow"
           onClick={() =>dispatch(removeFromCart(id))}
+          
         >
-          {quantity===1?<IoMdTrash/> :<FaMinus/>}
+          {quantity===1?<IoMdTrash/> :<FaMinus color="black" />}
          
         </Increase>
         <Count>{quantity}</Count>
