@@ -9,7 +9,7 @@ import { useDispatch } from "react-redux";
 import { addToCart} from "../../redux/cart/cartSlice";
 
 
-function Productos ( {img,title,category,price,desc}) {
+function Productos ( {img,title,category,price,desc,id}) {
   const dispatch = useDispatch();
   return (
     <CardProducto>
@@ -17,7 +17,7 @@ function Productos ( {img,title,category,price,desc}) {
         <h3>{title}</h3>
         <p>{desc}</p>
         <p>${price}</p>
-        <BotonBuy onClick={() => dispatch(addToCart({id, img, title, category, price, desc}))}>Comprar</BotonBuy>
+        <BotonBuy onClick={() =>  dispatch(addToCart({img, title, category, price, desc,id}))}>Comprar</BotonBuy>
         
     </CardProducto>
   )

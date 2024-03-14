@@ -121,7 +121,7 @@ const ModalCart = () => {
                 <PriceStyled>{totalPrice + shippingCost}</PriceStyled>
               </TotalStyled>
               <ButtonContainerStyled>
-                <Submit onClick={finalizarCompra}
+                <Submit onClick={finalizarCompra} disabled={cartItems.length === 0}
                 
                 >
                   Iniciar pedido

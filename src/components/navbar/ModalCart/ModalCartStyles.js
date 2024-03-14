@@ -28,6 +28,9 @@ export const CloseButtonContainerStyled = styled.div`
   height: 9rem;
   color : black;
   font-weight: 900;
+  
+
+  
 `;
 
 export const CloseButtonStyled = styled(motion.button)`
@@ -43,7 +46,6 @@ export const CloseButtonStyled = styled(motion.button)`
   color : black;
   font-weight: 900;
   cursor: pointer;
-
 
 `;
 
@@ -161,11 +163,16 @@ export const TotalStyled = styled(SubtotalStyled)``;
 
 export const ButtonContainerStyled = styled(SubtotalStyled)`
   justify-content: center;
+  font-weight: 500;
   
   
   & button {
     color: black;
     padding: 1rem 1rem;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 10px 10px;
   }
 `;
 
