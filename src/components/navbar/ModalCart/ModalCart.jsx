@@ -13,7 +13,7 @@ import { ModalOverlayStyled } from "../NavBar";
 
 import { useEffect } from "react";
 import {useDispatch, useSelector} from "react-redux";
-import { clearCart,toggleHiddenCart } from "../../../redux/cart/cartSlice";
+import { clearCart,toggleHiddenCart, finalizePurchase } from "../../../redux/cart/cartSlice";
 
 import {
   ButtonContainerStyled,
@@ -40,6 +40,11 @@ const ModalCart = () => {
   const dispatch = useDispatch();
 
   const navigate = useNavigate();
+
+  const finalizarCompra = () => {
+    dispatch(finalizePurchase());
+    alert("¡Gracias por tu compra! Mañana se despachará tu pedido. Esperamos que disfrutes tus Auris.");
+  };
 
 
 
@@ -76,22 +81,17 @@ const ModalCart = () => {
                 className="close__modal "
                 whileTap={{ scale: 0.95 }}
                 onClick={() => dispatch(toggleHiddenCart())}
+                color="black"
+                fontWeight={"bold"}
                 
               >
-                <MdOutlineClose size="24px" />
+                <MdOutlineClose size="24px"  />
               </CloseButtonStyled>
             </CloseButtonContainerStyled>
 
             <MainContainerStyled>
               <TitleStyled>
                 <h1>Tus Productos</h1>
-                {/* <Increase
-                  onClick={() => dispatch(clearCart())}
-                  bgColor="greenYellow"
-                  disabled="true"
-                >
-                  <IoMdTrash />
-                </Increase> */}
               </TitleStyled>
 
               <ProductsWrapperStyled>
@@ -100,7 +100,7 @@ const ModalCart = () => {
                       <ModalCartCard key={item.id} {...item} />
                     ))
                   ) : (
-                    <p>No hay auris en tu compra, <br/> sumamos unos?</p>
+                    <p>No hay <b> Auris</b> en tu compra, <br/> sumamos unos?</p>
                   )}
               </ProductsWrapperStyled>
             </MainContainerStyled>
@@ -121,7 +121,8 @@ const ModalCart = () => {
                 <PriceStyled>{totalPrice + shippingCost}</PriceStyled>
               </TotalStyled>
               <ButtonContainerStyled>
-                <Submit onClick={() => dispatch(toggleHiddenCart())}
+                <Submit onClick={finalizarCompra}
+                
                 >
                   Iniciar pedido
                 </Submit>

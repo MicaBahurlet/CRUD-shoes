@@ -15,6 +15,7 @@ const INITIAL_STATE = {
     hidden: true
 };
 
+
 const cartSlice = createSlice({
     name: "cart",
     initialState: INITIAL_STATE,
@@ -49,12 +50,33 @@ const cartSlice = createSlice({
                     ...state,
                     hidden: !state.hidden
                 };
+            },
+
+            finalizePurchase: (state) => {
+                return {
+                    ...state,
+                    hidden: !state.hidden,
+                    cartItems: [],
+                    shippingCost: 0,
+                    
+
+                }
             }
+
+
+
         }
+
+        // const finalizePurchase = () => (dispatch) => {
+        //     dispatch(clearCart());
+        
+
+        //     alert("¡Gracias por tu compra! Esperamos que disfrutes tus auris.");
+        // };
 
 
 });
 
-export const {addToCart, removeFromCart, clearCart, toggleHiddenCart} = cartSlice.actions;
+export const {addToCart, removeFromCart, clearCart, toggleHiddenCart, finalizePurchase} = cartSlice.actions;
 
 export default cartSlice.reducer;

@@ -27,6 +27,7 @@ export const CloseButtonContainerStyled = styled.div`
   
   height: 9rem;
   color : black;
+  font-weight: 900;
 `;
 
 export const CloseButtonStyled = styled(motion.button)`
@@ -39,8 +40,11 @@ export const CloseButtonStyled = styled(motion.button)`
   border: none;
   border-radius: 10px;
   background: var(--btn-gradient);
-  color: black;
+  color : black;
+  font-weight: 900;
   cursor: pointer;
+
+
 `;
 
 export const TitleStyled = styled.div`
@@ -56,17 +60,17 @@ export const TitleStyled = styled.div`
 `;
 
 export const MainContainerStyled = styled.div`
-  height: 55%;
+  height: 40%;
 `;
 
 export const ProductsWrapperStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 
   width: 100%;
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
   padding: 1rem;
 
@@ -93,9 +97,10 @@ export const ProductContainerStyled = styled.div`
   align-items: center;
   gap: 15px;
   width: 360px;
+  height: 90px;
 
   background: var(--gray-bg);
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: 15px;
 
@@ -136,7 +141,8 @@ export const PriceStyled = styled.span`
 
 export const PriceContainerStyled = styled.div`
   z-index: 1000;
-  background-color: var(--gray-bg);
+  background-color: whitesmoke;
+  margin-top: 2rem;
   & p {
     text-align: center;
     margin-bottom: 0;
@@ -155,6 +161,12 @@ export const TotalStyled = styled(SubtotalStyled)``;
 
 export const ButtonContainerStyled = styled(SubtotalStyled)`
   justify-content: center;
+  
+  
+  & button {
+    color: black;
+    padding: 1rem 1rem;
+  }
 `;
 
 export const QuantityContainerStyled = styled.div`
@@ -162,5 +174,6 @@ export const QuantityContainerStyled = styled.div`
   align-items: center;
   color: black;
   font-size: larger;
+  font-weight: bold;
   color: black;
 `;
