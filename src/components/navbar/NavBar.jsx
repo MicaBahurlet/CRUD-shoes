@@ -87,7 +87,7 @@ const Nav = styled.nav`
   background-color: black;
   color: white;
   gap: 3rem;
-  height: 6rem;
+  height: 5rem;
   
 
   @media (max-width: 768px) {
@@ -203,9 +203,10 @@ const Menu = styled.div`
   .active {
    /* border-bottom: 3px solid greenyellow;  */
     font-weight: 700;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 9px 15px;
     color: black;
   }
 

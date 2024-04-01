@@ -30,7 +30,7 @@ export const removeItemFromCart = (cartItems,id) => {
 export const resetShippingCost =(cartItems,shippingCost) => {
     if(cartItems.length === 1 && cartItems[0].quantity === 1) {
         return 0
-    }
+    } //Revisa que el elemento a elminar sea efectivamente el ultimo del carrito
 
     return shippingCost;
 }

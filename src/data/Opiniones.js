@@ -26,7 +26,7 @@ export const opiniones = [
         id: 2,
         img: Adolecente,
         name: "Lucas Raul",
-        desc: "Tuve un problema con el envío y me atendieron hasta darme la solución, muy recomendable",
+        desc: "Tuve un problema con el envío y me super ayudaron, muy recomendable",
         Punt: Estrellas2
     },
     {
@@ -69,7 +69,7 @@ export const opiniones = [
         id: 8,
         img: Trabajadora4,
         name: "Elena Casambayou",
-        desc: "No recibí el producto en el tiempo que decia, aún así volvería a comprar",
+        desc: "No recibí el producto en el tiempo que decia, pero volvería a comprar",
         Punt: Estrellas2
     },
     {

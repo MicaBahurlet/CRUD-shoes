@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RecomendadosWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 15px;
   font-family: var(--font-family);
   margin-bottom: 5rem;
@@ -26,8 +26,9 @@ export const RecomendadosContainer = styled.div`
   gap: 15px;
   user-select: none;
 
+
   img {
-    max-width: 150px;
+    max-width: 130px;
     border-radius: 15px;
   }
 
@@ -45,12 +46,11 @@ export const CardRecomendados = styled.div`
   justify-content: center;
   align-items: center;
   width: 400px;
-  padding: 1rem 1rem;
-  background-color: var(--background-card);
+  padding: 10px;
+  /* background-color: var(--background-card); */
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
   border-radius: 20px;
-  cursor: pointer;
   font-family: var(--font-family);
-
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -63,7 +63,7 @@ export const CardRecomendados = styled.div`
 
 
   img {
-    max-width: 100px;
+    max-width: 90px;
     border-radius: 10px;
     margin-right: 1.5rem;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
@@ -71,14 +71,14 @@ export const CardRecomendados = styled.div`
   }
 
   h3 {
-    font-size: 1.1rem;
+    font-size: 19px;
     font-weight: bold;
     color: black;
   }
 
   p {
     color: #666;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   &:hover {
@@ -94,7 +94,7 @@ export const InfoCard = styled.div`
   font-family: var(--font-family);
 
   img {
-    max-width: 70px;
+    max-width: 60px;
     border-radius: 10px;
     margin-right: 1.5rem;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));

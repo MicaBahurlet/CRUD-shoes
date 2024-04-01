@@ -9,6 +9,7 @@ export const HeroContainerStyles = styled.div`
     margin: 0 auto;
     gap: 30px;
     
+    
     @media (max-width: 968px) {
         flex-direction: column;
         flex-direction: column-reverse;
@@ -93,10 +94,11 @@ export const BotonInput = styled.div`
     border: 1px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
     color: black;
     font-weight: bold;
-    border: none;
+    border: 0.5px solid black;
     font-family:  var(--font-family) ;
 
 

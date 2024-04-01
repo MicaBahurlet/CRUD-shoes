@@ -23,9 +23,10 @@ function RecomendadosProduct() {
 
         ))}
         
-        <Boton className='Boton' onClick={() => window.location.href = "/Products"}>Más <FaAngleDoubleRight /></Boton>
+        
 
       </RecomendadosContainer>
+      <Boton  onClick={() => window.location.href = "/Products"}>Más <FaAngleDoubleRight /></Boton>
 
     </RecomendadosWrapper>
   );
