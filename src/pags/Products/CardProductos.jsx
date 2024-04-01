@@ -24,3 +24,4 @@ function Productos ( {img,title,category,price,desc,id}) {
 }
 
 export default Productos
+
