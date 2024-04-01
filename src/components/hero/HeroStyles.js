@@ -8,6 +8,7 @@ export const HeroContainerStyles = styled.div`
     max-width: 1300px;
     margin: 0 auto;
     gap: 30px;
+    /* height: 100vh;  */
     
     
     @media (max-width: 968px) {

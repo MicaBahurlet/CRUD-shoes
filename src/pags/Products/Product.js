@@ -25,8 +25,8 @@ export const TextProductos = styled.div`
         display: flex;
         flex-direction: column;
         text-align: start;
-        margin: 3rem auto;
-        margin-bottom: 2rem;
+        margin: 1rem auto;
+      
 
         
     @media (max-width:768px){
@@ -65,17 +65,18 @@ export const CardProducto = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
     width: 220px;
-    padding: 2rem 0.5rem;
+    padding: 15px 20px;
     background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
     border-radius: 20px;
-    cursor: pointer;
     font-family: var(--font-family);
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     transition: box-shadow 0.3s ease; 
+
+    border-bottom: black solid 2px;
+
     &:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     }
@@ -154,42 +155,47 @@ export const BotonsWrapper = styled.div`
     align-items: center;
     justify-content:center ;
     gap: 2rem;
-    margin: 1rem auto;
+    margin: 3rem auto;
 `;
 
 export const Boton = styled.div`
-    display: flex;
-    justify-content: center;
+     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: 5px;
-    padding: 10px 20px;
     font-size: 15px;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-    border: none;
+    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    color: #ffffff;
+    border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;
     color: black;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
-    font-size: 1.2rem;
-    font-weight: 500;
     font-family: var(--font-family) ;
+    font-weight: 500;
+    padding: 10px 10px;
+    max-width: 7rem;
 `;
 
 export const BotonVerMenos = styled.div`
-    display: flex;
-    justify-content: center;
+   display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: 5px;
-    padding: 10px 20px;
     font-size: 15px;
+    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+
     background-color: #ffffff;
+    color: #ffffff;
+    border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;
     color: black;
-    font-size: 1.2rem;
-    font-weight: 500;
-    border: 1px solid black;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     font-family: var(--font-family) ;
+    font-weight: 500;
+    padding: 10px 10px;
+    max-width: 7rem;
 `;
 
 
@@ -248,15 +254,16 @@ export const BotonBuy = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 14px;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    font-size: 15px;
+    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
     color: #ffffff;
-    border: none;
+    border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;
     color: black;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
-    font-size: 1.2rem;
     font-weight: 500;
     padding: 10px 10px;
     max-width: 7rem;
