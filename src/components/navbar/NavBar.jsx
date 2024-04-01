@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { useNavbarContext } from './NavbarContext'; //importo el contexto
-import LogoImg from '../../data/imgProducts/Logo7.png';
+import LogoImg from '../../data/imgProducts/LogoFinish.png';
 
 
 
@@ -24,6 +24,7 @@ const Navbar = () => {
       <ModalCart />
       <Logo>
         <img src={LogoImg} alt="Logo" />
+        <h1>Auris</h1>
       </Logo>
       <Burger onClick={handleClick}> 
         <div className={`icon ${clicked ? 'open' : ''}`}>
@@ -103,8 +104,14 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.h1`
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family:  var(--font-family); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  /* color: #CBE94B; */
+  color: white;
 `;
 
 const Burger = styled.div`

@@ -1,5 +1,5 @@
 // import { recomendados } from '../../data/recomendados.js';
-import { RecomendadosContainer, RecomendadosWrapper, Boton } from './recomendados.js';
+import { RecomendadosContainer, RecomendadosWrapper, BotonBuy } from './recomendados.js';
 import Recomendados from './CardRecomendado.jsx'; 
 
 import { FaAngleDoubleRight } from 'react-icons/fa';
@@ -26,7 +26,7 @@ function RecomendadosProduct() {
         
 
       </RecomendadosContainer>
-      <Boton  onClick={() => window.location.href = "/Products"}>Más <FaAngleDoubleRight /></Boton>
+      <BotonBuy  onClick={() => window.location.href = "/Products"}>Más <FaAngleDoubleRight /></BotonBuy>
 
     </RecomendadosWrapper>
   );

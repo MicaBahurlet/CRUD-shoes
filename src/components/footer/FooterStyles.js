@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterContainerStyles = styled.div`
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-top: 1px solid black;
     padding: 1rem 4rem;

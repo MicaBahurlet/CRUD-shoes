@@ -74,6 +74,7 @@ export const CardRecomendados = styled.div`
 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: box-shadow 0.3s ease; 
+  margin-bottom: 3.5rem;
 
   img {
     max-width: 100px;
@@ -127,13 +128,10 @@ export const Boton = styled.button`
     /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
     background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
     
-    color: #ffffff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     color: black;
-    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
-
     font-weight: 100;
     max-width: 9rem;
 `;
