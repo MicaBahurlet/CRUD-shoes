@@ -26,7 +26,7 @@ export const opiniones = [
         id: 2,
         img: Adolecente,
         name: "Lucas Raul",
-        desc: "Tuve un problema con el envío y me super ayudaron, muy recomendable",
+        desc: "Se complicó el envío y me super ayudaron, recomendable",
         Punt: Estrellas2
     },
     {
@@ -48,7 +48,7 @@ export const opiniones = [
         id: 5,
         img: Trabajadora1,
         name: "Cristina Rosales",
-        desc: "Para disfrutar de la música de la mejor manera. Volvería a comprar",
+        desc: "Para disfrutar de la música de la mejor manera.",
         Punt: Estrellas
     },
     {
@@ -69,7 +69,7 @@ export const opiniones = [
         id: 8,
         img: Trabajadora4,
         name: "Elena Casambayou",
-        desc: "No recibí el producto en el tiempo que decia, pero volvería a comprar",
+        desc: "Demoraron el envío, pero volvería a comprar",
         Punt: Estrellas2
     },
     {

@@ -15,7 +15,7 @@ function RecomendadosProduct() {
   return (
     <RecomendadosWrapper>   
       <h2>Recomendados  random para ti: </h2> 
-      <h3>Probá suerte, te recomendamos en base a los más comprados.</h3>
+      <h3> 	&#127808; Probá suerte, te recomendamos en base a los más comprados.</h3>
       <RecomendadosContainer> 
         {recommended.map(cat =>(  //antes estaba recomendados.map
 

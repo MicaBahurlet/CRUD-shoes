@@ -106,7 +106,7 @@ export const productos = [
     },
     {
         id: 11,
-        title: "ziaomi",
+        title: "Ziaomi",
         img: ziaomiProduct,
         category: "In-ear",
         desc: "5hs batería",

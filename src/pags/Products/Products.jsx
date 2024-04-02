@@ -1,16 +1,14 @@
 
 import {productos} from "../../data/productos.js";
+// import INITIAL_LIMIT from "../../utils/constantes.js";
 
 import { 
     ProductosContainer, 
     ProductosWrapper, 
-    TextProductos,
     BorderSeparacion,
     BotonsWrapper,
     Boton,
     BotonVerMenos,
-
-
 } from './Product.js';
 
 
@@ -28,7 +26,7 @@ import NavBar from "../../components/navbar/NavBar";
 import Categorias from "../../components/categorias/Categorias.jsx"
 
 
- import { useState } from "react";
+  import { useState } from "react";
   import { useDispatch, useSelector } from "react-redux";
   import { selectCategory } from "../../redux/categories/categoriesSlice";
 
@@ -38,7 +36,7 @@ import Categorias from "../../components/categorias/Categorias.jsx"
 function CardsProductos() {
     const [value,setValue]=useState("");
 
-  const listOfCategories=useSelector(
+    const listOfCategories=useSelector(
     (state)=> state.categories.categories)
     .map((category)=>category.category);
 

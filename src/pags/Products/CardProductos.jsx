@@ -24,6 +24,7 @@ function Productos({ img, title, category, price, desc, id }) {
     return (
         <>
             <CardProducto>
+                
                 <img src={img} alt={category} />
                 <h3>{title}</h3>
                 <p>{desc}</p>
@@ -42,6 +43,10 @@ function Productos({ img, title, category, price, desc, id }) {
 }
 
 export default Productos;
+
+
+
+
 
 
 //esto tenia antes, cualquier cosa borrar lo de arriba y además el ModalStyles. 
