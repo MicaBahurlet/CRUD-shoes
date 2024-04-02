@@ -6,10 +6,11 @@ export const ProductosWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto; 
     font-family: var(--font-family);
     margin-top: 6rem;
+    
   
 
 
@@ -17,6 +18,7 @@ export const ProductosWrapper = styled.div`
         padding-top: 30px;
         text-align: center;
     };
+    
 
 `;
 
@@ -25,7 +27,8 @@ export const TextProductos = styled.div`
         display: flex;
         flex-direction: column;
         text-align: start;
-        margin: 1rem auto;
+       
+       
       
 
         
@@ -46,9 +49,13 @@ export const ProductosContainer = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    gap: 40px;
     user-select:none;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     margin-top: 6rem;
 
     @media (max-width:768px){
@@ -62,34 +69,46 @@ export const ProductosContainer = styled.div`
 
 export const CardProducto = styled.div` 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    padding: 15px 20px;
-    background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
-    border-radius: 20px;
-    font-family: var(--font-family);
-    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    transition: box-shadow 0.3s ease; 
+  width: 210px;
+  height: 270px;
+  padding: 2px; 
 
-    border-bottom: black solid 2px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  
+  font-family: var(--font-family);
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease; 
+  margin-bottom: 5rem;
+  border-bottom: 1px solid green;
 
     &:hover {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     }
-    h2{
-        font-size: 1rem;
+    h3{
+        font-size: 1.2rem;
         font-family: var(--font-family);
+        font-weight: 800;
+    }
+    h4{
+        font-size: 1.1rem;
+        color: green;
+        font-weight: 800;
     }
     
 
     img {
         max-width: 100px;
         border-radius: 15px;
-        filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
         transition: transform 0.7s ease;
     }
 
@@ -104,8 +123,10 @@ export const CardProducto = styled.div`
 
     @media (max-width:768px){
         flex-direction: column;
-        padding-top: 30px;
+        
         text-align: center;
+        max-width: 200px;
+        height: 285px;
     };
     
     
@@ -127,6 +148,7 @@ export const AgregarCart = styled.button`
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     font-size: 1.2rem;
     font-weight: 200;
+   
 `;
 
 // export const BorderDecorationProducto = styled.div`
@@ -204,7 +226,7 @@ export const ImputContainerStyles = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 5rem;
+    margin-top: 1rem;
     
     gap: 2rem;
 
@@ -242,9 +264,9 @@ export const BotonInput = styled.div`
     font-family:  var(--font-family) ;
     margin-top: 3rem;
 
-    &:hover {
+    /* &:hover {
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    }
+    } */
 
 `;
 

@@ -27,7 +27,7 @@ function Productos({ img, title, category, price, desc, id }) {
                 <img src={img} alt={category} />
                 <h3>{title}</h3>
                 <p>{desc}</p>
-                <p>${price}</p>
+                <h4>${price}</h4>
                 <BotonBuy onClick={handleAddToCart}>Comprar</BotonBuy>
             </CardProducto>
 

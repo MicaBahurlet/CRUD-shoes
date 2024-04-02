@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const CategoriasWrapper = styled.div`
 
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1300px;
+    
     margin: 0 15px;
     font-family: var(--font-family);
+    gap: 3rem;
 
     h2 {
         margin-bottom: 3rem;
@@ -26,6 +29,8 @@ export const CategoriasContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1300px;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     user-select:none;
@@ -46,9 +51,9 @@ export const CardCategoria = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  width: 200px;
-  padding: 1.5rem 1rem;
+  gap: 0.4rem;
+  width: 150px;
+  padding: 1rem 0.5rem;
   border-radius: 20px;
   cursor: pointer;
   font-family: var(--font-family);
@@ -66,7 +71,7 @@ export const CardCategoria = styled.div`
   }
 
   img {
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
     /* Eliminar la siguiente línea */
@@ -120,7 +125,8 @@ export const BorderDecoration = styled.div`
 
     height: 5px;
     width: 30%;
-   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+   /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+   background-color: black;
     border-radius: 15px;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
 `;

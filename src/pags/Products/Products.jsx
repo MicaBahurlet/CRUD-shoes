@@ -66,11 +66,12 @@ function CardsProductos() {
     <div>
       <NavBar/>
       <ProductosWrapper>
-        <TextProductos> 
+        <Categorias/> 
+        {/* <TextProductos> 
                 <h2>La casa es chica pero el corazón es grande.</h2>
                 <h3>Nuestros productos serán pocos, pero ofrecemos calidad y garantía.</h3>
                 <p>Tan simple como seleccionar un producto y agregar al carrito. No dudes, el mejor precio está en <strong>Auris.</strong> </p>
-        </TextProductos>  
+        </TextProductos>   */}
 
           <ImputContainerStyles>
               <InputStyles 
@@ -94,7 +95,7 @@ function CardsProductos() {
               >BUSCAR</BotonInput>
           </ImputContainerStyles>
 
-          <Categorias/> 
+          
 
           <BorderSeparacion/>
 

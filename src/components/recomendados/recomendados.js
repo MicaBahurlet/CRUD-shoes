@@ -7,6 +7,8 @@ export const RecomendadosWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: auto;
     max-width: 1200px;
     margin: 0 15px;
     font-family: var(--font-family);
@@ -36,6 +38,7 @@ export const RecomendadosContainer = styled.div`
     flex-wrap: nowrap; 
     justify-content: center; 
     align-items: center;
+    
     gap: 15px;
     user-select:none;
 
@@ -60,11 +63,14 @@ export const CardRecomendados = styled.div`
   align-items: center;
 
   width: 200px;
+  height: 300px;
 
-  padding: 1rem 1rem;
+  /* padding: 1rem 1rem; */
 
   /* background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'}; */
-  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); */
+
+  background-color: whitesmoke;
   border-radius: 20px;
   
   font-family: var(--font-family);
@@ -74,7 +80,8 @@ export const CardRecomendados = styled.div`
 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: box-shadow 0.3s ease; 
-  margin-bottom: 3.5rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid green;
 
   img {
     max-width: 100px;

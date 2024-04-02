@@ -45,10 +45,11 @@ export const CardRecomendados = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 370px;
   padding: 10px;
   /* background-color: var(--background-card); */
-  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); */
+  background-color: whitesmoke;
   border-radius: 20px;
   font-family: var(--font-family);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -60,6 +61,7 @@ export const CardRecomendados = styled.div`
 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: box-shadow 0.3s ease; 
+  border-bottom: 1px solid black;
 
 
   img {

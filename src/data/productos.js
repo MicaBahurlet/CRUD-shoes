@@ -7,7 +7,7 @@ import AirpodProduct from "./imgProducts/AirpodsProduct.png";
 //Gamer
 import Gamer10 from "./imgProducts/Gamer10.png";
 import InEarProduct from "./imgProducts/ProductInEar.png";
-import KotionGamer from "./imgProducts/ProductGamer.png";
+import KotionGamer from "./imgProducts/gamerProduct1.png";
 import HylasGaming from "./imgProducts/ProductGamer2.png";
 import NuwoGamer from "./imgProducts/ProductGamer3.png";
 
@@ -26,7 +26,7 @@ import ZonnyProduct from "./imgProducts/ClasicProduct3.png";
 export const productos = [
     {
         id: 1,
-        title: "Kotion Each",
+        title: "Okimura K9",
         img: KotionGamer,
         category: "Gamer",
         desc: "Gamer sin fin",
@@ -74,7 +74,7 @@ export const productos = [
     },
     {
         id: 7,
-        title: "Genérico",
+        title: "Soul 4.3",
         img: genericoProduct,
         category: "Classic",
         desc: "Bueno, bonito, barato",
@@ -126,7 +126,7 @@ export const productos = [
         title: "TWS F9-5 BTH-F9",
         img: DeportivoProduct,
         category: "Deportivo",
-        desc: "El nombre es difícil, pero suenan tremendo",
+        desc: "El nombre es difícil,pero suenan tremendo",
         price: 4000,
     },
     {
@@ -134,7 +134,7 @@ export const productos = [
         title: "Lenobo Deportivo",
         img: LenoboDeportivo,
         category: "Deportivo",
-        desc: "Ideales para correr",
+        desc: "Ideales para correr y actividades al aire libre",
         price: 3500,
     },
     {
@@ -142,7 +142,7 @@ export const productos = [
         title: "Classiquito ",
         img: ClassicProducts,
         category: "Classic",
-        desc: "Con cables, como antes!",
+        desc: "Con cables, como era antes!",
         price: 2500,
     },
     {
@@ -150,7 +150,7 @@ export const productos = [
         title: "Gamer 3000 ",
         img: Gamer10,
         category: "Gamer",
-        desc: "Ahoora sí!, que suenen tus  headshots",
+        desc: "¡Ahoora sí! que suenen esos headshots",
         price: 10000,
     },
 
