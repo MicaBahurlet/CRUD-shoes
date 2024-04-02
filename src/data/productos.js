@@ -30,6 +30,7 @@ export const productos = [
         img: KotionGamer,
         category: "Gamer",
         desc: "Gamer sin fin",
+        New: "NUEVO",
         price: 1000,
     },
     {
@@ -127,6 +128,7 @@ export const productos = [
         img: DeportivoProduct,
         category: "Deportivo",
         desc: "El nombre es difícil,pero suenan tremendo",
+        
         price: 4000,
     },
     {

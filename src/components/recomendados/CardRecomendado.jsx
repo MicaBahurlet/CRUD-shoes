@@ -17,18 +17,17 @@ function Recomendados( {img,title,category, desc, price, id}) {
   return (
     <CardRecomendados>
 
-    <img src={img} alt={category} />
-    <InfoCard >
-      <h3>{title}</h3>
-      <p>{desc}</p>
-      <h4>${price}</h4>
-       <BotonBuy onClick={() => dispatch(addToCart({id, img, title, category, price, desc}))}>Comprar</BotonBuy> 
+      <img src={img} alt={category} />
+
+      <InfoCard >
+        <h3>{title}</h3>
+        <p>{desc}</p>
+        <h4>${price}</h4>
+        <BotonBuy onClick={() => dispatch(addToCart({id, img, title, category, price, desc}))}>Comprar</BotonBuy> 
+        
+      </InfoCard>
       
-    </InfoCard>
-    
-    
-   
-  </CardRecomendados>
+    </CardRecomendados>
 );
 }
 

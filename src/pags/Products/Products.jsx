@@ -1,6 +1,8 @@
 
 
 
+
+
 import {productos} from "../../data/productos.js";
 // // import {INITIAL_LIMIT} from "../../utils/constantes.js";
 
@@ -26,13 +28,15 @@ import NavBar from "../../components/navbar/NavBar";
 
 import Categorias from "../../components/categorias/Categorias.jsx"
 
-import { useState } from "react";
+import { useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "../../redux/categories/categoriesSlice";
 
-function CardsProductos() {
+function CardsProductos( ) {
+
   const [value, setValue] = useState("");
   const [limit, setLimit] = useState(INITIAL_LIMIT);
+
 
   const listOfCategories = useSelector((state) => state.categories.categories).map((category) => category.category);
   const dispatch = useDispatch();
@@ -43,7 +47,7 @@ function CardsProductos() {
     const selectedCategory = listOfCategories.find((category) => category.toLowerCase() === newCategory);
     if (selectedCategory) {
       dispatch(selectCategory(selectedCategory));
-      doScroll();
+      // doScroll();
     } else {
       alert("Ups! la categoría no existe, vuelve a intentar.");
     }
@@ -64,8 +68,10 @@ function CardsProductos() {
     <div>
       <NavBar />
       <ProductosWrapper>
+
         <Categorias />
-        <ImputContainerStyles>
+
+        <ImputContainerStyles  >
           <InputStyles
             value={value}
             onChange={(e) => setValue(e.target.value)}
@@ -85,17 +91,25 @@ function CardsProductos() {
             BUSCAR
           </BotonInput>
         </ImputContainerStyles>
+
         <BorderSeparacion />
-        <ProductosContainer>
+
+        <ProductosContainer >
+    
           {productos.slice(0, limit).map((prod) => (
             <CardProductos key={prod.id} {...prod} />
           ))}
         </ProductosContainer>
+
+
       </ProductosWrapper>
+
+
       <BotonsWrapper>
         <BotonVerMenos onClick={handleVerMenos}>Ver menos</BotonVerMenos>
         <Boton onClick={handleVerMas}>Ver más</Boton>
       </BotonsWrapper>
+
       <Footer />
     </div>
   );

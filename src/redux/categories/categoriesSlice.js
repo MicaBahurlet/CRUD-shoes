@@ -1,3 +1,5 @@
+
+
 import { categorias } from '../../data/categorias.js'; //traigo las categorías de data
 import { createSlice } from '@reduxjs/toolkit';  
 

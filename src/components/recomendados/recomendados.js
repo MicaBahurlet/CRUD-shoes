@@ -8,7 +8,7 @@ export const RecomendadosWrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+   
     max-width: 1200px;
     margin: 0 15px;
     font-family: var(--font-family);
@@ -38,6 +38,7 @@ export const RecomendadosContainer = styled.div`
     flex-wrap: nowrap; 
     justify-content: center; 
     align-items: center;
+   
     
     gap: 25px;
     user-select:none;
