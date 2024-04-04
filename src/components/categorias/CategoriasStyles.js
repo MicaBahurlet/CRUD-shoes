@@ -10,6 +10,7 @@ export const CategoriasWrapper = styled.div`
     margin: 0 15px;
     font-family: var(--font-family);
     gap: 3rem;
+    z-index: -2;
 
     h2 {
         margin-bottom: 3rem;
