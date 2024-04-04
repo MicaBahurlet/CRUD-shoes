@@ -19,12 +19,12 @@ import * as Yup from 'yup';
 
 const validationSchema = Yup.object ({
   nombre: Yup.string().trim() 
-    .required("Por favor, ingresa tu nombre y apellido"),
+    .required("Por favor, ingresa tu nombre y apellido."),
   email: Yup.string() 
-    .email("El formato de email no es válido")
-    .required("Por favor, ingresa tu email"),
+    .email("El formato de email no es válido. Asegurate de escribir tu correo correctamente.")
+    .required("Por favor, ingresa tu email."),
   mensaje: Yup.string() 
-    .required("Por favor, ingresa tu mensaje"),
+    .required("Por favor, ingresa tu mensaje."),
 });
 
 export default function Contacto() {
@@ -79,13 +79,13 @@ export default function Contacto() {
             <Textarea
               id="mensaje"
               name="mensaje"
-              rows="4"
+              rows="10" 
               {...getFieldProps('mensaje')}
             />
             {touched.mensaje && errors.mensaje && <Errormessage>{errors.mensaje}</Errormessage>}
           </GrupoEtiquetaInput>
 
-          <Boton type="submit">Enviar Mensaje</Boton>
+          <Boton type="submit">Enviar</Boton>
         </Formulario>
       </ContactoContainer>
       <Footer />

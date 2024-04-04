@@ -100,8 +100,7 @@ export const GrupoEtiquetaInput = styled.div`
 export const Errormessage = styled.p`
 
   color: red;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
-  margin-top: 0.5rem;
 
 `;
