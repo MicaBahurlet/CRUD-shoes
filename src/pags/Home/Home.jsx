@@ -1,3 +1,5 @@
+
+
 import { HomeContainer } from "./Home";
 import NavBar from "../../components/navbar/NavBar";
 import Hero from "../../components/hero/Hero";
@@ -6,9 +8,11 @@ import Layout from "../../components/layout/Layout";
 // import CardsProductos from "../../components/productos/CardsProductos"; 
 import Footer from "../../components/footer/Footer";
 
-import { ProductosWrapper } from "../../components/productos/CardsProductosStyles";
+// import { ProductosWrapper } from "../../components/productos/CardsProductosStyles";
 
-import { BotonVerMenos, Boton, BotonsWrapper } from "../Products/Product";
+// import { BotonVerMenos, Boton, BotonsWrapper } from "../Products/Product";
+
+
 
 
 import Recomendados from "../../components/recomendados/CardsRecomendados";
@@ -18,14 +22,8 @@ import Opiniones from "../../components/opiniones/CardsOpiniones";
 import { useRef } from "react";
 
 export function Home() {
-    const productsRef = useRef(); // acá se almacena la referencia
+   
 
-    const doScroll = () => {
-        window.scrollTo(
-            productsRef.current.getBoundingClientReact().x, //nos devuelve la ubicación X de algo = productRef.current
-            productsRef.current.getBoundingClientReact().y // ubicación y 
-        );
-    }
 
     return (
         <>
@@ -33,25 +31,12 @@ export function Home() {
                 <NavBar/> 
                 <Layout>
                     <Hero/>
-                    
-                    {/* <Categorias/>
-                    <button onClick={() => window.location.href = "/Products"}>Ver Productos</button> */}
 
                     <Opiniones/>
                     <Recomendados/>
 
-                   
-
-                    {/* <ProductosWrapper ref={productsRef}>  
-                        <h2>Nuestros Auris:</h2>
-                        <CardsProductos/> 
-
-                        <BotonsWrapper>
-                            <BotonVerMenos>Ver menos</BotonVerMenos>
-                            <Boton >Ver mas</Boton>
-                        </BotonsWrapper>
-                    </ProductosWrapper>     */}
                 </Layout>
+                
                 <Footer/>
             </HomeContainer>
         </>    

@@ -7,11 +7,27 @@ import {  CardRecomendados,
 import { useDispatch } from "react-redux";
 import { addToCart} from "../../redux/cart/cartSlice";
 
+import { useState } from 'react';
+
+import { ModalContainer, ModalContent } from '../../pags/Products/ModalStyles'; 
+
 
 
 function Recomendados( {img,title,category, desc, price, id}) {
 
   const dispatch = useDispatch();
+
+  const [showModal, setShowModal] = useState(false); // Estado para controlar el modal
+
+  const handleAddToCart = () => {
+      dispatch(addToCart({ img, title, category, price, desc, id }));
+      setShowModal(true); // Mostrar el mensaje cuando se agrega el producto al carrito
+      
+      setTimeout(() => {
+          setShowModal(false);
+      }, 3000); // Ocultar mensaje despues de 3 segundos
+  };
+
 
 
   return (
@@ -23,12 +39,21 @@ function Recomendados( {img,title,category, desc, price, id}) {
         <h3>{title}</h3>
         <p>{desc}</p>
         <h4>${price}</h4>
-        <BotonBuy onClick={() => dispatch(addToCart({id, img, title, category, price, desc}))}>Comprar</BotonBuy> 
+        <BotonBuy onClick={handleAddToCart}>Comprar</BotonBuy> 
         
       </InfoCard>
+
+      {showModal && (
+        <ModalContainer className="addModal activeModal">
+            <ModalContent> &#9989; Producto agregado al carrito &#128293;</ModalContent>
+        </ModalContainer>
+      )}
       
     </CardRecomendados>
-);
+
+    
+    
+  );
 }
 
 export default Recomendados

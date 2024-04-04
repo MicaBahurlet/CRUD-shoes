@@ -27,6 +27,14 @@ export const CloseButtonContainerStyled = styled.div`
   
   height: 9rem;
   font-weight: 900;
+  display: flex;
+  justify-content: flex-end;
+
+  .close__modal {
+    color: black;
+    font-weight: 700;
+    font: small;
+  }
 
 `;
 

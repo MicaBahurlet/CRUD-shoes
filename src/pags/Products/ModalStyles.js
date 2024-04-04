@@ -5,10 +5,11 @@ export const ModalContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white; 
-     background-color: black;
-    /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
-    color: black; */
+    width: 100%;
+    color: white;
+    background-color: black;
+    /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); */
+    /* color: black; */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -19,6 +20,12 @@ export const ModalContainer = styled.div`
     -ms-transform: translateY(200%);
     -o-transform: translateY(200%);
     z-index: 1;
+
+    .addModal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     &.activeModal {
         transform: translateY(0);

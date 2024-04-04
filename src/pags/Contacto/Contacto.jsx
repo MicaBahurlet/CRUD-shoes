@@ -75,7 +75,7 @@ export default function Contacto() {
           </GrupoEtiquetaInput>
 
           <GrupoEtiquetaInput>
-            <Etiqueta htmlFor="mensaje">Mensaje:</Etiqueta>
+            <Etiqueta htmlFor="mensaje">Asunto:</Etiqueta>
             <Textarea
               id="mensaje"
               name="mensaje"
