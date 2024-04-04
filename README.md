@@ -1,8 +1,4 @@
 
-
-
-
-
 <h2 align="start">Auris.</h2> 
 
 Son mis primeros pasos con React, en éste proyecto me inicio en el camino de la modularización de código y la re utilización de comonentes, además es el primer proyecto con una estructura compleja con el que trabajo. 
@@ -15,6 +11,8 @@ Son mis primeros pasos con React, en éste proyecto me inicio en el camino de la
 <img width="500px"  src="https://skillicons.dev/icons?i=html,js,react,vite,nodejs,styledcomponents,git,github,ps,perline=10"  />
 </p>
 
-Utilizo Node.js como entornno de ejecución y como entorno de desarrollo utilizo Vite.js, manejo los estilos con Styled Component y  las libreríaFramemotion para animaciones. 
+Utilizo Node.js como entorno de ejecución y como entorno de desarrollo utilizo Vite.js, manejo los estilos con Styled Component y las librerías: 
+- Formik y Yup para validación de formularios,  
+- Framemotion para animaciones. 
 
 
