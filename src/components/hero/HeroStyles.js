@@ -9,12 +9,15 @@ export const HeroContainerStyles = styled.div`
     margin: 0 auto;
     gap: 30px;
     height: 100vh;  // ver este inicio
+   
     
     
     @media (max-width: 968px) {
         flex-direction: column;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 4rem;
+        gap: 20px;
+        height: 84vh;
        
     }
 `;
@@ -49,10 +52,16 @@ export const HeroTextContainerStyles = styled.div`
     @media (max-width: 968px) {
         align-items: center;
         text-align: center;
-        width: 80;
+        width: 70;
         h1{
-            margin-top: 7px;
+            font-size: 3rem;
 
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
         }
     }
 
@@ -107,6 +116,11 @@ export const BotonInput = styled.div`
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     }
 
+    @media (max-width: 968px) {
+        max-width: 9rem;
+        font-size: small;
+    }
+
 `;
 
 
@@ -128,7 +142,10 @@ export const HeroImageContainerStyles = styled.div`
     }
 
     @media (max-width: 968px) {
-        max-width: 200px;
+        img {
+            max-width: 400px;
+        }
+        
     }
 
 `;

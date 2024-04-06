@@ -27,6 +27,8 @@ export const RecomendadosWrapper = styled.div`
     @media (max-width:768px){
         padding-top: 30px;
         text-align: center;
+        width: 100%;
+        max-width: 400px;
     };
 
 `;
