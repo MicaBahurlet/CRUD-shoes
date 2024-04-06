@@ -4,10 +4,11 @@ export const CategoriasWrapper = styled.div`
 
     display: flex;
     justify-content: space-between;
+    
     flex-direction: column;
     max-width: 1300px;
     
-    margin: 0 15px;
+    margin: 0 auto;
     font-family: var(--font-family);
     gap: 3rem;
     /* z-index: -1; */
