@@ -88,6 +88,7 @@ export const CardRecomendados = styled.div`
   margin-top: 2rem;
   margin-bottom: 5rem;
   border-bottom: 1px solid green;
+  border-top: 1px solid green;
 
   img {
     max-width: 100px;

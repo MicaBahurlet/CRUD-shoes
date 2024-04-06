@@ -10,6 +10,9 @@ import Adolescente1 from "../data/imgOpiniones/Adolescente1.png"
 import Adolescente2 from "../data/imgOpiniones/Adolescente2.png"
 import Adolescente3 from "../data/imgOpiniones/Adolescente3.png"
 
+import AddAdult1 from "../data/imgOpiniones/AddAdult1.jpg"
+import AddAdult2 from "../data/imgOpiniones/AddAdult2.jpg"
+import AddAdult3 from "../data/imgOpiniones/AddAdult3.jpg"
 
 import Estrellas from "../data/imgOpiniones/Estrellas.png"
 import Estrellas2 from "../data/imgOpiniones/clasificacion.png"
@@ -92,6 +95,27 @@ export const opiniones = [
         img: Adolescente3,
         name: "Antonio Carrera",
         desc: "Compré y a la semana bajaron todos los precios, una locura. ",
+        Punt: Estrellas2
+    },
+    {
+        id: 12,
+        img: AddAdult1,
+        name: "Cristian Lis",
+        desc: "Excelente todo!",
+        Punt: Estrellas
+    },
+    {
+        id: 13,
+        img: AddAdult2,
+        name: "Camilo Rodriguez",
+        desc: "Buena experiencia",
+        Punt: Estrellas
+    },
+    {
+        id: 14,
+        img: AddAdult3,
+        name: "Julia Cazan",
+        desc: "Todo bien, super recomendado.",
         Punt: Estrellas2
     }
  

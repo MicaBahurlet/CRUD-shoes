@@ -89,6 +89,7 @@ export const CardProducto = styled.div`
   transition: box-shadow 0.3s ease; 
   margin-bottom: 5rem;
   border-bottom: 1px solid green;
+  border-top: 1px solid green;
 
     &:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
