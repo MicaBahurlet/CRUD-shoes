@@ -8,7 +8,7 @@ export const HeroContainerStyles = styled.div`
     max-width: 1300px;
     margin: 0 auto;
     gap: 30px;
-    /* height: 100vh;  */
+    height: 100vh;  // ver este inicio
     
     
     @media (max-width: 968px) {
@@ -115,7 +115,7 @@ export const BotonInput = styled.div`
 export const HeroImageContainerStyles = styled.div`
 
     width: 40%;
-    z-index: -2;
+    z-index: -2; // ver este z index
     img{
         width: 100%;
         max-width: 400px;

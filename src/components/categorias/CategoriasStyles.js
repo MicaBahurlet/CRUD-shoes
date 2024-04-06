@@ -54,7 +54,7 @@ export const CardCategoria = styled.div`
   align-items: center;
   gap: 0.4rem;
   width: 150px;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1rem;
   border-radius: 20px;
   cursor: pointer;
   font-family: var(--font-family);
