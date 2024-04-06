@@ -1,3 +1,4 @@
+
 import {productos} from "../../data/productos.js";
 import { 
     ProductosContainer, 
@@ -25,7 +26,7 @@ import { useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "../../redux/categories/categoriesSlice";
 
-import { useRef } from "react";
+import { useRef } from "react"; // para la funciónn de doScroll
 
 function CardsProductos( ) {
 
@@ -34,13 +35,19 @@ function CardsProductos( ) {
   const [value, setValue] = useState("");
   const [limit, setLimit] = useState(INITIAL_LIMIT);
 
-  const listOfCategories = useSelector((state) => state.categories.categories).map((category) => category.category);
-  const dispatch = useDispatch();
+  const listOfCategories = useSelector((state) => state.categories.categories).map((category) => category.category); // me trae las categorías y las recorre
+  const dispatch = useDispatch(); 
 
   const handlerSubmit = (e, value) => {
     e.preventDefault();
     const newCategory = value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036F]/g, "").split(" ").join("");
-    const selectedCategory = listOfCategories.find((category) => category.toLowerCase() === newCategory);
+    const selectedCategory = listOfCategories.find((category) => category.toLowerCase() === newCategory); // busca entre toda la lista de categorias y filtra la categoria que coincida con newCategory y la alamecena en selectedCategory validandola
+
+    if (!value.trim()) { // Verifica si el valor está vacío o solo contiene espacios en blanco
+      alert("El campo está vacío. Por favor, ingresa un valor.");
+      return; // Sale de la función si el campo está vacío
+    }
+
     if (selectedCategory) {
       dispatch(selectCategory(selectedCategory));
       // Scroll al ProductosWrapper
@@ -53,8 +60,8 @@ function CardsProductos( ) {
 
   const doScroll = () => {
     window.scrollTo(
-      productRef.current.getBoundingClientRect().x,
-      productRef.current.getBoundingClientRect().y
+      productRef.current.getBoundingClientRect().x, // devuelve la ubicacion X de productRef
+      productRef.current.getBoundingClientRect().y // devuelve la ubicacion Y de productRef
     );
   }
 
@@ -76,7 +83,7 @@ function CardsProductos( ) {
         <ImputContainerStyles>
           <InputStyles
             value={value}
-            onChange={(e) => setValue(e.target.value)}
+            onChange={(e) => setValue(e.target.value)} //a medida de que haya cambios, almacena el value en el estado
             type="text"
             placeholder="Ej. Clasicos..."
             onKeyDown={(e) => {
@@ -89,6 +96,7 @@ function CardsProductos( ) {
             type="submit"
             onClick={(e) => handlerSubmit(e, value)}
             disabled={!value}
+            
           >
             BUSCAR
           </BotonInput>
