@@ -28,6 +28,7 @@ export const HeroTextContainerStyles = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 70%;
+    margin-top: -7rem;
     h1{
         font-size: 3.7rem;
         margin: 10px 0;
