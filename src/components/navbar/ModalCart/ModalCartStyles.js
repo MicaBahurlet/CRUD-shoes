@@ -125,6 +125,7 @@ export const TextContainerStyled = styled.div`
   gap: 5px;
 
   width: 190px;
+  
 `;
 
 export const CardTitleStyled = styled.h3`

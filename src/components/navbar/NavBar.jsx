@@ -89,6 +89,7 @@ const Nav = styled.nav`
   color: white;
   gap: 3rem;
   height: 5rem;
+  /* z-index: 2; */
   
 
   @media (max-width: 768px) {
@@ -173,6 +174,7 @@ const Burger = styled.div`
 const Menu = styled.div`
   display: flex;
   align-items: center;
+  z-index: 3;
 
   a {
     text-decoration: none;

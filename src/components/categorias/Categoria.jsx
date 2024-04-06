@@ -1,12 +1,13 @@
-import { BorderDecoration, CardCategoria } from "./CategoriasStyles"
-
 import { useDispatch, useSelector } from "react-redux";  // me traigo el dispatch porque tengo actions
 import { selectCategory } from "../../redux/categories/categoriesSlice";
 
 
+import { BorderDecoration, CardCategoria } from "./CategoriasStyles"
+
 
 function Categoria( {img,title,category}) {
     const { selectedCategory } = useSelector((state) => state.categories);
+
     const dispatch = useDispatch();
 
 
@@ -24,4 +25,4 @@ function Categoria( {img,title,category}) {
   )
 }
 
-export default Categoria
+export default Categoria;

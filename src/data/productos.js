@@ -124,7 +124,7 @@ export const productos = [
 
     {
         id: 13,
-        title: "TWS F9-5 BTH-F9",
+        title: "F9-5 BTH-F9",
         img: DeportivoProduct,
         category: "Deportivo",
         desc: "El nombre es difícil,pero suenan tremendo",
@@ -133,7 +133,7 @@ export const productos = [
     },
     {
         id: 14,
-        title: "Lenobo Deportivo",
+        title: "Lenobo",
         img: LenoboDeportivo,
         category: "Deportivo",
         desc: "Ideales para correr y actividades al aire libre",

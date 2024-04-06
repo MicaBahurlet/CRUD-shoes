@@ -1,8 +1,3 @@
-
-
-
-
-
 import {productos} from "../../data/productos.js";
 // // import {INITIAL_LIMIT} from "../../utils/constantes.js";
 

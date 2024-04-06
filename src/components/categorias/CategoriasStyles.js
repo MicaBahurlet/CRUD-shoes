@@ -10,7 +10,7 @@ export const CategoriasWrapper = styled.div`
     margin: 0 15px;
     font-family: var(--font-family);
     gap: 3rem;
-    z-index: -2;
+    /* z-index: -1; */
 
     h2 {
         margin-bottom: 3rem;
@@ -59,11 +59,9 @@ export const CardCategoria = styled.div`
   cursor: pointer;
   font-family: var(--font-family);
 
-  background-color: ${({ selected }) =>
-    selected ? 'var(--btn-principal)' : 'var(--background-card)'}; 
+  background-color: ${({ selected }) => selected ? 'var(--btn-principal)' : 'var(--background-card)'}; 
 
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
-
   transition: transform 0.3s ease-in-out;
   transform: scale(1);
 
