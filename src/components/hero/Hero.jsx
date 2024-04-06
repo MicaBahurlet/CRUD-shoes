@@ -8,7 +8,9 @@ import { HeroContainerStyles,
 } from "./HeroStyles"
 
 import { Fade } from "react-awesome-reveal"
-import IMGHero from "../../data/imgProducts/HEROAuris.png"
+// import IMGHero from "../../data/imgProducts/HEROAuris.png"
+
+import ImgHeroPrueba from "../../data/imgProducts/HeroPortImg.png"
 
 
 // import { useState } from "react";
@@ -45,6 +47,10 @@ const Hero = ({doScroll}) => {
 
   return (
     <HeroContainerStyles>
+
+        
+
+      
         <HeroTextContainerStyles>
           <h1>Viví tú música.</h1>
           <h2><strong>Tus auriculares importan</strong></h2>
@@ -75,12 +81,12 @@ const Hero = ({doScroll}) => {
           </ImputContainerStyles> */}
           
         </HeroTextContainerStyles>
-      <HeroImageContainerStyles>
-        <Fade direction="left"  duration={3000} >
-          <img src= {IMGHero} alt="Auriculares Hero"/>
-        </Fade>   
-      </HeroImageContainerStyles>
-
+     
+        <HeroImageContainerStyles>
+          <Fade direction="left"  duration={3000} >
+            <img src= {ImgHeroPrueba} alt="Auriculares Hero"/>
+          </Fade>   
+        </HeroImageContainerStyles>
 
         
 

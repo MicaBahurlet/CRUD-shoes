@@ -9,7 +9,7 @@ import {
 } from "./About";
 
 import Footer from "../../components/footer/Footer";
-import ImgAbout from "../../data/imgProducts/About.png";
+import ImgAbout from "../../data/imgProducts/AurisAbout.png";
 import NavBar from "../../components/navbar/NavBar";
 import { Fade } from "react-awesome-reveal"
 
