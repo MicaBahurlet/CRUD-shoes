@@ -1,69 +1,62 @@
-
-import {productos} from "../../data/productos.js";
-import { 
-    ProductosContainer, 
-    ProductosWrapper, 
-    BorderSeparacion,
-    BotonsWrapper,
-    Boton,
-    BotonVerMenos,
-} from './Product.js';
+import { productos } from "../../data/productos.js";
+import {
+  ProductosContainer,
+  ProductosWrapper,
+  BorderSeparacion,
+  BotonsWrapper,
+  Boton,
+  BotonVerMenos,
+} from "./Product.js";
 
 import {
-    ImputContainerStyles,
-    InputStyles,
-    BotonInput
-} from "../../components/hero/HeroStyles.js"
+  ImputContainerStyles,
+  InputStyles,
+  BotonInput
+} from "../../components/hero/HeroStyles.js";
 
-import CardProductos from "./CardProductos.jsx"
+import CardProductos from "./CardProductos.jsx";
 
-import Footer from "../../components/footer/Footer.jsx"
+import Footer from "../../components/footer/Footer.jsx";
 import NavBar from "../../components/navbar/NavBar";
 
-import Categorias from "../../components/categorias/Categorias.jsx"
+import Categorias from "../../components/categorias/Categorias.jsx";
 
-import { useState} from "react";
+import { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "../../redux/categories/categoriesSlice";
 
-import { useRef } from "react"; // para la funciónn de doScroll
-
-function CardsProductos( ) {
-
+function CardsProductos() {
   const productRef = useRef(); // Referencia del ref
 
   const [value, setValue] = useState("");
   const [limit, setLimit] = useState(INITIAL_LIMIT);
 
-  const listOfCategories = useSelector((state) => state.categories.categories).map((category) => category.category); // me trae las categorías y las recorre
-  const dispatch = useDispatch(); 
+  const selectedCategory = useSelector(
+    (state) => state.categories.selectedCategory
+  );
+
+  const dispatch = useDispatch();
 
   const handlerSubmit = (e, value) => {
     e.preventDefault();
-    const newCategory = value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036F]/g, "").split(" ").join("");
-    const selectedCategory = listOfCategories.find((category) => category.toLowerCase() === newCategory); // busca entre toda la lista de categorias y filtra la categoria que coincida con newCategory y la alamecena en selectedCategory validandola
 
-    if (!value.trim()) { // Verifica si el valor está vacío o solo contiene espacios en blanco
+
+    if (!value.trim()) {
       alert("El campo está vacío. Por favor, ingresa un valor.");
-      return; // Sale de la función si el campo está vacío
+      return;
     }
 
-    if (selectedCategory) {
-      dispatch(selectCategory(selectedCategory));
-      // Scroll al ProductosWrapper
-      doScroll();
-    } else {
-      alert("Ups! la categoría no existe, vuelve a intentar.");
-    }
+    dispatch(selectCategory(value.trim()));
     setValue("");
+    doScroll();
   };
 
   const doScroll = () => {
     window.scrollTo(
-      productRef.current.getBoundingClientRect().x, // devuelve la ubicacion X de productRef
-      productRef.current.getBoundingClientRect().y // devuelve la ubicacion Y de productRef
+      productRef.current.getBoundingClientRect().x,
+      productRef.current.getBoundingClientRect().y
     );
-  }
+  };
 
   const handleVerMas = () => {
     setLimit((prevLimit) => prevLimit + LIMIT_INCREMENT);
@@ -78,38 +71,44 @@ function CardsProductos( ) {
   return (
     <div>
       <NavBar />
-      
-        <Categorias />
-        <ImputContainerStyles>
-          <InputStyles
-            value={value}
-            onChange={(e) => setValue(e.target.value)} //a medida de que haya cambios, almacena el value en el estado
-            type="text"
-            placeholder="Ej. Clasicos..."
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                handlerSubmit(e, value);
-              }
-            }}
-          />
-          <BotonInput
-            type="submit"
-            onClick={(e) => handlerSubmit(e, value)}
-            disabled={!value}
-            
-          >
-            BUSCAR
-          </BotonInput>
-        </ImputContainerStyles>
-        <BorderSeparacion />
-        <ProductosWrapper ref={productRef}> 
-          <h2>Nuestros Auris: </h2>
-          <ProductosContainer>
-            {productos.slice(0, limit).map((prod) => (
+
+      <Categorias />
+      <ImputContainerStyles>
+        <InputStyles
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          type="text"
+          placeholder="Ej. Clasicos..."
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handlerSubmit(e, value);
+            }
+          }}
+        />
+        <BotonInput
+          type="submit"
+          onClick={(e) => handlerSubmit(e, value)}
+          disabled={!value}
+        >
+          BUSCAR
+        </BotonInput>
+      </ImputContainerStyles>
+      <BorderSeparacion />
+      <ProductosWrapper ref={productRef}>
+        <h2>Nuestros Auris: </h2>
+        <ProductosContainer>
+          {productos
+            .filter((prod) =>
+              selectedCategory
+                ? prod.category.toLowerCase().includes(selectedCategory.toLowerCase())
+                : true
+            )
+            .slice(0, limit)
+            .map((prod) => (
               <CardProductos key={prod.id} {...prod} />
             ))}
-          </ProductosContainer>
-        </ProductosWrapper>
+        </ProductosContainer>
+      </ProductosWrapper>
       <BotonsWrapper>
         <BotonVerMenos onClick={handleVerMenos}>Ver menos</BotonVerMenos>
         <Boton onClick={handleVerMas}>Ver más</Boton>
@@ -121,8 +120,6 @@ function CardsProductos( ) {
 
 export default CardsProductos;
 
-// esto es para la paginación, inicia en 4 y suma y resta de a 4
-
 const INITIAL_LIMIT = 4;
 const LIMIT_INCREMENT = 4;
 const LIMIT_DECREMENT = 4;
@@ -130,11 +127,9 @@ const LIMIT_DECREMENT = 4;
 
 
 
-// esto tenía antes del doScroll
+// lo que tenía antes del 7 y funcionaba
 
 // import {productos} from "../../data/productos.js";
-
-
 // import { 
 //     ProductosContainer, 
 //     ProductosWrapper, 
@@ -161,36 +156,43 @@ const LIMIT_DECREMENT = 4;
 // import { useDispatch, useSelector } from "react-redux";
 // import { selectCategory } from "../../redux/categories/categoriesSlice";
 
-
-// import { useRef } from "react";
+// import { useRef } from "react"; // para la funciónn de doScroll
 
 // function CardsProductos( ) {
 
-//   const productRef = useRef(); //referencia del ref
+//   const productRef = useRef(); // Referencia del ref
 
 //   const [value, setValue] = useState("");
 //   const [limit, setLimit] = useState(INITIAL_LIMIT);
 
-
-//   const listOfCategories = useSelector((state) => state.categories.categories).map((category) => category.category);
-//   const dispatch = useDispatch();
+//   const listOfCategories = useSelector((state) => state.categories.categories).map((category) => category.category); // me trae las categorías y las recorre
+//   const dispatch = useDispatch(); 
 
 //   const handlerSubmit = (e, value) => {
 //     e.preventDefault();
 //     const newCategory = value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036F]/g, "").split(" ").join("");
-//     const selectedCategory = listOfCategories.find((category) => category.toLowerCase() === newCategory);
+//     const selectedCategory = listOfCategories.find((category) => category.toLowerCase() === newCategory); // busca entre toda la lista de categorias y filtra la categoria que coincida con newCategory y la alamecena en selectedCategory validandola
+
+//     if (!value.trim()) { // Verifica si el valor está vacío o solo contiene espacios en blanco
+//       alert("El campo está vacío. Por favor, ingresa un valor.");
+//       return; // Sale de la función si el campo está vacío
+//     }
+
 //     if (selectedCategory) {
 //       dispatch(selectCategory(selectedCategory));
-//       // doScroll();
+//       // Scroll al ProductosWrapper
+//       doScroll();
 //     } else {
 //       alert("Ups! la categoría no existe, vuelve a intentar.");
 //     }
 //     setValue("");
+
+    
 //   };
 
 //   const doScroll = () => {
 //     window.scrollTo(
-//       productRef.current.getBoundingClientRect().x,  // devuelve la ubicacion X de productRef
+//       productRef.current.getBoundingClientRect().x, // devuelve la ubicacion X de productRef
 //       productRef.current.getBoundingClientRect().y // devuelve la ubicacion Y de productRef
 //     );
 //   }
@@ -209,13 +211,11 @@ const LIMIT_DECREMENT = 4;
 //     <div>
 //       <NavBar />
       
-
 //         <Categorias />
-
-//         <ImputContainerStyles  doScroll={doScroll} >
+//         <ImputContainerStyles>
 //           <InputStyles
 //             value={value}
-//             onChange={(e) => setValue(e.target.value)}
+//             onChange={(e) => setValue(e.target.value)} //a medida de que haya cambios, almacena el value en el estado
 //             type="text"
 //             placeholder="Ej. Clasicos..."
 //             onKeyDown={(e) => {
@@ -228,30 +228,30 @@ const LIMIT_DECREMENT = 4;
 //             type="submit"
 //             onClick={(e) => handlerSubmit(e, value)}
 //             disabled={!value}
+            
 //           >
 //             BUSCAR
 //           </BotonInput>
 //         </ImputContainerStyles>
-
 //         <BorderSeparacion />
-//       <ProductosWrapper>  
-//         <h2>Nuestros Auris: </h2>
-//         <ProductosContainer ref={productRef} >
-              
-//           {productos.slice(0, limit).map((prod) => (
-//             <CardProductos key={prod.id} {...prod} />
-//           ))}
-//         </ProductosContainer>
-
-
-//       </ProductosWrapper>
-
-
+//         <ProductosWrapper ref={productRef}> 
+//           <h2>Nuestros Auris: </h2>
+//           <ProductosContainer>
+//             {productos.slice(0, limit).map((prod) => (
+//               <CardProductos key={prod.id} {...prod} />
+//             ))}
+//             {/* {productos.filter ((productos) => productos.category === "Deportivo").slice(0, limit).map((productos) => (
+//               <CardProductos key={productos.id} {...productos}  />
+//             ))} */}
+            
+            
+             
+//           </ProductosContainer>
+//         </ProductosWrapper>
 //       <BotonsWrapper>
 //         <BotonVerMenos onClick={handleVerMenos}>Ver menos</BotonVerMenos>
 //         <Boton onClick={handleVerMas}>Ver más</Boton>
 //       </BotonsWrapper>
-
 //       <Footer />
 //     </div>
 //   );
@@ -259,8 +259,7 @@ const LIMIT_DECREMENT = 4;
 
 // export default CardsProductos;
 
-
-// //Valores iniciales para la paginación, quiero que inicie en 4 y que sume de a 4 y reste de a 4
+// // esto es para la paginación, inicia en 4 y suma y resta de a 4
 
 // const INITIAL_LIMIT = 4;
 // const LIMIT_INCREMENT = 4;
@@ -269,142 +268,281 @@ const LIMIT_DECREMENT = 4;
 
 
 
+// // esto tenía antes del doScroll
 
-// ésto es lo que tenía antes y funcionaba
-
-
-
-// import {productos} from "../../data/productos.js";
-// // import {INITIAL_LIMIT} from "../../utils/constantes.js";
-
-// import { 
-//     ProductosContainer, 
-//     ProductosWrapper, 
-//     BorderSeparacion,
-//     BotonsWrapper,
-//     Boton,
-//     BotonVerMenos,
-// } from './Product.js';
-
-// import {
-//     ImputContainerStyles,
-//     InputStyles,
-//     BotonInput
-// } from "../../components/hero/HeroStyles.js"
-
-// import CardProductos from "./CardProductos.jsx"
-
-// import Footer from "../../components/footer/Footer.jsx"
-// import NavBar from "../../components/navbar/NavBar";
-
-// import Categorias from "../../components/categorias/Categorias.jsx"
-
-// import { useState } from "react";
-// import { useDispatch, useSelector } from "react-redux";
-// import { selectCategory } from "../../redux/categories/categoriesSlice";
+// // import {productos} from "../../data/productos.js";
 
 
+// // import { 
+// //     ProductosContainer, 
+// //     ProductosWrapper, 
+// //     BorderSeparacion,
+// //     BotonsWrapper,
+// //     Boton,
+// //     BotonVerMenos,
+// // } from './Product.js';
+
+// // import {
+// //     ImputContainerStyles,
+// //     InputStyles,
+// //     BotonInput
+// // } from "../../components/hero/HeroStyles.js"
+
+// // import CardProductos from "./CardProductos.jsx"
+
+// // import Footer from "../../components/footer/Footer.jsx"
+// // import NavBar from "../../components/navbar/NavBar";
+
+// // import Categorias from "../../components/categorias/Categorias.jsx"
+
+// // import { useState} from "react";
+// // import { useDispatch, useSelector } from "react-redux";
+// // import { selectCategory } from "../../redux/categories/categoriesSlice";
 
 
-// function CardsProductos() {
+// // import { useRef } from "react";
 
-//     const [value,setValue]=useState("");
+// // function CardsProductos( ) {
 
-//     const listOfCategories=useSelector(
-//     (state)=> state.categories.categories)
-//     .map((category)=>category.category);
+// //   const productRef = useRef(); //referencia del ref
 
-//     const dispatch =useDispatch();
+// //   const [value, setValue] = useState("");
+// //   const [limit, setLimit] = useState(INITIAL_LIMIT);
 
-//     const handlerSubmit=(e,value)=>{
-//       e.preventDefault();
 
-//       const newCategory=value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036F]/g, "").split(" ").join("");
+// //   const listOfCategories = useSelector((state) => state.categories.categories).map((category) => category.category);
+// //   const dispatch = useDispatch();
 
-//       const selectedCategory = listOfCategories.find((category)=>category.toLowerCase()=== newCategory);
+// //   const handlerSubmit = (e, value) => {
+// //     e.preventDefault();
+// //     const newCategory = value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036F]/g, "").split(" ").join("");
+// //     const selectedCategory = listOfCategories.find((category) => category.toLowerCase() === newCategory);
+// //     if (selectedCategory) {
+// //       dispatch(selectCategory(selectedCategory));
+// //       // doScroll();
+// //     } else {
+// //       alert("Ups! la categoría no existe, vuelve a intentar.");
+// //     }
+// //     setValue("");
+// //   };
 
-//       if (selectedCategory) {
-//         dispatch(selectCategory(selectedCategory));
-//         doScroll();
-//       } else {
-//         return alert("Ups! la categoría no existe, vuelve a intentar.")
-//       }
+// //   const doScroll = () => {
+// //     window.scrollTo(
+// //       productRef.current.getBoundingClientRect().x,  // devuelve la ubicacion X de productRef
+// //       productRef.current.getBoundingClientRect().y // devuelve la ubicacion Y de productRef
+// //     );
+// //   }
 
-//       setValue("");
-//     };
+// //   const handleVerMas = () => {
+// //     setLimit((prevLimit) => prevLimit + LIMIT_INCREMENT);
+// //   };
 
- 
- 
+// //   const handleVerMenos = () => {
+// //     if (limit > INITIAL_LIMIT) {
+// //       setLimit((prevLimit) => prevLimit - LIMIT_DECREMENT);
+// //     }
+// //   };
 
-//   return (
-//     <div>
-//       <NavBar/>
-//       <ProductosWrapper>
-//         <Categorias/> 
-//         {/* <TextProductos> 
-//                 <h2>La casa es chica pero el corazón es grande.</h2>
-//                 <h3>Nuestros productos serán pocos, pero ofrecemos calidad y garantía.</h3>
-//                 <p>Tan simple como seleccionar un producto y agregar al carrito. No dudes, el mejor precio está en <strong>Auris.</strong> </p>
-//         </TextProductos>   */}
+// //   return (
+// //     <div>
+// //       <NavBar />
+      
 
-//           <ImputContainerStyles>
-//               <InputStyles 
-//                 value={value}
-//                 onChange={(e)=> setValue(e.target.value)}
-//                 type="text" 
-//                 placeholder="Ej. Clasicos..."
-//                 onKeyDown={(e) => {
-//                   if (e.key === 'Enter') {
-//                     handlerSubmit(e, value); // si se presiona la tecla enter llama a handlerSubmit
-//                   }
-//                 }}
+// //         <Categorias />
+
+// //         <ImputContainerStyles  doScroll={doScroll} >
+// //           <InputStyles
+// //             value={value}
+// //             onChange={(e) => setValue(e.target.value)}
+// //             type="text"
+// //             placeholder="Ej. Clasicos..."
+// //             onKeyDown={(e) => {
+// //               if (e.key === "Enter") {
+// //                 handlerSubmit(e, value);
+// //               }
+// //             }}
+// //           />
+// //           <BotonInput
+// //             type="submit"
+// //             onClick={(e) => handlerSubmit(e, value)}
+// //             disabled={!value}
+// //           >
+// //             BUSCAR
+// //           </BotonInput>
+// //         </ImputContainerStyles>
+
+// //         <BorderSeparacion />
+// //       <ProductosWrapper>  
+// //         <h2>Nuestros Auris: </h2>
+// //         <ProductosContainer ref={productRef} >
               
-//               />
-//               <BotonInput
-//                 type="submit"
-//                 onClick={(e) => handlerSubmit(e, value)}
-//                 disabled={!value}
+// //           {productos.slice(0, limit).map((prod) => (
+// //             <CardProductos key={prod.id} {...prod} />
+// //           ))}
+// //         </ProductosContainer>
+
+
+// //       </ProductosWrapper>
+
+
+// //       <BotonsWrapper>
+// //         <BotonVerMenos onClick={handleVerMenos}>Ver menos</BotonVerMenos>
+// //         <Boton onClick={handleVerMas}>Ver más</Boton>
+// //       </BotonsWrapper>
+
+// //       <Footer />
+// //     </div>
+// //   );
+// // }
+
+// // export default CardsProductos;
+
+
+// // //Valores iniciales para la paginación, quiero que inicie en 4 y que sume de a 4 y reste de a 4
+
+// // const INITIAL_LIMIT = 4;
+// // const LIMIT_INCREMENT = 4;
+// // const LIMIT_DECREMENT = 4;
+
+
+
+
+
+// // ésto es lo que tenía antes y funcionaba
+
+
+
+// // import {productos} from "../../data/productos.js";
+// // // import {INITIAL_LIMIT} from "../../utils/constantes.js";
+
+// // import { 
+// //     ProductosContainer, 
+// //     ProductosWrapper, 
+// //     BorderSeparacion,
+// //     BotonsWrapper,
+// //     Boton,
+// //     BotonVerMenos,
+// // } from './Product.js';
+
+// // import {
+// //     ImputContainerStyles,
+// //     InputStyles,
+// //     BotonInput
+// // } from "../../components/hero/HeroStyles.js"
+
+// // import CardProductos from "./CardProductos.jsx"
+
+// // import Footer from "../../components/footer/Footer.jsx"
+// // import NavBar from "../../components/navbar/NavBar";
+
+// // import Categorias from "../../components/categorias/Categorias.jsx"
+
+// // import { useState } from "react";
+// // import { useDispatch, useSelector } from "react-redux";
+// // import { selectCategory } from "../../redux/categories/categoriesSlice";
+
+
+
+
+// // function CardsProductos() {
+
+// //     const [value,setValue]=useState("");
+
+// //     const listOfCategories=useSelector(
+// //     (state)=> state.categories.categories)
+// //     .map((category)=>category.category);
+
+// //     const dispatch =useDispatch();
+
+// //     const handlerSubmit=(e,value)=>{
+// //       e.preventDefault();
+
+// //       const newCategory=value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036F]/g, "").split(" ").join("");
+
+// //       const selectedCategory = listOfCategories.find((category)=>category.toLowerCase()=== newCategory);
+
+// //       if (selectedCategory) {
+// //         dispatch(selectCategory(selectedCategory));
+// //         doScroll();
+// //       } else {
+// //         return alert("Ups! la categoría no existe, vuelve a intentar.")
+// //       }
+
+// //       setValue("");
+// //     };
+
+ 
+ 
+
+// //   return (
+// //     <div>
+// //       <NavBar/>
+// //       <ProductosWrapper>
+// //         <Categorias/> 
+// //         {/* <TextProductos> 
+// //                 <h2>La casa es chica pero el corazón es grande.</h2>
+// //                 <h3>Nuestros productos serán pocos, pero ofrecemos calidad y garantía.</h3>
+// //                 <p>Tan simple como seleccionar un producto y agregar al carrito. No dudes, el mejor precio está en <strong>Auris.</strong> </p>
+// //         </TextProductos>   */}
+
+// //           <ImputContainerStyles>
+// //               <InputStyles 
+// //                 value={value}
+// //                 onChange={(e)=> setValue(e.target.value)}
+// //                 type="text" 
+// //                 placeholder="Ej. Clasicos..."
+// //                 onKeyDown={(e) => {
+// //                   if (e.key === 'Enter') {
+// //                     handlerSubmit(e, value); // si se presiona la tecla enter llama a handlerSubmit
+// //                   }
+// //                 }}
+              
+// //               />
+// //               <BotonInput
+// //                 type="submit"
+// //                 onClick={(e) => handlerSubmit(e, value)}
+// //                 disabled={!value}
                 
               
-//               >BUSCAR</BotonInput>
-//           </ImputContainerStyles>
+// //               >BUSCAR</BotonInput>
+// //           </ImputContainerStyles>
 
           
 
-//           <BorderSeparacion/>
+// //           <BorderSeparacion/>
 
            
 
 
-//         <ProductosContainer>
-//           {productos.map(prod =>(
-//             <CardProductos key={prod.id} {...prod} />
-//           ))}
+// //         <ProductosContainer>
+// //           {productos.map(prod =>(
+// //             <CardProductos key={prod.id} {...prod} />
+// //           ))}
           
 
-//            {/* {Object.entries(productos).map(([,auriculares]) => 
-//               auriculares.map((auris) => <CardProductos key={auris.id} {...auris} /> ) 
-//            )} */}
-//         </ProductosContainer>
+// //            {/* {Object.entries(productos).map(([,auriculares]) => 
+// //               auriculares.map((auris) => <CardProductos key={auris.id} {...auris} /> ) 
+// //            )} */}
+// //         </ProductosContainer>
 
 
-//       </ProductosWrapper>
+// //       </ProductosWrapper>
 
 
-//         <BotonsWrapper>
+// //         <BotonsWrapper>
 
-//             <BotonVerMenos
-//             >Ver menos</BotonVerMenos>
-//             <Boton
+// //             <BotonVerMenos
+// //             >Ver menos</BotonVerMenos>
+// //             <Boton
            
-//             >Ver más</Boton>
-//         </BotonsWrapper>  
+// //             >Ver más</Boton>
+// //         </BotonsWrapper>  
 
-//       <Footer/>
+// //       <Footer/>
 
-//     </div>       
+// //     </div>       
 
-//   )
-// }
+// //   )
+// // }
 
-// export default CardsProductos
+// // export default CardsProductos

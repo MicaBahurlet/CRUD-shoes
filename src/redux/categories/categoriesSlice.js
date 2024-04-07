@@ -1,3 +1,6 @@
+
+
+
 import { createSlice } from '@reduxjs/toolkit';  
 
 import { categorias } from '../../data/categorias.js'; //traigo las categorías de data
@@ -29,3 +32,5 @@ const categoriesSlice = createSlice({
 export const { categories, selectCategory } = categoriesSlice.actions; // las dos funciones para hacer las acciones de los estados. 
 
 export default categoriesSlice.reducer
+
+
