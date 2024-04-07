@@ -10,9 +10,9 @@ import Adolescente1 from "../data/imgOpiniones/Adolescente1.png"
 import Adolescente2 from "../data/imgOpiniones/Adolescente2.png"
 import Adolescente3 from "../data/imgOpiniones/Adolescente3.png"
 
-import AddAdult1 from "../data/imgOpiniones/AddAdult1.jpg"
-import AddAdult2 from "../data/imgOpiniones/AddAdult2.jpg"
-import AddAdult3 from "../data/imgOpiniones/AddAdult3.jpg"
+import AddAdult1 from "../data/imgOpiniones/1AddAdult.png"
+import AddAdult2 from "../data/imgOpiniones/2AddAdult.png"
+import AddAdult3 from "../data/imgOpiniones/3AddAdult.png"
 
 import Estrellas from "../data/imgOpiniones/Estrellas.png"
 import Estrellas2 from "../data/imgOpiniones/clasificacion.png"
