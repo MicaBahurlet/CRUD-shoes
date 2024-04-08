@@ -29,7 +29,7 @@ function About() {
           
                         
                             <AboutImageContainerStyles>
-                                <Fade direction="left"  duration={3000} >
+                                <Fade direction="left"  duration={2000} >
                                     <img src={ImgAbout} alt="About"/>
                                 </Fade>
                             </AboutImageContainerStyles>
@@ -72,7 +72,9 @@ function About() {
                         </ul>
                     </div>
                     <BeneficiosImg> 
-                        <img src={BeneficiosImgAbout} alt="Beneficios de la musica"/>
+                        <Fade direction="right"  duration={2000} >
+                            <img src={BeneficiosImgAbout} alt="Beneficios de la musica"/>
+                        </Fade>    
                     </BeneficiosImg>    
 
                 </BeneficiosMusica>

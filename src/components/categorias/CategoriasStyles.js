@@ -8,7 +8,7 @@ export const CategoriasWrapper = styled.div`
     flex-direction: column;
     max-width: 1300px;
     
-    margin: 0 auto;
+    margin: 3rem auto;
     font-family: var(--font-family);
     gap: 3rem;
     /* z-index: -1; */
