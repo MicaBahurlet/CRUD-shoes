@@ -3,6 +3,10 @@ import jvlProduct from "./imgProducts/InEarFinishProduct.png";
 import ziaomiProduct from "./imgProducts/ZiaomiProduct.png";
 import PilipProduc from "./imgProducts/PilipProduct.png";
 import AirpodProduct from "./imgProducts/AirpodsProduct.png";
+import Deport1 from "./imgProducts/1Deport.png";
+import Deport2 from "./imgProducts/2Deport.png";
+import Deport3 from "./imgProducts/3Deport.png";
+import Deport4 from "./imgProducts/4Deport.png";
 
 //Gamer
 import Gamer10 from "./imgProducts/Gamer10.png";
@@ -10,11 +14,19 @@ import InEarProduct from "./imgProducts/ProductInEar.png";
 import KotionGamer from "./imgProducts/gamerProduct1.png";
 import HylasGaming from "./imgProducts/ProductGamer2.png";
 import NuwoGamer from "./imgProducts/ProductGamer3.png";
+import Gamer1 from "./imgProducts/1Gamer.png";
+import Gamer2 from "./imgProducts/2Gamer.png";
+import Gamer3 from "./imgProducts/3Gamer.png";
+import Gamer4 from "./imgProducts/4Gamer.png";
 
 //Classic
 import DeportivoProduct from "./imgProducts/DeportivoProduct.png";
 import LenoboDeportivo from "./imgProducts/LenovoDeportivo.png";
 import SportProduct from "./imgProducts/ProductDeportivo.png";
+import Clasicos1 from "./imgProducts/1Clasicos.png";
+import Clasicos2 from "./imgProducts/2Clasicos.png";
+import Clasicos3 from "./imgProducts/3Clasicos.png";
+import Clasicos4 from "./imgProducts/4Clasicos.png";
 
 //In-ear
 import ClassicProducts from "./imgProducts/ClassicProduct.png";
@@ -67,7 +79,7 @@ export const productos = [
     },
     {
         id: 6,
-        title: "MichiShi",
+        title: "Walker 3.5",
         img: ClassicProduct,
         category: "Clasicos",
         desc: "El fiel amigo",
@@ -155,6 +167,102 @@ export const productos = [
         desc: "¡Ahoora sí! que suenen esos headshots",
         price: 10000,
     },
+    {
+        id: 17,
+        title: "SonicSon",
+        img: Deport1,
+        category: "Deportivo",
+        desc: "Correr sin límites",
+        price: 1800,
+    },
+    {
+        id: 18,
+        title: "Vinchón",
+        img: Deport2,
+        category: "Deportivo",
+        desc: "La comodidad hecha auricular",
+        price: 5000,
+    },
+    {
+        id: 19,
+        title: "Duatlón",
+        img: Deport3,
+        category: "Deportivo",
+        desc: "No te quedes sin musica",
+        price: 9000,
+    },
+    {
+        id: 20,
+        title: "Energizer",
+        img: Deport4,
+        category: "Deportivo",
+        desc: "Energía para tu deporte",
+        price: 5000,
+    },
+    {
+        id: 21,
+        title: "HeadMusic",
+        img: Gamer1,
+        category: "Gamer",
+        desc: "Ahora con más comodidad",
+        price: 5000,
+    },
+    {
+        id: 22,
+        title: "Hyadron",
+        img: Gamer2,
+        category: "Gamer",
+        desc: "Sonido y calidad de la mano",
+        price: 11000,
+    },
+    {
+        id: 23,
+        title: "Redragón Re",
+        img: Gamer3,
+        category: "Gamer",
+        desc: "Inmersión y realidad",
+        price: 15000,
+    },
+    {
+        id: 24,
+        title: "Transformer",
+        img: Gamer4,
+        category: "Gamer",
+        desc: "Estilo y elegancia ",
+        price: 500,
+    },
+    {
+        id: 25,
+        title: "Sonix",
+        img: Clasicos1,
+        category: "Clasicos",
+        desc: "Sonido de la mejor manera",
+        price: 1000,
+    },
+    {
+        id: 26,
+        title: "Trek",
+        img: Clasicos2,
+        category: "Clasicos",
+        desc: "La mejor marca de sonido",
+        price: 2000,
+    },
+    {
+        id: 27,
+        title: "Psifer",
+        img: Clasicos3,
+        category: "Clasicos",
+        desc: "El cabe es irrompible",
+        price: 3000,
+    },
+    {
+        id: 28,
+        title: "Sonidón",
+        img: Clasicos4,
+        category: "Clasicos",
+        desc: "Como antes, connexión jac 3.5",
+        price: 2280,
+    }
 
 
     
