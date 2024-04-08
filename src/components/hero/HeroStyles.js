@@ -53,9 +53,12 @@ export const HeroTextContainerStyles = styled.div`
     @media (max-width: 968px) {
         align-items: center;
         text-align: center;
+        justify-content: center;
         width: 70;
+        margin-top: 2rem;
         h1{
             font-size: 3rem;
+           
 
         }
         h2 {
