@@ -1,3 +1,4 @@
+
 import { productos } from "../../data/productos.js";
 import {
   ProductosContainer,
@@ -33,6 +34,7 @@ function CardsProductos() {
 
   const selectedCategory = useSelector(
     (state) => state.categories.selectedCategory
+  
     
   );
 
@@ -63,7 +65,7 @@ function CardsProductos() {
     const categoryExists = productos.some(
       (prod) => prod.category.toLowerCase() === normalizedValue
     );
-
+     // Si no existe la categoría
     if (!categoryExists) {
       alert("Ups! No se encontró ninguna categoría. Por favor, intenta una categoría existente.");
       return;
@@ -71,6 +73,7 @@ function CardsProductos() {
 
     dispatch(selectCategory(normalizedValue));
     setValue("");
+
     doScroll();
   };
 
@@ -81,8 +84,11 @@ function CardsProductos() {
     );
   };
 
+
+
   const handleVerMas = () => {
     setLimit((prevLimit) => prevLimit + LIMIT_INCREMENT);
+
   };
 
   const handleVerMenos = () => {
@@ -117,7 +123,7 @@ function CardsProductos() {
         </BotonInput>
       </ImputContainerStyles>
       <BorderSeparacion />
-      <ProductosWrapper ref={productRef}>
+      <ProductosWrapper id="productos-wrapper" ref={productRef}>
         <h2>Nuestros Auris: </h2>
         <ProductosContainer>
           {productos
@@ -133,8 +139,12 @@ function CardsProductos() {
         </ProductosContainer>
       </ProductosWrapper>
       <BotonsWrapper>
-        <BotonVerMenos onClick={handleVerMenos}>Ver menos</BotonVerMenos>
-        <Boton onClick={handleVerMas}>Ver más</Boton>
+        <BotonVerMenos onClick={handleVerMenos}>
+          Ver menos
+        </BotonVerMenos>
+        <Boton onClick={handleVerMas} >
+          Ver más
+        </Boton>
       </BotonsWrapper>
       <Footer />
     </div>
