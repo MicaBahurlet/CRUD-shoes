@@ -21,6 +21,14 @@ export const ContainerStyled = styled(motion.div)`
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);
   color: black;
   font-family: var(--font-family); 
+
+  @media (max-width: 968px){
+    width: 100%;
+    height: 90%;
+    max-width: 400px ;
+    padding:  2rem 1rem;
+
+  }
 `;
 
 export const CloseButtonContainerStyled = styled.div`
@@ -35,6 +43,8 @@ export const CloseButtonContainerStyled = styled.div`
     font-weight: 700;
     font: small;
   }
+
+
 
 `;
 
