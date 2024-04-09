@@ -5,12 +5,13 @@ export const GlobalStyles = createGlobalStyle` //siempre la svastik. Y adentro v
     :root{
         --background-body: #FDFDFD;
         --background-card: #F1EDED;
-        --background-nav: #F9F2F2;
+        --background-nav: black;
         --btn-principal: linear-gradient(82deg,#ffa100,#fb103d);
         --btn-principal-hover: linear-gradient(82deg,#fb103d,#ffa100);
         --btn-secondary: linear-gradient(140deg,#3b3022,#3b2329);
         --btn-secondary-hover: linear-gradient(140deg,#3b2329,#3b3022);
-        --font-family: 'Montserrat', sans-serif;
+        --font-family: 'Montserrat', sans-serif, 'Roboto';
+        --btn-LinkActive:linear-gradient(to top, #0fd850 0%, #f9f047 100%);
 
 
 
