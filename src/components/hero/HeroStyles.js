@@ -18,6 +18,7 @@ export const HeroContainerStyles = styled.div`
         margin-top: 4rem;
         gap: 20px;
         height: 84vh;
+
        
     }
 `;
@@ -146,8 +147,15 @@ export const HeroImageContainerStyles = styled.div`
     }
 
     @media (max-width: 968px) {
+     
+
         img {
-            max-width: 400px;
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
         }
         
     }
