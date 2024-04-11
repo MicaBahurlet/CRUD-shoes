@@ -236,7 +236,7 @@ export const productos = [
         title: "Sonix",
         img: Clasicos1,
         category: "Clasicos",
-        desc: "Sonido de la mejor manera",
+        desc: "Buen sonido",
         price: 1000,
     },
     {

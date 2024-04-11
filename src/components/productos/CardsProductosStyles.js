@@ -51,7 +51,7 @@ export const CardProducto = styled.div`
     
 
     img{
-        max-width: 100px;
+        max-width: 90px;
         border-radius: 15px;
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     }

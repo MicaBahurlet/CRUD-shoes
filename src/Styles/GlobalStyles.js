@@ -40,5 +40,7 @@ export const GlobalStyles = createGlobalStyle` //siempre la svastik. Y adentro v
 
     }
 
+    
+
 
 `;

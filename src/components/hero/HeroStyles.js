@@ -34,7 +34,9 @@ export const HeroTextContainerStyles = styled.div`
         font-size: 3.7rem;
         margin: 10px 0;
         font-family: var(--font-family);
-        text-shadow: 1px 1px 1px #000;
+        text-shadow: 1.2px 1px 1px #000;
+        color: #1E1E1E;
+        
 
     }
     
@@ -42,12 +44,14 @@ export const HeroTextContainerStyles = styled.div`
         font-size: 1.5rem;
         margin: 10px 0;
         font-family: var(--font-family);
+        color: #1E1E1E;
     }
     p{
         font-size: 1.2rem;
         font-family: var(--font-family);
         line-height: 1.2;
         margin-bottom: 4rem;
+        color: #1E1E1E;
     }
 
 
@@ -59,14 +63,16 @@ export const HeroTextContainerStyles = styled.div`
         margin-top: 2rem;
         h1{
             font-size: 3rem;
-           
+            color: #1E1E1E;
 
         }
         h2 {
             font-size: 1.5rem;
+            color: #1E1E1E;
         }
         p {
             font-size: 1rem;
+            color: #1E1E1E;
         }
     }
 
@@ -77,7 +83,7 @@ export const ImputContainerStyles = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
     
     gap: 2rem;
 
@@ -110,10 +116,12 @@ export const BotonInput = styled.div`
     border-radius: 10px;
     cursor: pointer;
     /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
-    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
-    color: black;
+    /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
+    background-color: #91f94D;
+    
+    color: #1E1E1E;
     font-weight: bold;
-    border: 0.5px solid black;
+    border: 0.5px solid  #1E1E1E;
     font-family:  var(--font-family) ;
 
 

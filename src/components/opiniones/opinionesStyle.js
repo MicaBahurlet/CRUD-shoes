@@ -9,7 +9,7 @@ export const RecomendadosWrapper = styled.div`
   margin-bottom: 5rem;
 
   h2 {
-    color: black;
+    color: #1E1E1E;
   }
 
   @media (max-width: 768px) {
@@ -25,6 +25,7 @@ export const RecomendadosContainer = styled.div`
   align-items: center;
   gap: 15px;
   user-select: none;
+  
 
 
   img {
@@ -76,7 +77,7 @@ export const CardRecomendados = styled.div`
   h3 {
     font-size: 19px;
     font-weight: bold;
-    color: black;
+    color: #1E1E1E;
   }
 
   p {
