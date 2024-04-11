@@ -3,16 +3,17 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle` //siempre la svastik. Y adentro vamos a poner todos los estilos globales. Ver si luego necesito un reset de de box sizing, margin y padding. 
 
     :root{
+
+
         --background-body: #FDFDFD;
         --background-card: #F1EDED;
-        --background-nav: black;
-        --btn-principal: linear-gradient(82deg,#ffa100,#fb103d);
-        --btn-principal-hover: linear-gradient(82deg,#fb103d,#ffa100);
-        --btn-secondary: linear-gradient(140deg,#3b3022,#3b2329);
-        --btn-secondary-hover: linear-gradient(140deg,#3b2329,#3b3022);
-        --font-family: 'Montserrat', sans-serif, 'Roboto';
-        --btn-LinkActive:linear-gradient(to top, #0fd850 0%, #f9f047 100%);
 
+        --background-nav: #1E1E1E;
+        --btn-LinkActive:#abdb25;
+
+       
+        --font-family: 'Montserrat', sans-serif, 'Roboto';
+        --btn-Background: #abdb25;
 
 
     }

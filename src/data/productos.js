@@ -212,7 +212,7 @@ export const productos = [
         title: "Hyadron",
         img: Gamer2,
         category: "Gamer",
-        desc: "Sonido y calidad de la mano",
+        desc: "Calidad",
         price: 11000,
     },
     {

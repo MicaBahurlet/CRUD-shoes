@@ -41,7 +41,7 @@ export const CardProducto = styled.div`
     padding: 2rem 0.5rem;
     background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
     border-radius: 50px;
-    cursor: pointer;
+    
     font-family: var(--font-family);
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     h2{

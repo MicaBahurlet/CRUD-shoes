@@ -67,12 +67,11 @@ export const Textarea = styled.textarea`
   border-radius: 10px;
 `;
 
-export const Boton = styled.div`
+export const BotonEnviar = styled.div`
   padding: 10px 20px;
   font-size: 12px;
-  /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
-  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
-  color: #ffffff;
+  background-color: var( --btn-Background);
+
   border: 1px solid black;
   border-radius: 10px;
   cursor: pointer;
@@ -80,12 +79,8 @@ export const Boton = styled.div`
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
   font-size: 1.2rem;
   font-weight: 400;
-  z-index: -2 ;
+  /* z-index: -2 ; */
 
-  /* Estilo al pasar el ratón por encima */
-  &:hover {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  }
 
 `;
 

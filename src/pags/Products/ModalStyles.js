@@ -7,10 +7,9 @@ export const ModalContainer = styled.div`
     text-align: center;
     justify-content: center;
     width: 100%;
-    color: white;
-    background-color: green;
-    /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); */
-    /* color: black; */
+    color: black;
+    background-color: var( --btn-Background);
+  
     position: fixed;
     bottom: 0;
     width: 100%;

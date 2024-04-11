@@ -49,8 +49,8 @@ export const HeroTextContainerStyles = styled.div`
     p{
         font-size: 1.2rem;
         font-family: var(--font-family);
-        line-height: 1.2;
-        margin-bottom: 4rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
         color: #1E1E1E;
     }
 
@@ -84,8 +84,9 @@ export const ImputContainerStyles = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    
+
     gap: 2rem;
+    
 
     @media (max-width: 968px) {
         flex-direction: column;
@@ -117,7 +118,7 @@ export const BotonInput = styled.div`
     cursor: pointer;
     /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
     /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
-    background-color: #91f94D;
+    background-color: var(--btn-Background);
     
     color: #1E1E1E;
     font-weight: bold;
@@ -125,9 +126,9 @@ export const BotonInput = styled.div`
     font-family:  var(--font-family) ;
 
 
-    &:hover {
+    /* &:hover {
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    }
+    } */
 
     @media (max-width: 968px) {
         max-width: 9rem;

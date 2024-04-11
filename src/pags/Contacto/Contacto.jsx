@@ -5,7 +5,7 @@ import {
   Etiqueta,
   Input,
   Textarea,
-  Boton,
+  BotonEnviar,
   GrupoEtiquetaInput,
   Errormessage,
 } from './Contacto';
@@ -85,7 +85,9 @@ export default function Contacto() {
             {touched.mensaje && errors.mensaje && <Errormessage>{errors.mensaje}</Errormessage>}
           </GrupoEtiquetaInput>
 
-          <Boton type="submit">Enviar</Boton>
+          <BotonEnviar type="submit" 
+            onClick={() => alert("Su mensaje ha sido enviado con exito. Gracias por contactarnos.")}
+          >Enviar</BotonEnviar>
         </Formulario>
       </ContactoContainer>
       <Footer />

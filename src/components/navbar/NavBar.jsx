@@ -88,7 +88,7 @@ const Nav = styled.nav`
   /* background-color: black; */
   /* background-color: gainsboro; */
   /* background-color: #1E1E1E; */
-  background-color: #1E1E1E;
+  background-color: var(--background-nav);
   color: white;
   gap: 3rem;
   height: 5rem;
@@ -219,7 +219,8 @@ const Menu = styled.div`
     font-weight: 700;
     /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
     /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
-    background-color: #7EF918;
+    /* background-color: #7EF918; */
+    background-color: var(--btn-LinkActive);
     border-radius: 10px;
     padding: 9px 15px;
     color: black;

@@ -68,7 +68,7 @@ export const ProductosContainer = styled.div`
 
 
 export const CardProducto = styled.div` 
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -188,7 +188,9 @@ export const Boton = styled.div`
     font-size: 15px;
     /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
 
-    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
+     /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
+     background-color: var( --btn-Background);
     color: #ffffff;
     border: 1px solid black;
     border-radius: 10px;
@@ -280,7 +282,9 @@ export const BotonBuy = styled.div`
     font-size: 15px;
     /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
 
-    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
+     /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
+     background-color: var( --btn-Background);
     color: #ffffff;
     border: 1px solid black;
     border-radius: 10px;
