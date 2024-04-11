@@ -216,7 +216,7 @@ const Menu = styled.div`
 
   .active {
    /* border-bottom: 3px solid greenyellow;  */
-    font-weight: 700;
+    font-weight: 500;
     /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
     /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
     /* background-color: #7EF918; */

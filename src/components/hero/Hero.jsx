@@ -10,7 +10,7 @@ import { HeroContainerStyles,
 import { Fade } from "react-awesome-reveal"
 // import IMGHero from "../../data/imgProducts/HEROAuris.png"
 
-import ImgHeroPrueba from "../../data/imgProducts/HeroPortImg.png"
+import ImgHeroPrueba from "../../data/imgProducts/ImgtoHero.png"
 
 
 // import { useState } from "react";
