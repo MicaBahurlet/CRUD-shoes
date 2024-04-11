@@ -29,7 +29,7 @@ export const NoPage = styled.div`
     }
 
     button {
-        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+        background-color: var(--btn-Background);
         border-radius: 10px;
         padding: 1rem;
         border: transparent;
@@ -44,9 +44,9 @@ export const NoPage = styled.div`
        
     }
 
-    button:hover {
+    /* button:hover {
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    }
+    } */
 
     @media (max-width: 768px) {
         

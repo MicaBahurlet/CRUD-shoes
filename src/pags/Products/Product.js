@@ -167,7 +167,7 @@ export const BorderSeparacion = styled.div`
     width: 70%;
     margin:  6rem auto;
     margin-bottom: 2rem;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-image: var(--borderSeparation);
     border-radius: 15px;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
 `;
@@ -280,11 +280,8 @@ export const BotonBuy = styled.div`
     justify-content: flex-start;
     align-items: center;
     font-size: 15px;
-    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
 
-    /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
-     /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
-     background-color: var( --btn-Background);
+    background-color: var( --btn-Background);
     color: #ffffff;
     border: 1px solid black;
     border-radius: 10px;
@@ -296,27 +293,3 @@ export const BotonBuy = styled.div`
     max-width: 7rem;
 `;
 
-
-
-// export const ModalContainer = styled.div`
-//     padding: 15px 0px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     color: white;
-//     background-color: #00A97F;
-//     position: fixed;
-//     bottom: 0;
-//     width: 100%;
-//     transition: all 0.5s ease-out;
-//     transform: translateY(200%);
-//     -webkit-transform: translateY(200%);
-//     -moz-transform: translateY(200%);
-//     -ms-transform: translateY(200%);
-//     -o-transform: translateY(200%);
-
-//     &.activeModal {
-//         transform: translateY(0);
-//         transition: all 0.5s ease-in;
-//     }
-// `;

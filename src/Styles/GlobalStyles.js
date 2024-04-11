@@ -4,7 +4,6 @@ export const GlobalStyles = createGlobalStyle` //siempre la svastik. Y adentro v
 
     :root{
 
-
         --background-body: #FDFDFD;
         --background-card: #F1EDED;
 
@@ -16,6 +15,8 @@ export const GlobalStyles = createGlobalStyle` //siempre la svastik. Y adentro v
         --btn-Background: #abdb25;
 
         --bubble-cart: #e0bc00;
+
+        --borderSeparation: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 
 
     }

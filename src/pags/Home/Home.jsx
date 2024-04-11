@@ -27,8 +27,10 @@ export function Home() {
 
     return (
         <>
+            <NavBar/> 
             <HomeContainer>
-                <NavBar/> 
+                
+                
                 <Layout>
                     <Hero/>
 

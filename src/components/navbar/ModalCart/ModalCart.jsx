@@ -84,7 +84,7 @@ const ModalCart = () => {
                 color="black"
                 fontWeight={"bold"}
                 
-              > x
+              > 
                 <MdOutlineClose size="24px"  style={{ color: "black" }}  />
               </CloseButtonStyled>
             </CloseButtonContainerStyled>

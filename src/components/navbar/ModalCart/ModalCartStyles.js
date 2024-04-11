@@ -190,7 +190,7 @@ export const ButtonContainerStyled = styled(SubtotalStyled)`
   & button {
     color: black;
     padding: 1rem 1rem;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-color: var(--btn-Background);
     border-radius: 10px;
     font-weight: 700;
     padding: 10px 10px;
