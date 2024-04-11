@@ -15,6 +15,8 @@ export const GlobalStyles = createGlobalStyle` //siempre la svastik. Y adentro v
         --font-family: 'Montserrat', sans-serif, 'Roboto';
         --btn-Background: #abdb25;
 
+        --bubble-cart: #e0bc00;
+
 
     }
 

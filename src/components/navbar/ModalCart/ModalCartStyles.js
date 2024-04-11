@@ -57,7 +57,7 @@ export const CloseButtonStyled = styled(motion.button)`  //acá es el btn de cie
   outline: none;
   border: none;
   border-radius: 10px;
-  background: var(--btn-gradient);
+  background: var(--btn-Background);
   color : black !important;
   font-weight: 900;
   cursor: pointer;
@@ -108,13 +108,15 @@ export const ProductsWrapperStyled = styled.div`
   }
 `;
 
+//card de producto
+
 export const ProductContainerStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
   width: 360px;
-  height: 90px;
+  height: 130px;
 
   background: var(--gray-bg);
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
@@ -132,7 +134,7 @@ export const ProductContainerStyled = styled.div`
 export const TextContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 
   width: 190px;
   
@@ -141,7 +143,7 @@ export const TextContainerStyled = styled.div`
 export const CardTitleStyled = styled.h3`
   margin: 0;
   margin-bottom: 2px;
-  font-weight: 500;
+  font-weight: 800;
 `;
 
 export const TextStyled = styled.p`
@@ -151,9 +153,9 @@ export const TextStyled = styled.p`
 `;
 
 export const PriceStyled = styled.span`
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.2rem;
-  background: var(--btn-gradient);
+  background: var(--btn-gradient); //elegir color para el price
 
 `;
 
@@ -167,10 +169,13 @@ export const PriceContainerStyled = styled.div`
   }
 `;
 
+
+
 export const SubtotalStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5px;
 `;
 
 export const EnvioStyled = styled(SubtotalStyled)``;

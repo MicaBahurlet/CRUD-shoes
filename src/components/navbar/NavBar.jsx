@@ -280,6 +280,8 @@ const Menu = styled.div`
   }
 `;
 
+//bubble nav cart
+
 export const CartNavStyled = styled.div`
   position: relative;
   cursor: pointer;
@@ -292,13 +294,14 @@ export const CartNavStyled = styled.div`
     height: 20px;
     width: 20px;
     text-align: center;
+    justify-content: center;
 
     
 
     border-radius: 1rem;
     border: 1px solid green;
     color: white;
-    background-color: greenyellow;
+    background-color: var(--btn-Background); //color bubble
     font-family: var(--font-family);
     font-size: 0.8rem;
     font-weight: 600;
