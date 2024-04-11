@@ -33,3 +33,29 @@ export const FooterContainerStyles = styled.div`
 
 
 `;
+
+export const PagosContainerStyles = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+
+    p {
+        font-family: var(--font-family);
+        color: white;
+    }
+
+    img {
+        width: 50px;
+        border-radius: 10px;
+    }
+
+
+
+
+
+`

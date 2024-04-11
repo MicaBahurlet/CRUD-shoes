@@ -27,7 +27,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "../../redux/categories/categoriesSlice";
 
 function CardsProductos() {
-  const productRef = useRef(); // Referencia del ref
+  const productRef = useRef(); // Referencia del ref para el doScroll
 
   const [value, setValue] = useState("");
   const [limit, setLimit] = useState(INITIAL_LIMIT);
@@ -60,21 +60,21 @@ function CardsProductos() {
       return;
     }
 
-    // Verificar si la categoría ingresada está en la lista de categorías
+    // Verificar si la categoría ingresada está en la lista de categorías de Auris
     const normalizedValue = value.trim().toLowerCase();
     const categoryExists = productos.some(
       (prod) => prod.category.toLowerCase() === normalizedValue
     );
      // Si no existe la categoría
     if (!categoryExists) {
-      alert("Ups! No se encontró ninguna categoría. Por favor, intenta una categoría existente.");
+      alert("Ups! No se encontró ninguna categoría. Por favor, intenta con una categoría existente.");
       return;
     }
 
     dispatch(selectCategory(normalizedValue));
     setValue("");
 
-    doScroll();
+    doScroll(); // Realizar scroll al ProductWrapper
   };
 
   const doScroll = () => {
@@ -88,6 +88,9 @@ function CardsProductos() {
 
   const handleVerMas = () => {
     setLimit((prevLimit) => prevLimit + LIMIT_INCREMENT);
+    
+
+
 
   };
 
@@ -95,6 +98,7 @@ function CardsProductos() {
     if (limit > INITIAL_LIMIT) {
       setLimit((prevLimit) => prevLimit - LIMIT_DECREMENT);
     }
+    
   };
 
   return (
@@ -142,7 +146,9 @@ function CardsProductos() {
         <BotonVerMenos onClick={handleVerMenos}>
           Ver menos
         </BotonVerMenos>
-        <Boton onClick={handleVerMas} >
+        <Boton onClick={handleVerMas} 
+        //  disabled = {limit >= productos.length} ver por qué no funciona
+        >
           Ver más
         </Boton>
       </BotonsWrapper>

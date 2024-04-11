@@ -1,4 +1,8 @@
-import {FooterContainerStyles} from './FooterStyles.js' 
+import {
+  FooterContainerStyles,
+  PagosContainerStyles
+
+} from './FooterStyles.js' 
 import LogoImg from '../../data/imgProducts/LogoFinish.png';
 
 
@@ -14,7 +18,21 @@ function footer() {
       <div>
         
         <p>Todos los derechos reservados ®</p>
+
       </div>
+      <PagosContainerStyles>
+        <p>Medios de pago:</p>
+
+        <div>
+
+          <img src="https://img.icons8.com/color/48/000000/visa.png"/>
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png"/>
+          <img src="https://img.icons8.com/color/48/000000/mercado-pago.png"/>
+          <img src="https://img.icons8.com/color/48/000000/paypal.png"/>
+        </div>
+
+      </PagosContainerStyles>
+
     </FooterContainerStyles>
   )
 }
