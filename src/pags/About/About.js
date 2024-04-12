@@ -16,6 +16,8 @@ export const AboutContainer = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        max-width: 380px;
         
         
     }
@@ -110,6 +112,7 @@ export const HistoriaAbout = styled.div`
         align-items: center;
         justify-content: center;
         text-align: start;
+        max-width: 380px;
         
         p {
             width: 100%;
@@ -152,6 +155,7 @@ export const MisionAbout = styled.div`
         align-items: center;
         justify-content: center;
         text-align: start;
+        max-width: 380px;
         
         p {
             width: 100%;
@@ -189,11 +193,12 @@ export const BeneficiosMusica = styled.div`
     }
 
     @media (max-width: 968px) {
-        margin: 0 auto;
+        margin: 2 auto;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: start;
+        max-width: 380px;
 
         h2 {
             margin: 0 auto;
@@ -203,8 +208,9 @@ export const BeneficiosMusica = styled.div`
         ul {
             width: 100%;
             height: auto;
-            max-width: 380px;
+            max-width: 350px;
             text-align: start;
+            margin-top: 3rem;
         }
     }
 
@@ -220,13 +226,13 @@ export const BeneficiosImg = styled.div`
     img{
         width: 100%;
         max-width: 300px;
-        padding-bottom: 75px;
+       
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
         border-radius: 10px;
     }
 
     @media (max-width: 968px) {
-        max-width: 200px;
+        max-width: 300px;
     }
 
 `;
