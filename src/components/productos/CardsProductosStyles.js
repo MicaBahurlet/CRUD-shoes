@@ -10,8 +10,12 @@ export const ProductosWrapper = styled.div`
     margin-top: 4rem;
    
     @media (max-width:768px){
-        padding-top: 30px;
+
         text-align: center;
+        width: 100%;
+        height: auto;
+        max-width: 380px;
+        margin-top: 2rem;
     };
 
 `;
@@ -27,6 +31,15 @@ export const ProductosContainer = styled.div`
     gap: 20px;
     user-select:none;
     margin-bottom: 4rem;
+
+    @media (max-width:768px){
+
+        text-align: center;
+        width: 100%;
+        height: auto;
+        max-width: 380px;
+        margin-top: 2rem;
+    };
     
 `;
 
@@ -37,7 +50,9 @@ export const CardProducto = styled.div`
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    width: 220px;
+    width: 100%;
+    height: auto;
+    max-width: 220px;
     padding: 2rem 0.5rem;
     background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
     border-radius: 50px;
@@ -59,13 +74,14 @@ export const CardProducto = styled.div`
         text-align: center;
     }
 
+    @media (max-width:768px){
+
+        text-align: center;
+        width: 100%;
+        height: auto;
+        max-width: 380px;
+
+    };
+
 `;
 
-export const BorderDecorationProducto = styled.div`
-
-    height: 7px;
-    width: 30%;
-    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-    border-radius: 15px;
-    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
-`;

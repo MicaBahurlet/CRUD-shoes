@@ -20,8 +20,12 @@ export const CategoriasWrapper = styled.div`
 
 
     @media (max-width:768px){
-        padding-top: 30px;
+
         text-align: center;
+        gap: 1rem;
+        width: 100%;
+        max-width: 390px;
+        height: auto;
     };
 
 `;
@@ -44,6 +48,15 @@ export const CategoriasContainer = styled.div`
     img:hover {
         transform: scale(1.2); 
     }
+
+    @media (max-width:768px){
+
+      text-align: center;
+      gap: 1rem;
+      width: 100%;
+      max-width: 390px;
+      height: auto;
+    };
     
 `;
 
@@ -71,11 +84,10 @@ export const CardCategoria = styled.div`
   }
 
   img {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
-    /* Eliminar la siguiente línea */
-    /* transition: transform 0.7s ease; */
+
   }
 
   h2 {
@@ -83,49 +95,26 @@ export const CardCategoria = styled.div`
     margin-top: 1rem;
     text-align: center;
   }
+
+  @media (max-width:768px){
+    width: 100%;
+    height: auto;
+    max-width: 130px; // el ancho de la card en mobile
+
+    img {
+      max-width: 70%;
+    }
+
+  };
 `;
 
 
-
-// export const CardCategoria = styled.div` //Acá tenía un motion que supuestamente es de framer-motion//
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 0.5rem;
-//     width: 220px;
-//     padding: 2rem 0.5rem;
-    
-//     background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'};
-//     border-radius: 100px;
-//     cursor: pointer;
-//     font-family: var(--font-family);
-//     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
-//     z-index: -2;
-
-
-    
-//     h2{
-//         font-size: 1rem;
-//         font-family: var(--font-family);
-//     }
-//     img{
-//         max-width: 100px;
-//         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
-//         transition: transform 0.7s ease;
-//     }
-//     img:hover {
-//         transform: scale(1.2); 
-//     }
-    
-
-// `;
 
 export const BorderDecoration = styled.div`
 
     height: 5px;
     width: 30%;
-   /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+
    background-color: black;
     border-radius: 15px;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
