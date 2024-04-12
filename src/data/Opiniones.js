@@ -29,7 +29,7 @@ export const opiniones = [
         id: 2,
         img: Adolecente,
         name: "Lucas Raul",
-        desc: "Se complicó el envío y me super ayudaron, recomendable",
+        desc: "Se complicó el envío y me super ayudaron.",
         Punt: Estrellas2
     },
     {

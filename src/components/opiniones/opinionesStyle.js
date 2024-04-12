@@ -13,7 +13,7 @@ export const OpininonesWrapper = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding-top: 30px;
+    padding-top: 4rem;
     text-align: center;
     max-width: 400px;
   }

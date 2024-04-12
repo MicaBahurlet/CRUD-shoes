@@ -157,12 +157,12 @@ export const HeroImageContainerStyles = styled.div`
 
         img {
             display: flex;
-            
             width: 100%;
             max-width: 700px;
             margin: 0 auto;
             justify-content: center;
             align-items: center;
+            margin-top: 2rem;
             
         }
         

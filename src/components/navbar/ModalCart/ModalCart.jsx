@@ -91,7 +91,7 @@ const ModalCart = () => {
 
             <MainContainerStyled>
               <TitleStyled>
-                <h1>Tus Productos</h1>
+                <h2>Tus Productos:</h2>
               </TitleStyled>
 
               <ProductsWrapperStyled>
