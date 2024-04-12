@@ -98,11 +98,11 @@ export const CardCategoria = styled.div`
 
   @media (max-width:768px){
     width: 100%;
-    height: auto;
+    height: 150px;
     max-width: 130px; // el ancho de la card en mobile
 
     img {
-      max-width: 70%;
+      max-width: 50%;
     }
 
   };
