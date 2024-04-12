@@ -11,8 +11,8 @@ export const ContainerStyled = styled(motion.div)`
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
-
-  width: 440px;
+  width: 100%;
+  max-width: 440px;
   height: calc(100vh - 4rem);
 
   padding: 2rem;
@@ -24,9 +24,9 @@ export const ContainerStyled = styled(motion.div)`
 
   @media (max-width: 968px){
     width: 100%;
-    height: 90%;
-    max-width: 400px ;
-    padding:  2rem 1rem;
+    height: 92%;
+    max-width: 360px ; // width del modal cart
+      
 
   }
 `;
@@ -103,8 +103,11 @@ export const ProductsWrapperStyled = styled.div`
     display: none;
   }
 
-  @media (max-height: 800px) {
+  @media (max-width: 968px) {
+    width: 100%;
+    max-width: 300px;
     height: 235px;
+
   }
 `;
 
@@ -115,7 +118,9 @@ export const ProductContainerStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  width: 360px;
+  width: 100%;
+
+  max-width: 360px;
   height: 130px;
 
   background: var(--gray-bg);
@@ -129,6 +134,15 @@ export const ProductContainerStyled = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
+  @media (max-width: 968px) {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+
+
+
+
+  }
 `;
 
 export const TextContainerStyled = styled.div`
@@ -136,7 +150,7 @@ export const TextContainerStyled = styled.div`
   flex-direction: column;
   gap: 8px;
 
-  width: 190px;
+  width: 200px;
   
 `;
 
@@ -155,7 +169,11 @@ export const TextStyled = styled.p`
 export const PriceStyled = styled.span`
   font-weight: 700;
   font-size: 1.2rem;
-  background: var(--btn-gradient); //elegir color para el price
+  color: green; // ver si me gusta este color
+  /* background: var(--btn-Background); //elegir color para el price
+  border-radius: 10px;
+  padding: 3px;
+  max-width: 4rem; */
 
 `;
 
@@ -175,7 +193,7 @@ export const SubtotalStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
 `;
 
 export const EnvioStyled = styled(SubtotalStyled)``;
@@ -193,7 +211,7 @@ export const ButtonContainerStyled = styled(SubtotalStyled)`
     background-color: var(--btn-Background);
     border-radius: 10px;
     font-weight: 700;
-    padding: 10px 10px;
+    padding: 12px 12px;
   }
 `;
 
