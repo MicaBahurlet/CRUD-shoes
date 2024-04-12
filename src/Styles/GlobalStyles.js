@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle` 
 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    
+
     :root{
 
         --background-body: #FDFDFD;
@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
         --btn-LinkActive:#abdb25;
 
        
-        --font-family: 'Montserrat', sans-serif, 'Roboto';
+        --font-family: 'Montserrat', sans-serif;
         --btn-Background: #abdb25;
 
         --bubble-cart: #e0bc00;
