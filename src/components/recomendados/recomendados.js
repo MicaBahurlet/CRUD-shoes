@@ -28,7 +28,7 @@ export const RecomendadosWrapper = styled.div`
         padding-top: 30px;
         text-align: center;
         width: 100%;
-        max-width: 400px;
+        max-width: 380px;
     };
 
 `;
@@ -55,6 +55,7 @@ export const RecomendadosContainer = styled.div`
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        max-width: 380px;
         
     }
 `;
@@ -72,8 +73,6 @@ export const CardRecomendados = styled.div`
 
   padding: 2px;
 
-  /* background-color: ${({selected}) => selected ? 'var(--btn-principal)' : 'var(--background-card)'}; */
-  /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); */
 
   background-color: whitesmoke;
   border-radius: 20px;
@@ -130,9 +129,7 @@ export const BotonBuy = styled.div`
     justify-content: flex-start;
     align-items: center;
     font-size: 15px;
-    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
 
-    /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
     background-color: var( --btn-Background);
    
     color: #ffffff;
@@ -151,7 +148,7 @@ export const Boton = styled.button`
     justify-content: center;
     align-items: center;
     font-size: 7px;
-    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+
     background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
     
     border: none;

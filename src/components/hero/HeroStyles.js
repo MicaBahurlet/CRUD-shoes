@@ -116,8 +116,7 @@ export const BotonInput = styled.div`
     border: 1px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
-    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
-    /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
+  
     background-color: var(--btn-Background);
     
     color: #1E1E1E;
@@ -125,10 +124,6 @@ export const BotonInput = styled.div`
     border: 0.5px solid  #1E1E1E;
     font-family:  var(--font-family) ;
 
-
-    /* &:hover {
-        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    } */
 
     @media (max-width: 968px) {
         max-width: 9rem;
@@ -142,13 +137,11 @@ export const BotonInput = styled.div`
 
 export const HeroImageContainerStyles = styled.div`
 
-    width: 50%;
+    width: 50%; // para que compartan el 50% del contenedor
     z-index: -2; // ver este z index
     padding-right: 10rem;
     img{
-        /* width: 100%; */
-        /* max-width: 400px; */
-        /* padding-bottom: 75px; */
+
         width: 1000px;
         
         filter: drop-shadow(3px 3px 5px rgba (0, 0, 0, 0.2));
@@ -156,15 +149,21 @@ export const HeroImageContainerStyles = styled.div`
     }
 
     @media (max-width: 968px) {
+        width: 100%;
+        padding-right: 0;
+        max-width: 400px;
+
      
 
         img {
             display: flex;
+            
             width: 100%;
+            max-width: 700px;
             margin: 0 auto;
             justify-content: center;
             align-items: center;
-            max-width: 500px;
+            
         }
         
     }

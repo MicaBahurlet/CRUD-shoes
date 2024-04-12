@@ -27,7 +27,7 @@ export const FooterContainerStyles = styled.div`
     }
     @media (max-width: 768px) {
         flex-direction: column;
-        height: 16rem;
+        height: 20rem;
     }
 
 

@@ -1,4 +1,4 @@
-import { RecomendadosContainer, RecomendadosWrapper } from "./opinionesStyle";
+import { OpinionesContainer, OpininonesWrapper } from "./opinionesStyle";
 import Opiniones from './CardOpinion';
 import { useSelector, useDispatch } from 'react-redux';
 import { randomOpinion } from '../../redux/opininones/opinionesSlice'; 
@@ -13,30 +13,30 @@ function OpinionesCompra() {
   // };
 
   return (
-    <RecomendadosWrapper>
+    <OpininonesWrapper>
       <h2>Experiencias de compra: </h2>
 
       
-      <RecomendadosContainer>
+      <OpinionesContainer>
         {opiniones.map(opinion => (
           <Opiniones key={opinion.id} {...opinion} />
         ))}
-      </RecomendadosContainer>
+      </OpinionesContainer>
 
       {/* <BotonRecargar className='BotonRecargar' onClick={handleReloadOpinions}>SABER MAS</BotonRecargar> */}
       
-    </RecomendadosWrapper>
+    </OpininonesWrapper>
   );
 }
 
 export default OpinionesCompra;
 
-export const BotonRecargar = styled.button`
+// export const BotonRecargar = styled.button`
   
-  max-width: 12rem;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  font-size: 12px;
+//   max-width: 12rem;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 0 auto;
+//   font-size: 12px;
 
-`
+// `

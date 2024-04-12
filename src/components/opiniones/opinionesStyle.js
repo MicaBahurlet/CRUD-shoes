@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const RecomendadosWrapper = styled.div`
+export const OpininonesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 1300px;
@@ -15,10 +15,11 @@ export const RecomendadosWrapper = styled.div`
   @media (max-width: 768px) {
     padding-top: 30px;
     text-align: center;
+    max-width: 400px;
   }
 `;
 
-export const RecomendadosContainer = styled.div`
+export const OpinionesContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -38,18 +39,18 @@ export const RecomendadosContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 400px;
   }
 `;
 
-export const CardRecomendados = styled.div`
+export const CardOpiniones = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 370px;
+  width: 360px;
   padding: 10px;
-  /* background-color: var(--background-card); */
-  /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); */
+
   background-color: whitesmoke;
   border-radius: 20px;
   font-family: var(--font-family);
@@ -87,6 +88,10 @@ export const CardRecomendados = styled.div`
 
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    max-width: 320px;
   }
 `;
 
