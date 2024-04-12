@@ -54,7 +54,7 @@ export const CategoriasContainer = styled.div`
       text-align: center;
       gap: 1rem;
       width: 100%;
-      max-width: 390px;
+      max-width: 380px;
       height: auto;
     };
     
@@ -99,7 +99,7 @@ export const CardCategoria = styled.div`
   @media (max-width:768px){
     width: 100%;
     height: 150px;
-    max-width: 130px; // el ancho de la card en mobile
+    max-width: 120px; // el ancho de la card en mobile
 
     img {
       max-width: 50%;
