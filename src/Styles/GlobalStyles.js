@@ -1,8 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle` //siempre la svastik. Y adentro vamos a poner todos los estilos globales. Ver si luego necesito un reset de de box sizing, margin y padding. 
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+export const GlobalStyles = createGlobalStyle` 
 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    
     :root{
 
         --background-body: #FDFDFD;
