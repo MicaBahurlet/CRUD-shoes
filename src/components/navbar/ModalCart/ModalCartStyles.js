@@ -25,7 +25,7 @@ export const ContainerStyled = styled(motion.div)`
   @media (max-width: 968px){
     width: 100%;
     height: 92%;
-    max-width: 360px ; // width del modal cart
+    max-width: 320px ; // width del modal cart
       
 
   }
