@@ -63,8 +63,8 @@ export const CardOpiniones = styled.div`
 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: box-shadow 0.3s ease; 
-  border-bottom: 2px solid greenyellow;
-  border-top: 2px solid greenyellow ;
+  border-bottom: 2px solid #abdb25;
+  border-top: 2px solid #abdb25 ;
 
 
   img {

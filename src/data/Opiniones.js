@@ -36,7 +36,7 @@ export const opiniones = [
         id: 3,
         img: Trabajador1,
         name: "Cristian Lis",
-        desc: "A la hora de elegir tienen gran variedad, soy fan de Auris.",
+        desc: "para elegir tienen gran variedad, soy fan.",
         Punt: Estrellas
     },
     {
@@ -94,7 +94,7 @@ export const opiniones = [
         id: 11,
         img: Adolescente3,
         name: "Antonio Carrera",
-        desc: "Compré y a la semana bajaron todos los precios, una locura. ",
+        desc: "Compré y a la semana bajaron todos los precios, bajón. ",
         Punt: Estrellas2
     },
     {
