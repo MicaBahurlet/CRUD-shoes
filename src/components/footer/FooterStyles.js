@@ -22,7 +22,6 @@ export const FooterContainerStyles = styled.div`
     p{
         font-family: var(--font-family);
         font-size: large;
-        font-weight: bold;
         color: white;
     }
     @media (max-width: 768px) {

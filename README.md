@@ -21,6 +21,7 @@ Además de mostrar un renderizado dinámico en el DOM de los productos de Auris,
 Me sirvo de Node.js como entorno de ejecución y como entorno de desarrollo utilizo Vite.js, manejo los estilos con Styled Component y las librerías: 
 - Formik y Yup para validación de formularios,  
 - Framemotion para animaciones. 
+- Fontsource para la tipografía.
 
 Por otro lado, diseñé tanto el logo como la img central en el Hero y utilizando las propiedades del color verde, apelo dentro de su connotación a un entorno amable, de bienestar y estabilidad. Manejo los estilos del proyecto desde mi archivo GlobalStyles.js buscando el día de mañana la escalabilidad y un mayor orden del código.
 

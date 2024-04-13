@@ -39,6 +39,7 @@ export const ProductosContainer = styled.div`
         height: auto;
         max-width: 380px;
         margin-top: 2rem;
+       
     };
     
 `;
@@ -80,6 +81,7 @@ export const CardProducto = styled.div`
         width: 100%;
         height: auto;
         max-width: 380px;
+        
 
     };
 
