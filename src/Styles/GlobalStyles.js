@@ -1,11 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle` 
 
+export const GlobalStyles = createGlobalStyle` 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    
 
     :root{
-
+       
         --background-body: #FDFDFD;
         --background-card: #F1EDED;
 
@@ -31,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: --background-body;
-        font-family: --font-family;
+        font-family: var(--font-family);
         overflow-x: hidden;
     }
 
