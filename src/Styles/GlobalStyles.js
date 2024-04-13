@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 
 export const GlobalStyles = createGlobalStyle` 
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    
     
 
     :root{
@@ -17,12 +17,14 @@ export const GlobalStyles = createGlobalStyle`
         --font-family: 'Montserrat', sans-serif;
         --btn-Background: #abdb25;
 
-        --bubble-cart: #e0bc00;
+        --bubble-cart: #abdb25;
 
         --borderSeparation: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 
 
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
     html{
         scroll-behavior: smooth;
@@ -31,8 +33,8 @@ export const GlobalStyles = createGlobalStyle`
     body{
         margin: 0;
         padding: 0;
-        background-color: --background-body;
-        font-family: var(--font-family);
+        /* background-color: --background-body; */
+        font-family: 'Montserrat';
         overflow-x: hidden;
     }
 
