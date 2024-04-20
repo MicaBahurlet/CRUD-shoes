@@ -336,3 +336,6 @@ export const ModalOverlayStyled = styled(motion.div)`
 export default Navbar;
 
 
+// Cart mobile
+
+

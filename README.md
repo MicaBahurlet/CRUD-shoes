@@ -23,6 +23,6 @@ Me sirvo de Node.js como entorno de ejecución y como entorno de desarrollo util
 - Framemotion para animaciones. 
 - Fontsource para la tipografía.
 
-Por otro lado, diseñé tanto el logo como la img central en el Hero y utilizando las propiedades del color verde, apelo dentro de su connotación a un entorno amable, de bienestar y estabilidad. Manejo los estilos del proyecto desde mi archivo GlobalStyles.js buscando el día de mañana la escalabilidad y un mayor orden del código.
+Por otro lado, diseñé tanto el logo como la img central en el Hero y utilizando las propiedades del color verde, apelando a  su connotación amable, de bienestar y estabilidad. Manejo los estilos del proyecto desde mi archivo GlobalStyles.js buscando el día de mañana la escalabilidad y un mayor orden del código.
 
 
