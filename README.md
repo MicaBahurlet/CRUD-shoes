@@ -13,7 +13,7 @@
 
 Son mis primeros pasos con <strong> React,</strong> en éste proyecto me inicio en el camino de la modularización de código y la re utilización de comonentes, además es el primer proyecto con una estructura compleja con el que trabajo. 
 
-Este proyecto es un e-commerce de auriculares desarrollado en React, cumpliendo con las indicaciones del módulo de React de NUCBA. El proyecto permite a los usuarios explorar una variedad de auriculares, agregarlos al carrito y realizar compras. El sitio es totalmente responsive y tiene funcionalidades avanzadas para mejorar la experiencia del usuario.
+Se trata de un e-commerce de auriculares, cumpliendo con las indicaciones del módulo de React de NUCBA. El proyecto permite a los usuarios explorar una variedad de auriculares, agregarlos al carrito y realizar compras. El sitio es totalmente responsive y tiene funcionalidades avanzadas para mejorar la experiencia del usuario.
 
 <hr>
 
