@@ -51,21 +51,21 @@ Este proyecto es un e-commerce de auriculares desarrollado en React, cumpliendo 
 
 Hero del sitio
 
-<img src="./src/data/screensToReadme/Auris1.png" alt="Landing Page" style="max-width: 400px;">
+<img src="./src/data/screensToReadme/Auris1.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 <br>
 Algoritmo que renderiza experiencias de compra:
 
 
-<img src="./src/data/screensToReadme/Auris2.png" alt="Landing Page" style="max-width: 400px;">
+<img src="./src/data/screensToReadme/Auris2.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 <br>
 
 Categorias de compra:
-<img src="./src/data/screensToReadme/Auris3.png" alt="Landing Page" style="max-width: 400px;">
+<img src="./src/data/screensToReadme/Auris3.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 Cards de productos:
-<img src="./src/data/screensToReadme/Auris4.png" alt="Landing Page" style="max-width: 400px;">
+<img src="./src/data/screensToReadme/Auris4.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 
 Sección representativa de about:
@@ -73,5 +73,6 @@ Sección representativa de about:
 
 <br>
 
-El proyecto se encuentra desplegado en <b> Vercel,</b> puedes encontrarlo  [aquí](https://auris-phi.vercel.app/).
+El proyecto se encuentra desplegado en <b>Vercel</b>, puedes visitarlo <a href="https://auris-phi.vercel.app/" target="_blank" >aquí</a>.
+
 
