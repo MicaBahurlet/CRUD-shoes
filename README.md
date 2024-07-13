@@ -1,5 +1,5 @@
 
-<h2 align="start">Auris.</h2> 
+<h2 align="start">CRUD.</h2> 
 <hr>
 
 <!-- <h3 align="start">Lenguajes, herramientas y librerías utilizadas para el proyecto: </h3>  -->
@@ -11,10 +11,7 @@
 
 
 
-Son mis primeros pasos con <strong> React,</strong> en éste proyecto me inicio en el camino de la modularización de código y la re utilización de comonentes, además es el primer proyecto con una estructura compleja con el que trabajo. 
-
-Se trata de un e-commerce de auriculares, cumpliendo con las indicaciones del módulo de React de NUCBA. El proyecto permite a los usuarios explorar una variedad de auriculares, agregarlos al carrito y realizar compras. El sitio es totalmente responsive y tiene funcionalidades avanzadas para mejorar la experiencia del usuario.
-
+Iniciando en el mundo back-end.  Se trata de un e-commerce de zapatillas deportivas, cumpliendo con las indicaciones del módulo de React de NUCBA. 
 <hr>
 
 <h3>Características del proyecto:</h3>
@@ -51,28 +48,28 @@ Se trata de un e-commerce de auriculares, cumpliendo con las indicaciones del m�
 
 Hero del sitio
 
-<img src="./src/data/screensToReadme/Auris1.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
+<img src="#" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 <br>
 Algoritmo que renderiza experiencias de compra:
 
 
-<img src="./src/data/screensToReadme/Auris2.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
+<img src="#" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 <br>
 
 Categorias de compra:
-<img src="./src/data/screensToReadme/Auris3.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
+<img src="#" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 Cards de productos:
-<img src="./src/data/screensToReadme/Auris4.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
+<img src="#" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 
 Sección representativa de about:
-<img src="./src/data/screensToReadme/Auris5.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
+<img src="#" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 <br>
 
-El proyecto se encuentra desplegado en <b>Vercel</b>, puedes visitarlo <a href="https://auris-phi.vercel.app/" target="_blank" >aquí</a>.
+El proyecto se encuentra desplegado en <b>Vercel</b>, puedes visitarlo <a href="#" target="_blank" >aquí</a>.
 
 

@@ -10,7 +10,7 @@ import { HeroContainerStyles,
 import { Fade } from "react-awesome-reveal"
 // import IMGHero from "../../data/imgProducts/HEROAuris.png"
 
-import ImgHeroPrueba from "../../data/imgProducts/ImgtoHero.png"
+import HeroCrud from "../../data/imgProducts/HEROCrud.png"
 
 
 // import { useState } from "react";
@@ -52,11 +52,11 @@ const Hero = ({doScroll}) => {
 
       
         <HeroTextContainerStyles>
-          <h1>Viví tú música.</h1>
-          <h2><strong>Tus auriculares importan</strong></h2>
-          <p><strong> El mejor sonido</strong> a tu disposición. Comprá <b>rápido</b>, comprá <b>calidad</b>, comprá <b>facil.</b> </p>
+          <h1>DEJÁ TU HUELLA.</h1>
+          {/* <h2><strong>Tus auriculares importan</strong></h2> */}
+          <p><strong> Las mejores zapatillas</strong> están acá. Comprá <b>rápido</b>, comprá <b>calidad</b>, comprá <b>facil.</b> </p>
 
-          <BotonInput onClick={() => window.location.href = "/Products"}>VER PRODUCTOS</BotonInput>
+          <BotonInput onClick={() => window.location.href = "/Products"}>COMPRAR</BotonInput>
           
           {/* <ImputContainerStyles>
               <InputStyles 
@@ -84,7 +84,7 @@ const Hero = ({doScroll}) => {
      
         <HeroImageContainerStyles>
           <Fade direction="left"  duration={3000} >
-            <img src= {ImgHeroPrueba} alt="Auriculares Hero"/>
+            <img src= {HeroCrud} alt="Auriculares Hero"/>
           </Fade>   
         </HeroImageContainerStyles>
 

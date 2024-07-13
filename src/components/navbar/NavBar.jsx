@@ -23,8 +23,8 @@ const Navbar = () => {
     <Nav>
       <ModalCart />
       <Logo>
-        <img src={LogoImg} alt="Logo" />
-        <h1>Auris</h1>
+        {/* <img src={LogoImg} alt="Logo" /> */}
+        <h1>CRUD</h1>
       </Logo>
       <Burger onClick={handleClick}> 
         <div className={`icon ${clicked ? 'open' : ''}`}>
@@ -38,28 +38,28 @@ const Navbar = () => {
             className={({ isActive }) => isActive ? 'active' : ''} //si isActive es true, le pongo active, si no, no
             to="/" onClick={closeMenu} >
               <FaHome className='IconsNav'/>
-              Inicio
+              HOME
           </NavLink>
 
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
              to="/about" onClick={closeMenu}>
               {/* <FaUser className='IconsNav'/> */}
-              Nosotros
+              NOSOTROS
           </NavLink>
 
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
               to="/products" onClick={closeMenu}>
               {/* <FaShoppingCart className='IconsNav'/> */}
-              Productos
+              PRODUCTOS
           </NavLink>
 
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
              to="/contact" onClick={closeMenu}>
               {/* <FaEnvelope className='IconsNav'/> */}
-              Contacto
+              CONTACTO
           </NavLink>
 
           <CartNavStyled>
@@ -85,13 +85,11 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 1rem 3rem;
-  /* background-color: black; */
-  /* background-color: gainsboro; */
-  /* background-color: #1E1E1E; */
-  background-color: var(--background-nav);
+  background-color: black;
   color: white;
   gap: 3rem;
   height: 5rem;
+  /* position: sticky; */
   /* z-index: 2; */
   
 
@@ -180,6 +178,7 @@ const Menu = styled.div`
   display: flex;
   align-items: center;
   z-index: 3;
+  /* margin-right: 33rem; */
 
   a {
     text-decoration: none;
@@ -188,7 +187,7 @@ const Menu = styled.div`
     font-size: 1.2rem;
     font-family: var(--font-family); 
     gap: 2rem;
-    font-weight: 500;
+    font-weight: 700;
 
     &:hover {  /* cuando pase el cursor por el link */
       border-bottom: 3px solid greenyellow;  
@@ -216,7 +215,7 @@ const Menu = styled.div`
 
   .active {
    /* border-bottom: 3px solid greenyellow;  */
-    font-weight: 500;
+    font-weight: 700;
     /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
     /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
     /* background-color: #7EF918; */

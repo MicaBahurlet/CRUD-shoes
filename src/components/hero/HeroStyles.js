@@ -5,10 +5,11 @@ export const HeroContainerStyles = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1300px;
+    max-width: 100%; // ver este inicio
     margin: 0 auto;
     gap: 30px;
     height: 100vh;  // ver este inicio
+    background-color: black;
    
     
     
@@ -28,14 +29,16 @@ export const HeroTextContainerStyles = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 70%;
+    width: 100%;
     margin-top: -7rem;
+    margin-left: 10rem;
+    
     h1{
         font-size: 3.7rem;
         margin: 10px 0;
         font-family: var(--font-family);
         text-shadow: 1.2px 1px 1px #000;
-        color: #1E1E1E;
+        color: white;
         
 
     }
@@ -44,14 +47,14 @@ export const HeroTextContainerStyles = styled.div`
         font-size: 1.5rem;
         margin: 10px 0;
         font-family: var(--font-family);
-        color: #1E1E1E;
+        color: white;
     }
     p{
         font-size: 1.2rem;
         font-family: var(--font-family);
         line-height: 1.4;
         margin-bottom: 2rem;
-        color: #1E1E1E;
+        color: white;
     }
 
 
@@ -138,7 +141,7 @@ export const BotonInput = styled.div`
 export const HeroImageContainerStyles = styled.div`
 
     width: 50%; // para que compartan el 50% del contenedor
-    z-index: -2; // ver este z index
+    z-index: 1; // ver este z index
     padding-right: 10rem;
     img{
 
