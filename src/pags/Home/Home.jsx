@@ -4,13 +4,11 @@ import { HomeContainer } from "./Home";
 import NavBar from "../../components/navbar/NavBar";
 import Hero from "../../components/hero/Hero";
 import Layout from "../../components/layout/Layout";
-// import Categorias from "../../components/categorias/Categorias";
-// import CardsProductos from "../../components/productos/CardsProductos"; 
+
 import Footer from "../../components/footer/Footer";
+import Marcas from "../../components/marcas/Marcas";
 
-// import { ProductosWrapper } from "../../components/productos/CardsProductosStyles";
 
-// import { BotonVerMenos, Boton, BotonsWrapper } from "../Products/Product";
 
 
 
@@ -34,8 +32,9 @@ export function Home() {
                 <Layout>
                     <Hero/>
 
-                    <Opiniones/>
-                    <Recomendados/>
+                    <Marcas/>
+                    {/* <Opiniones/>
+                    <Recomendados/> */}
 
                 </Layout>
                 

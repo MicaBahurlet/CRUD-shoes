@@ -7,8 +7,9 @@ export const FooterContainerStyles = styled.div`
     align-items: center;
     border-top: 1px solid black;
     padding: 1rem 4rem;
-    background-color: #1E1E1E;
+    background-color: black;
     height: 5rem;
+    
 
     img{
         max-width: 120px;

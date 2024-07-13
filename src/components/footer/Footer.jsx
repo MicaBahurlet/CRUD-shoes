@@ -3,17 +3,17 @@ import {
   PagosContainerStyles
 
 } from './FooterStyles.js' 
-import LogoImg from '../../data/imgProducts/LogoFinish.png';
+import LogoCrud from '../../data/imgProducts/Ap-icon.png';
 
 
 function footer() {
   return (
     <FooterContainerStyles>
       <div>
-        <img src={LogoImg} alt="Logo Finish" />
+        <img src={LogoCrud} alt="Logo Finish" />
       </div>
 
-      <h2>Auris ®</h2>
+      <h2>CRUD | shoes</h2>
 
       <div>
         
