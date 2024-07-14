@@ -14,8 +14,8 @@ function RecomendadosProduct() {
   const {recommended} = useSelector((state) => state.recommended);
   return (
     <RecomendadosWrapper>   
-      <h2>Recomendados  random para ti: </h2> 
-      <h3> 	&#127808; Probá suerte, te recomendamos en base a los más comprados.</h3>
+      <h2>Zapatillas recomendadas para ti: </h2> 
+      <h3> 	&#127808; Probá suerte, te recomendamos en base a las más compradas.</h3>
       <RecomendadosContainer> 
         {recommended.map(cat =>(  //antes estaba recomendados.map
 

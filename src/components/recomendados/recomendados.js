@@ -8,20 +8,23 @@ export const RecomendadosWrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-   
-    max-width: 1200px;
     margin: 0 15px;
     font-family: var(--font-family);
     margin-bottom: 5rem;
+    margin-top: 3rem;
+    background-color: rgba(0, 0, 0, 0.9); 
 
     h2 {
         margin-bottom: 1rem;
+        color: white;
+
     }
     h3 {
         margin-bottom: 3rem;
         font-weight: 400;
+        color: white;
+
     }
-    
 
 
     @media (max-width:768px){
@@ -40,13 +43,13 @@ export const RecomendadosContainer = styled.div`
     flex-wrap: nowrap; 
     justify-content: center; 
     align-items: center;
-   
-    
+    width: 100%;
+
     gap: 25px;
     user-select:none;
 
     img {
-        max-width: 150px;
+        max-width: 200px;
         border-radius: 15px;
     
     }
@@ -63,34 +66,31 @@ export const RecomendadosContainer = styled.div`
 
 export const CardRecomendados = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row; 
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  width: 210px;
-  height: 300px;
-
+  width: 400px;
+  height: auto;
   padding: 2px;
 
-
-  background-color: whitesmoke;
+  background-color: grey; 
   border-radius: 20px;
-  
   font-family: var(--font-family);
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   border: 1px solid rgba(0, 0, 0, 0.1);
-
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: box-shadow 0.3s ease; 
   margin-top: 2rem;
   margin-bottom: 5rem;
-  border-bottom: 1px solid green;
-  border-top: 1px solid green;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  gap: 23px;
+
 
   img {
-    max-width: 100px;
+    max-width: 210px;
     border-radius: 10px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     transition: transform 0.7s ease;
@@ -107,26 +107,24 @@ export const CardRecomendados = styled.div`
     }
     h4{
         font-size: 1.1rem;
-        color: green;
+        color: white;
         font-weight: 800;
     }
 
-  p {
-    color: black;
-
-    /* font-weight: 700; */
-  }
+    p {
+      color: white;
+    }
 
 
-  &:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-  }
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    }
 
 `;
 
 export const BotonBuy = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     font-size: 15px;
 
@@ -140,31 +138,37 @@ export const BotonBuy = styled.div`
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     font-weight: 500;
     padding: 10px 10px;
-    max-width: 7rem;
+    max-width: 4rem;
+    margin-bottom: 1rem;
 `;
 
-export const Boton = styled.button`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 7px;
-
-    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
-    
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    color: black;
-    font-weight: 100;
-    max-width: 10rem;
-`;
 
 
 export const InfoCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--font-family);
+
 `;
+
+
+
+// export const Boton = styled.button`
+//     display: flex;
+
+//     justify-content: center;
+//     align-items: center;
+
+//     font-size: 7px;
+
+//     background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    
+//     border: none;
+//     border-radius: 10px;
+//     cursor: pointer;
+//     color: black;
+//     font-weight: 100;
+//     max-width: 10rem;
+// `;

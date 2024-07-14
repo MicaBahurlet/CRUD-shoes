@@ -24,7 +24,7 @@ const Navbar = () => {
       <ModalCart />
       <Logo>
         {/* <img src={LogoImg} alt="Logo" /> */}
-        <h1>CRUD</h1>
+        <h1>CRUD | shoes</h1>
       </Logo>
       <Burger onClick={handleClick}> 
         <div className={`icon ${clicked ? 'open' : ''}`}>
@@ -41,12 +41,7 @@ const Navbar = () => {
               HOME
           </NavLink>
 
-          <NavLink
-              className={({ isActive }) => isActive ? 'active' : ''}
-             to="/about" onClick={closeMenu}>
-              {/* <FaUser className='IconsNav'/> */}
-              NOSOTROS
-          </NavLink>
+          
 
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
@@ -57,14 +52,19 @@ const Navbar = () => {
 
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
+             to="/about" onClick={closeMenu}>
+              {/* <FaUser className='IconsNav'/> */}
+              NOSOTROS
+          </NavLink>
+
+          <NavLink
+              className={({ isActive }) => isActive ? 'active' : ''}
              to="/contact" onClick={closeMenu}>
               {/* <FaEnvelope className='IconsNav'/> */}
               CONTACTO
           </NavLink>
 
-          <CartNavStyled>
-               <CartIcon  />
-          </CartNavStyled>
+          
 
 
           
@@ -72,6 +72,9 @@ const Navbar = () => {
         
 
       </Menu>
+      <CartNavStyled>
+               <CartIcon  />
+      </CartNavStyled>
     </Nav>
   );
 };
@@ -83,12 +86,13 @@ const Navbar = () => {
 const Nav = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem 3rem;
   background-color: black;
   color: white;
   gap: 3rem;
   height: 5rem;
+  
   /* position: sticky; */
   /* z-index: 2; */
   
@@ -275,6 +279,7 @@ const Menu = styled.div`
     color:white;
     font-size: x-large;
     font-weight: 900;
+    z-index: 3;
     
   }
 `;
@@ -285,6 +290,7 @@ export const CartNavStyled = styled.div`
   position: relative;
   cursor: pointer;
   font-size: x-large;
+  z-index: 3;
 
   span {
     position: absolute;

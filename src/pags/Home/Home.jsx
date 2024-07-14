@@ -33,8 +33,8 @@ export function Home() {
                     <Hero/>
 
                     <Marcas/>
-                    {/* <Opiniones/>
-                    <Recomendados/> */}
+                    {/* <Opiniones/> */}
+                    {/* <Recomendados/> */}
 
                 </Layout>
                 

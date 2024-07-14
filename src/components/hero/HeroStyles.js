@@ -5,7 +5,7 @@ export const HeroContainerStyles = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 100%; // ver este inicio
+    width: 100%;
     margin: 0 auto;
     gap: 30px;
     height: 100vh;  // ver este inicio
