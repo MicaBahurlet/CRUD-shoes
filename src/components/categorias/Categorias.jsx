@@ -19,9 +19,6 @@ function Categorias() {
           <Categoria key={cat.id} {...cat} /> //le paso la key para que no de error y luego un spred para traer todo el objeto
 
         ))}
-        {/* {categories.map((category) => (
-        <Categoria key={category.id} {...category} />
-        ))} */}
       </CategoriasContainer>
 
     </CategoriasWrapper>

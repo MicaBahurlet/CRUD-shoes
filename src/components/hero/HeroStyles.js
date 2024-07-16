@@ -50,9 +50,9 @@ export const HeroTextContainerStyles = styled.div`
         color: white;
     }
     p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-family: var(--font-family);
-        line-height: 1.4;
+        line-height: 1.6;
         margin-bottom: 2rem;
         color: white;
     }

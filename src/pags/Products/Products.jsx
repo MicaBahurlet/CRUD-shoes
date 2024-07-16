@@ -38,10 +38,6 @@ function CardsProductos() {
     
   );
 
-  // const handleCategoryClick = (category) => {
-  //   dispatch(selectCategory(category));
-  //   doScroll(); // Realizar scroll al ProductWrapper
-  // };
 
   const dispatch = useDispatch();
 
@@ -106,7 +102,7 @@ function CardsProductos() {
       <NavBar />
 
       <Categorias />
-      <ImputContainerStyles>
+      {/* <ImputContainerStyles>
         <InputStyles
           value={value}
           onChange={(e) => setValue(e.target.value)}
@@ -125,10 +121,10 @@ function CardsProductos() {
         >
           BUSCAR
         </BotonInput>
-      </ImputContainerStyles>
-      <BorderSeparacion />
+      </ImputContainerStyles> */}
+      {/* <BorderSeparacion /> */}
       <ProductosWrapper id="productos-wrapper" ref={productRef}>
-        <h2>Nuestros Auris: </h2>
+        <h2>Nuestros pares seleccionados: </h2>
         <ProductosContainer>
           {productos
             .filter((prod) =>

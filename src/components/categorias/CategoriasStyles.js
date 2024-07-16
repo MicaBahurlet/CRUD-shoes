@@ -4,14 +4,13 @@ export const CategoriasWrapper = styled.div`
 
     display: flex;
     justify-content: space-between;
-    
     flex-direction: column;
     max-width: 1300px;
-    
     margin: 3rem auto;
     font-family: var(--font-family);
     gap: 3rem;
     /* z-index: -1; */
+
 
     h2 {
         margin-bottom: 3rem;
@@ -43,7 +42,6 @@ export const CategoriasContainer = styled.div`
 
     img{ 
         max-width: 150px;
-        border-radius: 15px;
     }
     img:hover {
         transform: scale(1.2); 
@@ -68,8 +66,9 @@ export const CardCategoria = styled.div`
   align-items: center;
   gap: 0.4rem;
   width: 150px;
+  height: 150px;
   padding: 1rem 1rem;
-  border-radius: 20px;
+  border-radius: 15px;
   cursor: pointer;
   font-family: var(--font-family);
 

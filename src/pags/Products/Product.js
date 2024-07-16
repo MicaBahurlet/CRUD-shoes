@@ -68,17 +68,19 @@ export const ProductosContainer = styled.div`
 
 
 export const CardProducto = styled.div` 
+
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  width: 210px;
+  width: 212px;
   height: 270px;
   padding: 2px; 
 
   background-color: whitesmoke;
-  border-radius: 20px;
+  border-radius: 15px;
   
   font-family: var(--font-family);
 
@@ -88,8 +90,8 @@ export const CardProducto = styled.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: box-shadow 0.3s ease; 
   margin-bottom: 5rem;
-  border-bottom: 1px solid green;
-  border-top: 1px solid green;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 
     &:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
