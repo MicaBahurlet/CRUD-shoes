@@ -48,6 +48,11 @@ export const GlobalStyles = createGlobalStyle`
         list-style: none;
 
     }
+    // esto es genial, para que no se pueda movilizar ninguna img
+    /* img:hover{
+        pointer-events: none;
+        user-select: none;
+    } */
 
     
 

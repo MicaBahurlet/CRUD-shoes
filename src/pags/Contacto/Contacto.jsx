@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {
   ContactoContainer,
@@ -36,7 +37,7 @@ export default function Contacto() {
     },
     validationSchema,
     onSubmit: (values, { resetForm }) => {
-      console.log("Valores enviados:", values);
+      alert("Valores enviados:", values);
       resetForm();
     },
   });
@@ -45,9 +46,6 @@ export default function Contacto() {
     <div>
       <NavBar />
       <ContactoContainer>
-        <Fade direction="left" duration={3000}>
-          <img src={imgForm} alt="Img Formulario" />
-        </Fade>
 
         <Formulario action="/ruta-de-envio" method="post" onSubmit={handleSubmit}>
           <h2>Contactate con nosotros:</h2>
@@ -89,6 +87,11 @@ export default function Contacto() {
             onClick={() => alert("Su mensaje ha sido enviado con exito. Gracias por contactarnos.")}
           >Enviar</BotonEnviar>
         </Formulario>
+
+
+        <Fade direction="right" duration={2000}>
+          <img src={imgForm} alt="Img Formulario" />
+        </Fade>
       </ContactoContainer>
       <Footer />
     </div>

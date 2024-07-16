@@ -11,7 +11,7 @@ function Categorias() {
 
   return (
     <CategoriasWrapper>  
-      <h2>Categorías:</h2> 
+      <h2>Categorías</h2> 
      
       <CategoriasContainer> 
         {categories.map (cat =>( //hago un map para poder leer el archivo categorias.js dentro de data antes estaba categorias.map

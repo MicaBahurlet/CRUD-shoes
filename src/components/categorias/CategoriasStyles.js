@@ -4,10 +4,10 @@ export const CategoriasWrapper = styled.div`
 
     display: flex;
     flex-direction: column;
-  justify-content: center;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 1000px;
-    margin: 3rem auto;
+    margin: 4rem auto;
     font-family: var(--font-family);
     gap: 1rem;
     /* z-index: -1; */
@@ -22,6 +22,7 @@ export const CategoriasWrapper = styled.div`
     @media (max-width:768px){
 
         text-align: center;
+        flex-direction: column;
         gap: 1rem;
         width: 100%;
         max-width: 390px;
@@ -32,13 +33,12 @@ export const CategoriasWrapper = styled.div`
 
 export const CategoriasContainer = styled.div`
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1300px;
+     display: grid;
+      grid-template-columns: repeat(1, 1fr); /* Por defecto, una columna en escritorio */
+      gap: 20px; /* Espacio entre las cards en escritorio */
+      max-width: 1300px;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     user-select:none;
 
     img{ 
@@ -50,11 +50,14 @@ export const CategoriasContainer = styled.div`
 
     @media (max-width:768px){
 
-      text-align: center;
-      gap: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
       width: 100%;
-      max-width: 380px;
-      height: auto;
+      margin: 0 auto;
+      padding: 0 1rem;
+
+      
     };
     
 `;
@@ -84,7 +87,7 @@ export const CardCategoria = styled.div`
   }
 
   img {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
 
@@ -98,11 +101,12 @@ export const CardCategoria = styled.div`
 
   @media (max-width:768px){
     width: 100%;
-    height: 140px;
+    height: 120px;
     max-width: 120px; // el ancho de la card en mobile
 
+
     img {
-      max-width: 50%;
+      max-width: 70%;
     }
 
   };
@@ -119,5 +123,7 @@ export const BorderDecoration = styled.div`
     border-radius: 15px;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
 `;
+
+
 
 

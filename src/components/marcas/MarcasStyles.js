@@ -14,5 +14,7 @@ export const BrandImage = styled.img`
   width: 135px; /* Ajusta el tamaño según tu necesidad */
   height: auto;
   margin: 10px;
+  pointer-events: none;
+  user-select: none;
 `;
 

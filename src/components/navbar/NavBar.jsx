@@ -116,10 +116,8 @@ const Logo = styled.h1`
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  /* color: #CBE94B; */
   color: white;
-  /* color: black; */
-  
+  user-select: none; 
 `;
 
 const Burger = styled.div`
@@ -213,20 +211,13 @@ const Menu = styled.div`
     font-weight: 500;
 
     &:hover {  /* cuando pase el cursor por el link */
-      border-bottom: 3px solid greenyellow;  
+      border-bottom: 4px solid greenyellow;  
     }
   }
 
   .active {
-   /* border-bottom: 3px solid greenyellow;  */
-    font-weight: 700;
-    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
-    /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
-    /* background-color: #7EF918; */
-    background-color: var(--btn-LinkActive);
-    border-radius: 10px;
-    padding: 9px 15px;
-    color: black;
+    font-weight: 900;
+    color: greenyellow;
   }
 
   @media (max-width: 768px) {
@@ -300,18 +291,15 @@ export const CartNavStyled = styled.div`
     width: 20px;
     text-align: center;
     justify-content: center;
-
-    
-
     border-radius: 1rem;
     border: 1px solid green;
     color: white;
-    background-color: var(--btn-Background); //color bubble
+    background-color: greenyellow; //color bubble
     font-family: var(--font-family);
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 800;
     color: black;
-    padding: 1px;
+    padding: 1.5px;
   }
 `;
 

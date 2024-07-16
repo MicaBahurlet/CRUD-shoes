@@ -92,13 +92,19 @@ export const CardRecomendados = styled.div`
   img {
     max-width: 210px;
     border-radius: 10px;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
     transition: transform 0.7s ease;
    
   }
   img:hover {
         transform: scale(1.2); 
+        user-select: none;
+        -webkit-user-drag: none; /* Para navegadores basados en WebKit */
+        pointer-events: none; /* Evita eventos de puntero (clics, arrastres, etc.) */
   }
+
+ 
+
 
     h3{
         font-size: 1.2rem;

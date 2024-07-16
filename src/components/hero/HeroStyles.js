@@ -39,6 +39,8 @@ export const HeroTextContainerStyles = styled.div`
         font-family: var(--font-family);
         text-shadow: 1.2px 1px 1px #000;
         color: white;
+        font-weight: 800;
+        user-select: none; 
         
 
     }
@@ -123,7 +125,7 @@ export const BotonInput = styled.div`
   
     /* background-color: var(--btn-Background); */
     /* background-color:#30B7E7; */
-    background-color: #9BD40A;
+    background-color: greenyellow;
     
     color: #1E1E1E;
     font-weight: bold;
@@ -146,6 +148,8 @@ export const HeroImageContainerStyles = styled.div`
     width: 50%; // para que compartan el 50% del contenedor
     z-index: 1; // ver este z index
     padding-right: 10rem;
+    pointer-events: none;
+    user-select: none;
     img{
 
         width: 1000px;
