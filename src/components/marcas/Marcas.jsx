@@ -17,7 +17,6 @@ const Marcas = () => {
         <BrandImage src={Adidaspng} alt="Marca 2" />
         <BrandImage src={Puma} alt="Marca 3" />
         <BrandImage src={Vans} alt="Marca 4" />
-        <BrandImage src={Sketchers} alt="Marca 5" />
       </Flip>
     </Container>
   );

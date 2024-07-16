@@ -15,7 +15,7 @@ function RecomendadosProduct() {
   return (
     <RecomendadosWrapper>   
       <h2>Zapatillas recomendadas para ti: </h2> 
-      <h3> 	&#127808; Probá suerte, te recomendamos en base a las más compradas.</h3>
+      {/* <h3>Recomendaciones hechas para ti.</h3> */}
       <RecomendadosContainer> 
         {recommended.map(cat =>(  //antes estaba recomendados.map
 
@@ -26,7 +26,7 @@ function RecomendadosProduct() {
         
 
       </RecomendadosContainer>
-      <BotonBuy  onClick={() => window.location.href = "/Products"}>Más <FaAngleDoubleRight /></BotonBuy>
+      <BotonBuy  onClick={() => window.location.href = "/Products"}> Ver más  <FaAngleDoubleRight /></BotonBuy>
 
     </RecomendadosWrapper>
   );

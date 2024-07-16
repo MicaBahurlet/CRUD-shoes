@@ -1,32 +1,33 @@
-import inEarImg from './imgProducts/In-EARcategory.png'; //Acá me tengo que importar todas las cimg de las categorías y luego arreglarle el tamaño desde el categotiasSyles CardCategoria img
-import GamerImg from './imgProducts/gamer-category.png';
-import DeportivoImg from './imgProducts/Deportivo-category.png';
-import ClassicImg from './imgProducts/Classic-category.png';
+ //Acá me tengo que importar todas las cimg de las categorías y luego arreglarle el tamaño desde el categotiasSyles CardCategoria img
+import Nike from './imgProducts/NikeCategory.png';
+import AdidasCategory from './imgProducts/AdidasCategory.png';
+import Puma from './imgProducts/PumaCategory.png';
+import VansCategory from './imgProducts/VansCategory.png';
 
 export const categorias = [
     {
         id: 1,
-        img: inEarImg,
-        title: "Inalambricos",
-        category: "Inalambricos",
+        img: Puma,
+        title: "Puma",
+        category: "Puma",
     },
     {
         id: 2,
-        img: GamerImg,
-        title: "Gamer",
-        category: "Gamer",
+        img: Nike,
+        title: "Nike",
+        category: "Nike",
     },
     {
         id: 3,
-        img: DeportivoImg,
-        title: "Deportivo",
-        category: "Deportivo",
+        img: AdidasCategory,
+        title: "Adidas",
+        category: "Adidas",
     },
     {
         id: 4,
-        img: ClassicImg,
-        title: "Clasicos",
-        category: "Clasicos",
+        img: VansCategory,
+        title: "Vans",
+        category: "Vans",
     }
 
 ]

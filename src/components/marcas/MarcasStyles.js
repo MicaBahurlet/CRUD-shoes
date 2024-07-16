@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const BrandImage = styled.img`
-  width: 100px; /* Ajusta el tamaño según tu necesidad */
+  width: 150px; /* Ajusta el tamaño según tu necesidad */
   height: auto;
   margin: 10px;
 `;

@@ -120,7 +120,9 @@ export const BotonInput = styled.div`
     border-radius: 10px;
     cursor: pointer;
   
-    background-color: var(--btn-Background);
+    /* background-color: var(--btn-Background); */
+    /* background-color:#30B7E7; */
+    background-color: #9BD40A;
     
     color: #1E1E1E;
     font-weight: bold;

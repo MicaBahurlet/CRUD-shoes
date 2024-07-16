@@ -34,7 +34,7 @@ export function Home() {
 
                     <Marcas/>
                     {/* <Opiniones/> */}
-                    {/* <Recomendados/> */}
+                    <Recomendados/>
 
                 </Layout>
                 

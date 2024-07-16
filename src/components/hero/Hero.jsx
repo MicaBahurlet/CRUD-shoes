@@ -58,27 +58,6 @@ const Hero = ({doScroll}) => {
 
           <BotonInput onClick={() => window.location.href = "/Products"}>COMPRAR</BotonInput>
           
-          {/* <ImputContainerStyles>
-              <InputStyles 
-                value={value}
-                onChange={(e)=> setValue(e.target.value)}
-                type="text" 
-                placeholder="Ej. Clasicos..."
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') {
-                    handlerSubmit(e, value); // si se presiona la tecla enter llama a handlerSubmit
-                  }
-                }}
-              
-              />
-              <BotonInput
-                type="submit"
-                onClick={(e) => handlerSubmit(e, value)}
-                disabled={!value}
-                
-              
-              >BUSCAR</BotonInput>
-          </ImputContainerStyles> */}
           
         </HeroTextContainerStyles>
      

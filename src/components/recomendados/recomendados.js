@@ -10,19 +10,19 @@ export const RecomendadosWrapper = styled.div`
     width: 100%;
     margin: 0 15px;
     font-family: var(--font-family);
-    margin-bottom: 5rem;
-    margin-top: 3rem;
-    background-color: rgba(0, 0, 0, 0.9); 
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
 
     h2 {
+      margin-top: 4rem;
         margin-bottom: 1rem;
-        color: white;
-
+        
     }
     h3 {
         margin-bottom: 3rem;
         font-weight: 400;
-        color: white;
+       
 
     }
 
@@ -74,7 +74,8 @@ export const CardRecomendados = styled.div`
   height: auto;
   padding: 2px;
 
-  background-color: grey; 
+  /* background-color: grey;  */
+  background-color: white;
   border-radius: 20px;
   font-family: var(--font-family);
 
@@ -107,12 +108,12 @@ export const CardRecomendados = styled.div`
     }
     h4{
         font-size: 1.1rem;
-        color: white;
+        color: black;
         font-weight: 800;
     }
 
     p {
-      color: white;
+      color: black;
     }
 
 
@@ -127,9 +128,7 @@ export const BotonBuy = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 15px;
-
     background-color: var( --btn-Background);
-   
     color: #ffffff;
     border: 1px solid black;
     border-radius: 10px;
@@ -138,8 +137,8 @@ export const BotonBuy = styled.div`
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     font-weight: 500;
     padding: 10px 10px;
-    max-width: 4rem;
-    margin-bottom: 1rem;
+    max-width: 5rem;
+    margin-bottom: 4rem;
 `;
 
 

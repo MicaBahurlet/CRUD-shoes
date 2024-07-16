@@ -6,16 +6,22 @@ import Nike4 from "./imgProducts/Product6.png";
 import Nike5 from "./imgProducts/Product8.png";
 import Nike6 from "./imgProducts/Product10.png";
 import Nike7 from "./imgProducts/Product13.png";
+import Nike8 from "./imgProducts/Product15.png";
 
 //Adidas
 import Adidas1 from "./imgProducts/Product3.png";
 import Adidas2 from "./imgProducts/Product9.png";
 import Adidas3 from "./imgProducts/Product11.png";
 import Adidas4 from "./imgProducts/Product12.png";
+import Adidas5 from "./imgProducts/Product16.png";
+import Adidas6 from "./imgProducts/Product17.png";
+import Adidas7 from "./imgProducts/Product19.png";
+
 
 
 //Puma
 import Puma1 from "./imgProducts/Product14.png";
+import Puma2 from "./imgProducts/Product18.png";
 
 
 //Vans
@@ -28,7 +34,7 @@ export const productos = [
         id: 1,
         title: "Nike air",
         img: Nike1,
-        category: "Gamer",
+        category: "Nike",
         desc: "runner",
         New: "NUEVO",
         price: 1000,
@@ -37,7 +43,7 @@ export const productos = [
         id: 2,
         title: "Nike black",
         img: Nike2,
-        category: "Gamer",
+        category: "Nike",
         desc: "Runner",
         price: 2500,
     },
@@ -45,7 +51,7 @@ export const productos = [
         id: 3,
         title: "Nubwo N1",
         img: Nike3,
-        category: "Gamer",
+        category: "Nike",
         desc: "Auris Pro",
         price: 4500,
     },
@@ -53,7 +59,7 @@ export const productos = [
         id: 4,
         title: "Sport",
         img: Nike4,
-        category: "Depotivo",
+        category: "Nike",
         desc: "A correr!",
         price: 900,
     },
@@ -61,7 +67,7 @@ export const productos = [
         id: 5,
         title: "In-Ear",
         img: Nike5,
-        category: "Inalambricos",
+        category: "Nike",
         desc: "Batería 10hs",
         price: 5000,
     },
@@ -69,7 +75,7 @@ export const productos = [
         id: 6,
         title: "Walker 3.5",
         img: Nike6,
-        category: "Clasicos",
+        category: "Nike",
         desc: "El fiel amigo",
         price: 1000,
     },
@@ -77,7 +83,7 @@ export const productos = [
         id: 7,
         title: "Soul 4.3",
         img: Nike7,
-        category: "Clasicos",
+        category: "Nike",
         desc: "Bueno, bonito, barato",
         price: 400,
     },
@@ -85,7 +91,7 @@ export const productos = [
         id: 8,
         title: "Zonny",
         img: Adidas1,
-        category: "Clasicos",
+        category: "AdidasCategory",
         desc: "Bajos calidad premium",
         price: 2000,
     },
@@ -93,7 +99,7 @@ export const productos = [
         id: 9,
         title: "Pilip´s",
         img: Adidas2,
-        category: "Clasicos",
+        category: "AdidasCategory",
         desc: "El cásico de siempre",
         price: 1000,
     },
@@ -101,7 +107,7 @@ export const productos = [
         id: 10,
         title: "MaAirpod´s",
         img: Adidas3,
-        category: "Inalambricos",
+        category: "AdidasCategory",
         desc: "Original´s",
         price: 1000,
     },
@@ -109,7 +115,7 @@ export const productos = [
         id: 11,
         title: "Ziaomi",
         img: Adidas4,
-        category: "Inalambricos",
+        category: "AdidasCategory",
         desc: "5hs batería",
         price: 1000,
     },
@@ -117,7 +123,7 @@ export const productos = [
         id: 12,
         title: "JVL",
         img: Puma1,
-        category: "Inalambricos",
+        category: "Puma",
         desc: "Resistentes al agua",
         price: 1000,
     },
@@ -126,11 +132,53 @@ export const productos = [
         id: 13,
         title: "F9-5 BTH-F9",
         img: Vans1,
-        category: "Deportivo",
+        category: "VansCategory",
         desc: "El nombre es difícil,pero suenan tremendo",
         
         price: 4000,
+    },
+    {
+        id: 14,
+        title: "F9-5 BTH-F9",
+        img: Nike8,
+        category: "Nike",
+        desc: "Running",
+        price: 5000,
+    },
+    {
+        id: 15,
+        title: "Adidas",
+        img: Adidas5,
+        category: "AdidasCategory",
+        desc: "Running",
+        price: 8000,
+    },
+    {
+        id: 16,
+        title: "Adidas",
+        img: Adidas6,
+        category: "AdidasCategory",
+        desc: "Running",
+        price: 8000,
+    },
+    {
+        id: 17,
+        title: "Adidas",
+        img: Adidas7,
+        category: "AdidasCategory",
+        desc: "Running",
+        price: 8000,
+    },
+
+    {
+        id: 18,
+        title: "Puma",
+        img: Puma2,
+        category: "Puma",
+        desc: "Running",
+        price: 8000,
     }
+
     
 
     
