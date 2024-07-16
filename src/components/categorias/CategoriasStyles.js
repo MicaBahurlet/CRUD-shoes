@@ -7,7 +7,7 @@ export const CategoriasWrapper = styled.div`
     justify-content: center;
     align-items: center;
     max-width: 1000px;
-    margin: 4rem auto;
+    margin: 2rem auto;
     font-family: var(--font-family);
     gap: 1rem;
     /* z-index: -1; */
