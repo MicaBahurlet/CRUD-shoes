@@ -13,9 +13,11 @@ export const ContactoContainer = styled.div`
   z-index: -2; 
   
   img {
-    max-width:500px;
+    max-width:600px;
     border-radius: 10px;
     margin-top: 5rem;
+    user-select: none;
+    pointer-events: none;
   }
 
   @media (max-width: 768px) {
@@ -35,7 +37,7 @@ export const Formulario = styled.form`
   display: flex;
   flex-direction: column; 
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 100%;
   height : auto ;
   max-width: 500px;
@@ -79,6 +81,7 @@ export const BotonEnviar = styled.div`
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
   font-size: 1.2rem;
   font-weight: 400;
+  margin-top: 1rem;
   /* z-index: -2 ; */
 
 

@@ -90,7 +90,7 @@ export default function Contacto() {
 
 
         <Fade direction="right" duration={2000}>
-          <img src={imgForm} alt="Img Formulario" />
+          <img src={imgForm} alt="Img Formulario"  />
         </Fade>
       </ContactoContainer>
       <Footer />

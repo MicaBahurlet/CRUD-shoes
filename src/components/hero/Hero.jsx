@@ -62,7 +62,7 @@ const Hero = ({doScroll}) => {
         </HeroTextContainerStyles>
      
         <HeroImageContainerStyles>
-          <Fade direction="left"  duration={3000} >
+          <Fade direction="left"  duration={4000} >
             <img src= {HeroCrud} alt="Auriculares Hero"/>
           </Fade>   
         </HeroImageContainerStyles>
