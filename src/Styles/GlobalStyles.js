@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
         --btn-LinkActive:#abdb25;
 
        
-        --font-family: 'Montserrat', sans-serif;
+        --font-family: 'Lato', sans-serif;
         --btn-Background: #abdb25;
 
         --bubble-cart: #abdb25;

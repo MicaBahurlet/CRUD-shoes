@@ -12,7 +12,7 @@ export const ContainerStyled = styled(motion.div)`
   justify-content: space-between;
   gap: 30px;
   width: 100%;
-  max-width: 440px;
+  max-width: 425px;
   height: calc(100vh - 4rem);
 
   padding: 2rem;
@@ -25,7 +25,7 @@ export const ContainerStyled = styled(motion.div)`
   @media (max-width: 968px){
     width: 100%;
     height: 92%;
-    max-width: 320px ; // width del modal cart
+    max-width: 320px ; // width del modal cart mobile
       
 
   }
@@ -77,7 +77,7 @@ export const TitleStyled = styled.div`
 `;
 
 export const MainContainerStyled = styled.div`
-  height: 40%;
+  height: 50%;
 `;
 
 export const ProductsWrapperStyled = styled.div`
@@ -121,7 +121,7 @@ export const ProductContainerStyled = styled.div`
   width: 100%;
 
   max-width: 360px;
-  height: 130px;
+  height: 200px;
 
   background: var(--gray-bg);
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
@@ -206,9 +206,10 @@ export const ButtonContainerStyled = styled(SubtotalStyled)`
   
   
   & button {
-    color: black;
+    color: white;
     padding: 1rem 1rem;
-    background-color: var(--btn-Background);
+    /* background-color: var(--btn-Background); */
+    background-color: black;
     border-radius: 10px;
     font-weight: 700;
     padding: 12px 12px;

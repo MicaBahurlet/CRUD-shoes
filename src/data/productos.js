@@ -215,7 +215,7 @@ export const productos = [
         title: "Vans",
         img: Vans5,
         category: "Vans",
-        desc: "Talle 36, unisex",
+        desc: "Talle 36, unisex - Casual",
         price: 38000,
     },
     {

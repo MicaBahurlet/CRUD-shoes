@@ -56,8 +56,8 @@ function Categoria({ img, title, category }) {
       onClick={handleCategoryClick}
     >
       <img src={img} alt={category} />
-      <h3>{title}</h3>
-      <BorderDecoration />
+      {/* <h3>{title}</h3> */}
+      {/* <BorderDecoration /> */}
     </CardCategoria>
   );
 }

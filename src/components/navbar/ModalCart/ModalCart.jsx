@@ -43,7 +43,7 @@ const ModalCart = () => {
 
   const finalizarCompra = () => {
     dispatch(finalizePurchase());
-    alert("¡Gracias por tu compra! Mañana despacharemos tu pedido. Esperamos que disfrutes tus Auris.");
+    alert("¡Gracias por tu compra! Mañana despacharemos tu pedido. Esperamos que disfrutes tus nuevas zapatillas.");
   };
 
 
@@ -91,7 +91,7 @@ const ModalCart = () => {
 
             <MainContainerStyled>
               <TitleStyled>
-                <h2>Tus Productos:</h2>
+                <h2>Tu carrito:</h2>
               </TitleStyled>
 
               <ProductsWrapperStyled>
@@ -100,7 +100,7 @@ const ModalCart = () => {
                       <ModalCartCard key={item.id} {...item} />
                     ))
                   ) : (
-                    <p>No hay <b> Auris</b> en tu compra, <br/> sumamos unos?</p>
+                    <p>No hay ningún producto en tu carrito, <b>explorá zapatillas en la página de productos</b></p>
                   )}
               </ProductsWrapperStyled>
             </MainContainerStyled>
@@ -112,7 +112,7 @@ const ModalCart = () => {
                
               </SubtotalStyled>
               <EnvioStyled>
-                <p>Envio</p>
+                <p>Envío:</p>
                 <span>${shippingCost}</span>
               </EnvioStyled>
               <hr />

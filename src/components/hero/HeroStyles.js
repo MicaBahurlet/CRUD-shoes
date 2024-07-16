@@ -34,7 +34,7 @@ export const HeroTextContainerStyles = styled.div`
     margin-left: 10rem;
     
     h1{
-        font-size: 3.7rem;
+        font-size: 5rem;
         margin: 10px 0;
         font-family: var(--font-family);
         text-shadow: 1.2px 1px 1px #000;
@@ -53,6 +53,7 @@ export const HeroTextContainerStyles = styled.div`
         font-size: 1.4rem;
         font-family: var(--font-family);
         line-height: 1.6;
+        margin-top: 1rem;
         margin-bottom: 2rem;
         color: white;
     }

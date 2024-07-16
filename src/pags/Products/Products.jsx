@@ -8,11 +8,11 @@ import {
   BotonVerMenos,
 } from "./Product.js";
 
-import {
-  ImputContainerStyles,
-  InputStyles,
-  BotonInput
-} from "../../components/hero/HeroStyles.js";
+// import {
+//   ImputContainerStyles,
+//   InputStyles,
+//   BotonInput
+// } from "../../components/hero/HeroStyles.js";
 
 import CardProductos from "./CardProductos.jsx";
 

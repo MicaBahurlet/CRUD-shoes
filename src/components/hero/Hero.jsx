@@ -54,7 +54,7 @@ const Hero = ({doScroll}) => {
         <HeroTextContainerStyles>
           <h1>DEJÁ TU HUELLA.</h1>
           {/* <h2><strong>Tus auriculares importan</strong></h2> */}
-          <p><strong> Las mejores zapatillas</strong> están acá. <br></br> <b>Pares únicos al mejor precio.</b> </p>
+          <p><strong> Las mejores zapatillas</strong> están acá. <br></br> <b>Pares discontinuos originales al mejor precio.</b> </p>
 
           <BotonInput onClick={() => window.location.href = "/Products"}>COMPRAR</BotonInput>
           

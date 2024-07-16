@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const CategoriasWrapper = styled.div`
 
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    max-width: 1300px;
+  justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
     margin: 3rem auto;
     font-family: var(--font-family);
-    gap: 3rem;
+    gap: 1rem;
     /* z-index: -1; */
 
 
@@ -66,7 +67,7 @@ export const CardCategoria = styled.div`
   align-items: center;
   gap: 0.4rem;
   width: 150px;
-  height: 150px;
+  height: 120px;
   padding: 1rem 1rem;
   border-radius: 15px;
   cursor: pointer;
