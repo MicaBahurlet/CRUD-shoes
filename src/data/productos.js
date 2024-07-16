@@ -40,7 +40,7 @@ export const productos = [
         title: "Nike air",
         img: Nike1,
         category: "Nike",
-        desc: "Talle 37, unisex - Trainning",
+        desc: "Talle 37, unisex -Trainning",
         New: "NUEVO",
         price: 100000,
     },
@@ -65,7 +65,7 @@ export const productos = [
         title: "Nike Sport",
         img: Nike4,
         category: "Nike",
-        desc: "A correr!",
+        desc: "Talle 39, unisex - Running",
         price: 90000,
     },
     {

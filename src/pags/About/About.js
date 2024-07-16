@@ -10,7 +10,8 @@ export const AboutContainer = styled.div`
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 5rem;
+
 
     @media (max-width: 968px) {
         flex-direction: column;
@@ -72,7 +73,7 @@ export const AboutImageContainerStyles = styled.div`
     z-index: -2;
     img{
         width: 100%;
-        max-width: 300px;
+        max-width: 500px;
         padding-bottom: 75px;
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     }
@@ -225,7 +226,7 @@ export const BeneficiosImg = styled.div`
     
     img{
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
        
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
         border-radius: 10px;

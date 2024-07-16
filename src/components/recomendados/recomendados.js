@@ -7,7 +7,6 @@ export const RecomendadosWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin: 0 15px;
     font-family: var(--font-family);
     width: 100%;
@@ -72,7 +71,7 @@ export const CardRecomendados = styled.div`
   text-align: center;
   width: 400px;
   height: auto;
-  padding: 2px;
+  padding: 1rem 1rem;
 
   /* background-color: grey;  */
   background-color: white;
@@ -108,7 +107,7 @@ export const CardRecomendados = styled.div`
     }
     h4{
         font-size: 1.1rem;
-        color: black;
+        color: green;
         font-weight: 800;
     }
 
@@ -128,12 +127,12 @@ export const BotonBuy = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    background-color: var( --btn-Background);
-    color: #ffffff;
+    background-color: black;
+    color: white;
     border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;
-    color: black;
+
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
     font-weight: 500;
     padding: 10px 10px;
@@ -148,6 +147,7 @@ export const InfoCard = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
  
 
 `;

@@ -13,7 +13,7 @@ export const ContactoContainer = styled.div`
   z-index: -2; 
   
   img {
-    max-width:350px;
+    max-width:500px;
     border-radius: 10px;
     margin-top: 5rem;
   }

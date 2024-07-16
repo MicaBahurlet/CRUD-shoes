@@ -3,10 +3,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/cart/cartSlice';
 import { ModalContainer, ModalContent } from './ModalStyles'; 
-import { CardProducto, 
-  BotonBuy
-  
-} from "./Product"
+import { CardProducto, BotonBuy, InfoContainer } from "./Product";
 
 function Productos({ img, title, category, price, desc, id }) {
     const dispatch = useDispatch();
@@ -24,12 +21,14 @@ function Productos({ img, title, category, price, desc, id }) {
     return (
         <>
             <CardProducto>
-                
                 <img src={img} alt={category} />
-                <h3>{title}</h3>
-                <p>{desc}</p>
-                <h4>${price}</h4>
-                <BotonBuy onClick={handleAddToCart}>Comprar</BotonBuy>
+                <InfoContainer>
+                    <h3>{title}</h3>
+                    <p>{desc}</p>
+                    <h4>${price}</h4>
+                    <BotonBuy onClick={handleAddToCart}>Comprar</BotonBuy>
+                </InfoContainer>
+                
             </CardProducto>
 
             {/* Mostrar el modal cuando se agrega el producto al carrito */}
@@ -43,9 +42,6 @@ function Productos({ img, title, category, price, desc, id }) {
 }
 
 export default Productos;
-
-
-
 
 
 

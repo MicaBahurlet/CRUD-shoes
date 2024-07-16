@@ -9,7 +9,7 @@ import {
   GrupoEtiquetaInput,
   Errormessage,
 } from './Contacto';
-import imgForm from '../../data/imgProducts/Contacto.jpg';
+import imgForm from '../../data/imgProducts/Iconic2.png';
 import Footer from '../../components/footer/Footer.jsx';
 import { Fade } from "react-awesome-reveal"
 import NavBar from '../../components/navbar/NavBar.jsx';
