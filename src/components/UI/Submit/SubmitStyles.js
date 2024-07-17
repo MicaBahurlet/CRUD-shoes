@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 export const ButtonSubmitStyled = styled(motion.button)`
    padding: 10px 20px;
-  font-size: 12px;
   background-color: var( --btn-Background);
 
   border: 1px solid black;

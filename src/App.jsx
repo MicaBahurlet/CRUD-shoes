@@ -15,6 +15,8 @@ import Checkout from "./pags/Checkout/Checkout.jsx";
 
 // import ProtectedRoute from "./components/protectedRoute/ProtectedRoute.jsx";
 
+import FinishCompra from "./pags/FinishCompra/FinishCompra.jsx";
+
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
                 <Route path="contact" element={<Contact/>}/>
                 <Route path="*" element={<Nopage/>}/>
                 <Route path="checkout" element={<Checkout/>}/>
+                <Route path="finish" element={<FinishCompra/>}/>
 
 
                 

@@ -30,7 +30,8 @@ export const CardsWrapperStyled = styled.div`
   margin: 0 auto;
 
   overflow: scroll;
-  background-color: white; // ver este contenedor, fondo de las cards de productos
+  background-color: whitesmoke; // ver este contenedor, fondo de las cards de productos
+  /* border: 1px solid black; */
 
   padding: 1rem;
   border-radius: 10px;

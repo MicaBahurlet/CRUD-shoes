@@ -207,12 +207,16 @@ export const ButtonContainerStyled = styled(SubtotalStyled)`
   
   & button {
     color: white;
-    padding: 1rem 1rem;
+    padding: 10px 20px;
     /* background-color: var(--btn-Background); */
     background-color: black;
     border-radius: 10px;
-    font-weight: 700;
+    font-weight: 400;
     padding: 12px 12px;
+    font-family: var( --font-family);
+    font-size: 1.2rem;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+    cursor: pointer;
   }
 `;
 

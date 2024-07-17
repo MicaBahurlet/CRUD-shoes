@@ -23,7 +23,7 @@ export const getOrders = async (dispatch, currentUser) => {
     console.log(err);
     dispatch(
       fetchOrdersFail(
-        "Upss, algo salío mal. No hay ordenes sin usuario, es como querer jugar al fútbol sin una pelota"
+        "Upss, algo salío mal. Por favor, intenta de nuevo."
       )
     );
   }

@@ -36,7 +36,7 @@ const CheckoutForm = ({ cartItems, price, shippingCost }) => {
           };
           try {
             await createOrder(orderData, dispatch, currentUser);
-            navigate("/felicitaciones");
+            navigate("/Finish");
             dispatch(clearCart());
           } catch (error) {
             alert("Error al crear la orden");
@@ -82,8 +82,10 @@ const CheckoutForm = ({ cartItems, price, shippingCost }) => {
               Dirección
             </Input>
             <div>
-              <Submit disabled={!cartItems.length}>
+              <Submit 
+                disabled={!cartItems.length} type="submit">
                 {isSubmitting ? <Loader /> : "Iniciar Pedido"}
+
               </Submit>
             </div>
           </Form>
@@ -94,3 +96,5 @@ const CheckoutForm = ({ cartItems, price, shippingCost }) => {
 };
 
 export default CheckoutForm;
+
+
