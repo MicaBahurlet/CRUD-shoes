@@ -33,9 +33,10 @@ export const GlobalStyles = createGlobalStyle`
     body{
         margin: 0;
         padding: 0;
-        /* background-color: --background-body; */
+
         font-family: 'Montserrat';
         overflow-x: hidden;
+        background-color: whitesmoke;
     }
 
     a{

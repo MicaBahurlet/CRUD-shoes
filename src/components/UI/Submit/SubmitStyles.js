@@ -2,17 +2,19 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const ButtonSubmitStyled = styled(motion.button)`
-  padding: 0.8rem 1.5rem;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  background: var(--btn-gradient);
+   padding: 10px 20px;
+  font-size: 12px;
+  background-color: var( --btn-Background);
 
-  color: white;
-  text-transform: uppercase;
-  font-weight: 400;
+  border: 1px solid black;
+  border-radius: 10px;
   cursor: pointer;
-  margin-top: 15px;
+  color: black;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 
   &:disabled {
     cursor: not-allowed;

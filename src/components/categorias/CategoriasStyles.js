@@ -84,12 +84,16 @@ export const CardCategoria = styled.div`
 
   &:hover {
     transform: scale(1.05);
+    
   }
 
   img {
     max-width: 80%;
     height: auto;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+    pointer-events: none;
+    user-select: none;
+    
 
   }
 

@@ -1,9 +1,15 @@
+
+
+
+
+
 import styled from "styled-components";
 
 
 export const AboutContainer = styled.div`
 
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -11,6 +17,7 @@ export const AboutContainer = styled.div`
     height: auto;
     margin: 0 auto;
     margin-top: 5rem;
+    gap: 2rem;
 
 
     @media (max-width: 968px) {
@@ -32,7 +39,7 @@ export const AboutTextContainerStyles = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 50%;
+    width: 80%; //antes estaba 50%
     h1{
         font-size: 4rem;
         margin: 10px 0;
@@ -69,13 +76,20 @@ export const AboutTextContainerStyles = styled.div`
 
 export const AboutImageContainerStyles = styled.div`
 
-    width: 40%;
+    width: 70%;
     z-index: -2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin : 0 auto;
     img{
         width: 100%;
-        max-width: 500px;
-        padding-bottom: 75px;
+        max-width: 700px;
+
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+        border-radius: 10px;
+        user-select: none;
+        pointer-events: none;
     }
 
     @media (max-width: 968px) {
@@ -97,6 +111,7 @@ export const HistoriaAbout = styled.div`
     margin: 2rem auto;
     
     h2{
+        text-align: start;
         font-size: 2rem;
         margin: 10px 0;
         font-family: var(--font-family);
@@ -173,19 +188,21 @@ export const BeneficiosMusica = styled.div`
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: start;
     width: 100%;
     height: auto;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 5rem auto;
     gap: 5rem;
     
     h2{
+        text-align: start;
         font-size: 2rem;
         margin: 10px 0;
         font-family: var(--font-family);
         text-shadow: 0.5px 0.5px 0.5px #000;
+        max-width: 380px;
     }
     ul {
         font-size: 1.2rem;
@@ -230,6 +247,8 @@ export const BeneficiosImg = styled.div`
        
         filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
         border-radius: 10px;
+        user-select: none;
+        pointer-events: none;
     }
 
     @media (max-width: 968px) {

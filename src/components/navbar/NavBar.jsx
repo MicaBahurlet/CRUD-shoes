@@ -2,11 +2,9 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { useNavbarContext } from './NavbarContext'; //importo el contexto
-import LogoImg from '../../data/imgProducts/LogoFinish.png';
 
 
-
-import  {FaHome } from 'react-icons/fa';
+import  {FaHome, FaUser } from 'react-icons/fa';
 
 import { motion } from "framer-motion";
 
@@ -46,21 +44,18 @@ const Navbar = () => {
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
               to="/products" onClick={closeMenu}>
-              {/* <FaShoppingCart className='IconsNav'/> */}
               PRODUCTOS
           </NavLink>
 
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
              to="/about" onClick={closeMenu}>
-              {/* <FaUser className='IconsNav'/> */}
               NOSOTROS
           </NavLink>
 
           <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
              to="/contact" onClick={closeMenu}>
-              {/* <FaEnvelope className='IconsNav'/> */}
               CONTACTO
           </NavLink>
 
@@ -72,9 +67,23 @@ const Navbar = () => {
         
 
       </Menu>
-      <CartNavStyled>
-               <CartIcon  />
-      </CartNavStyled>
+
+      <UserAndCartNav>
+        <NavLink
+              className={({ isActive }) => isActive ? 'active' : ''}
+             to="/login" onClick={closeMenu}>
+              <FaUser className='IconsNav'/>
+              INICIAR
+          </NavLink>
+
+        
+
+        <CartNavStyled>
+                
+                <CartIcon  />
+        </CartNavStyled>
+
+      </UserAndCartNav>
     </Nav>
   );
 };
@@ -118,6 +127,28 @@ const Logo = styled.h1`
   gap: 2rem;
   color: white;
   user-select: none; 
+`;
+
+const UserAndCartNav = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-family: var(--font-family); 
+    gap: 2rem;
+    font-weight: 700;
+
+    &:hover {  /* cuando pase el cursor por el link */
+      border-bottom: 3px solid greenyellow;  
+    }
+  }
+
 `;
 
 const Burger = styled.div`

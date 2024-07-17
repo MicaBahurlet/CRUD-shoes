@@ -11,7 +11,7 @@ import {
 } from "./About";
 
 import Footer from "../../components/footer/Footer";
-import ImgAbout from "../../data/imgProducts/Iconic1.png";
+import ImgAbout from "../../data/imgProducts/AboutCrud.jpg";
 import NavBar from "../../components/navbar/NavBar";
 import { Fade } from "react-awesome-reveal";
 import BeneficiosImgAbout from "../../data/imgProducts/Iconic3.png";
@@ -29,7 +29,7 @@ function About() {
           
                         
                             <AboutImageContainerStyles>
-                                <Fade direction="left"  duration={2000} >
+                                <Fade direction="zoom"  duration={2000} >
                                     <img src={ImgAbout} alt="About"/>
                                 </Fade>
                             </AboutImageContainerStyles>
@@ -43,17 +43,17 @@ function About() {
                 </AboutContainer>
 
                 <BeneficiosMusica>
-                <div>
-                    <h2>Beneficios de comprar en nuestra <br></br> tienda online:</h2>
-                    <ul>
-                        <li>&#128176; Pares discontinuos originales al mejor precio del mercado.</li>
-                        <li>&#128241; Compra rápida y sencilla.</li>
-                        <li>&#128242; Comunicación directa con nosotros para resolver tus dudas.</li>
-                        <li>&#128077; Envío seguro y confiable a tu domicilio.</li>
-                        <li>&#127752; Amplia variedad de métodos de pago disponibles.</li>
-                        <li>&#128230; Ofertas exclusivas y descuentos especiales para clientes registrados.</li>
-                    </ul>
-                </div>
+                    <div>
+                        <h2>Beneficios de comprar en nuestra tienda online:</h2>
+                        <ul>
+                            <li>&#128176; Pares discontinuos originales al mejor precio del mercado.</li>
+                            <li>&#128241; Compra rápida y sencilla.</li>
+                            <li>&#128242; Comunicación directa con nosotros para resolver tus dudas.</li>
+                            <li>&#128077; Envío seguro y confiable a tu domicilio.</li>
+                            <li>&#127752; Amplia variedad de métodos de pago disponibles.</li>
+                            <li>&#128230; Ofertas exclusivas y descuentos especiales para clientes registrados.</li>
+                        </ul>
+                    </div>
 
                     <BeneficiosImg> 
                         <Fade direction="right"  duration={2000} >
