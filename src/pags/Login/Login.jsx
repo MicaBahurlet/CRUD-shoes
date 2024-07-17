@@ -55,7 +55,7 @@ const Login = () => {
           >
             <Form>
               <LoginInput name="email" type="text" placeholder="Email" />
-              <LoginInput name="password" type="password" placeholder="Password" />
+              <LoginInput name="password" type="password" placeholder="Contraseña" />
               <Link to="/register">
                 <LoginEmailStyled>¿No tenes cuenta? Crea una</LoginEmailStyled>
               </Link>

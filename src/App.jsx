@@ -11,6 +11,10 @@ import Contact from "./pags/Contacto/Contacto.jsx";
 import Products from "./pags/Products/Products.jsx";
 import Login from "./pags/Login/Login.jsx";
 
+import Checkout from "./pags/Checkout/Checkout.jsx";
+
+// import ProtectedRoute from "./components/protectedRoute/ProtectedRoute.jsx";
+
 
 
 function App() {
@@ -28,6 +32,10 @@ function App() {
                 <Route path="products" element={<Products/>}/>
                 <Route path="contact" element={<Contact/>}/>
                 <Route path="*" element={<Nopage/>}/>
+                <Route path="checkout" element={<Checkout/>}/>
+
+
+                
 
           </Routes>
       

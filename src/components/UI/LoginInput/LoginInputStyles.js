@@ -13,6 +13,7 @@ export const LoginInputStyled = styled.input`
   border-radius: 10px;
   border: 1px solid black;
   border-color: ${({ isError }) => (isError ? '#fb103d' : 'black')};
+  outline: none;
 
 
   ::placeholder {

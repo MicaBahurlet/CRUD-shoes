@@ -9,6 +9,7 @@ import productsReducer from "./products/productsSlice.js";
 import recommendedReducer from "./recomended/recomendedSlice.js";
 import opinionesReducer from "./opininones/opinionesSlice.js";
 import userReducer from "./user/userSlice.js";
+import ordersReducer from "./orders/ordersSlice.js";
 
 
 import cartReducer from "./cart/cartSlice.js"; 
@@ -21,7 +22,7 @@ const reducers = combineReducers({ //crea un objeto con todos los reducers que y
     cart : cartReducer,
     opiniones: opinionesReducer,
     user: userReducer,
-    
+    orders: ordersReducer,  
 });
 
 const persistConfig = {

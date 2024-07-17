@@ -59,13 +59,6 @@ const Navbar = () => {
               CONTACTO
           </NavLink>
 
-          
-
-
-          
-
-        
-
       </Menu>
 
       <UserAndCartNav>
