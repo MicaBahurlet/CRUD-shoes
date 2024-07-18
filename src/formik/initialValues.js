@@ -1,3 +1,5 @@
+//valores iniciales de los formularios
+
 export const checkoutInitialValues = {
     name: "",
     cellphone: "",

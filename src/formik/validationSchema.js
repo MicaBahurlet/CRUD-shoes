@@ -1,3 +1,5 @@
+// aquí manejo las validaciones de todos los forms
+
 import * as Yup from "yup";
 import { regEmail } from "../utils/regExp";
 

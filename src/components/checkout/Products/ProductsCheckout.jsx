@@ -26,7 +26,7 @@ const ProductsCheckout = ({ cartItems, shippingCost, price }) => {
           ))
         ) : (
           <>
-            <p>¿Deseas agregar algo al carrito?</p>
+            <p>Ups! no hay productos en el carrito, deseas agregar algo?</p>
             <Link />
           </>
         )}

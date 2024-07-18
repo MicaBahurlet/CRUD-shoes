@@ -19,6 +19,6 @@ export const StyledLink = styled(Link)`
     font-weight: 700;
     font-size: 1rem;
     background: var(--btn-gradient);
-    color: white;
+    color: green;
   }
 `;
