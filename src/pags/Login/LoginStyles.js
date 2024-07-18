@@ -71,7 +71,7 @@ export const Form = styled(FormikForm)`
 `;
 
 export const LoginEmailStyled = styled.p`
-  color: black;
+  color: green;
   font-weight: 600;
 
   :hover {

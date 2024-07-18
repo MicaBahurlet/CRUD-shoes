@@ -62,12 +62,14 @@ const Navbar = () => {
       </Menu>
 
       <UserAndCartNav>
-        {/* <NavLink
+        <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
              to="/login" onClick={closeMenu}>
-              <FaUser className='IconsNav'/>
+              
               INICIAR
-        </NavLink> */}
+        </NavLink>
+
+        <FaUser className='IconsNav'/>
 
         
 

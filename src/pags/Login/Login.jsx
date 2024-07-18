@@ -57,9 +57,9 @@ const Login = () => {
               <LoginInput name="email" type="text" placeholder="Email" />
               <LoginInput name="password" type="password" placeholder="Contraseña" />
               <Link to="/register">
-                <LoginEmailStyled>¿No tenes cuenta? Crea una</LoginEmailStyled>
+                <LoginEmailStyled onClick={() => window.location.href = "/register"} >¿No tenes cuenta? Crea una</LoginEmailStyled>
               </Link>
-              <Submit>Ingresar</Submit>
+              <Submit >Ingresar</Submit>
             </Form>
           </Formik>
         </LoginContainerStyled>

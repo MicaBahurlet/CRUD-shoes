@@ -7,11 +7,12 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   padding: 20px;
-  background-color: black; /* Cambia esto según tu preferencia */
+  background-color: black; 
+
 `;
 
 export const BrandImage = styled.img`
-  width: 135px; /* Ajusta el tamaño según tu necesidad */
+  width: 135px; 
   height: auto;
   margin: 10px;
   pointer-events: none;

@@ -16,6 +16,7 @@ import Checkout from "./pags/Checkout/Checkout.jsx";
 // import ProtectedRoute from "./components/protectedRoute/ProtectedRoute.jsx";
 
 import FinishCompra from "./pags/FinishCompra/FinishCompra.jsx";
+import Register from "./pags/Register/Register.jsx";
 
 
 
@@ -36,6 +37,7 @@ function App() {
                 <Route path="*" element={<Nopage/>}/>
                 <Route path="checkout" element={<Checkout/>}/>
                 <Route path="finish" element={<FinishCompra/>}/>
+                <Route path="register" element={<Register/>}/>
 
 
                 
