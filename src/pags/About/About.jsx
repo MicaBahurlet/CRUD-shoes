@@ -50,7 +50,6 @@ function About() {
                             <li>&#128241; Compra rápida y sencilla.</li>
                             <li>&#128242; Comunicación directa con nosotros para resolver tus dudas.</li>
                             <li>&#128077; Envío seguro y confiable a tu domicilio.</li>
-                            <li>&#127752; Amplia variedad de métodos de pago disponibles.</li>
                             <li>&#128230; Ofertas exclusivas y descuentos especiales para clientes registrados.</li>
                         </ul>
                     </div>

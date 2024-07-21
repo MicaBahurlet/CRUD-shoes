@@ -73,3 +73,8 @@ Sección representativa de about:
 El proyecto se encuentra desplegado en <b>Vercel</b>, puedes visitarlo <a href="#" target="_blank" >aquí</a>.
 
 
+URI DB: mongodb+srv://micabahurletgo:Crud-shoes@crud-shoes.x226hvy.mongodb.net/
+
+pasword: Crud-shoes
+
+ip: 190.16.1.213

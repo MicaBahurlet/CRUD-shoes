@@ -50,11 +50,11 @@ const Register = () => {
             <Form>
             <LoginInput name="name" type="text" placeholder="Nombre" />
             <LoginInput name="email" type="text" placeholder="Email" />
-            <LoginInput name="password" type="password" placeholder="Password" />
+            <LoginInput name="password" type="password" placeholder="Contraseña" />
             <LoginEmailStyled to="/login">
                 <p>¿Ya tenes cuenta? Inicia sesión</p>
             </LoginEmailStyled>
-            <Submit>Registrarte</Submit>
+            <Submit>Registrate</Submit>
             </Form>
         </Formik>
         </LoginContainerStyled>

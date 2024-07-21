@@ -30,6 +30,8 @@ import {
   TotalStyled,
 } from "./ModalCartStyles";
 
+import Link from "../../UI/Link/Link";
+
 
 const ModalCart = () => {
 
@@ -101,7 +103,12 @@ const ModalCart = () => {
                     ))
                   ) : (
                     <p>No hay ningún producto en tu carrito, <b>explorá zapatillas en la página de productos</b></p>
+                    
                   )}
+                  {/* <Link />  */}
+
+                    
+
               </ProductsWrapperStyled>
             </MainContainerStyled>
 

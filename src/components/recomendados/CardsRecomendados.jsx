@@ -26,7 +26,7 @@ function RecomendadosProduct() {
         
 
       </RecomendadosContainer>
-      <BotonBuy  onClick={() => window.location.href = "/Products"}> Ver más  <FaAngleDoubleRight /></BotonBuy>
+      <BotonBuy  onClick={() => window.location.href = "/Products"}> Más productos  <FaAngleDoubleRight /></BotonBuy>
 
     </RecomendadosWrapper>
   );

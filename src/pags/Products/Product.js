@@ -225,7 +225,7 @@ export const BotonVerMenos = styled.div`
   font-family: var(--font-family);
   font-weight: 500;
   padding: 10px 10px;
-  max-width: 7rem;
+  max-width: 8rem;
 `;
 
 export const ImputContainerStyles = styled.div`

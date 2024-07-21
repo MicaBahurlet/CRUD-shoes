@@ -106,10 +106,10 @@ function CardsProductos() {
           </ProductosWrapper>
           <BotonsWrapper>
             <BotonVerMenos onClick={handleVerMenos}>
-              Ver menos
+              Menos productos 
             </BotonVerMenos>
             <Boton onClick={handleVerMas}>
-              Ver más
+              Más productos
             </Boton>
           </BotonsWrapper>
         </ContentWrapper>

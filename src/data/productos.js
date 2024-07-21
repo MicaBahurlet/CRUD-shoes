@@ -70,7 +70,7 @@ export const productos = [
     },
     {
         id: 5,
-        title: "In-Ear",
+        title: "Nike Yellow Xtreme",
         img: Nike5,
         category: "Nike",
         desc: "Talle 37, unisex - Running",
@@ -102,7 +102,7 @@ export const productos = [
     },
     {
         id: 9,
-        title: "Adi Nice",
+        title: "Adidas Nice",
         img: Adidas2,
         category: "AdidasCategory",
         desc: "Talle 29, unisex - Running",

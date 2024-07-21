@@ -73,6 +73,7 @@ export const Form = styled(FormikForm)`
 export const LoginEmailStyled = styled.p`
   color: green;
   font-weight: 600;
+  font-size: 1.3rem ;
 
   :hover {
     text-decoration: underline;

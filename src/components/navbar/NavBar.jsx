@@ -11,10 +11,14 @@ import { motion } from "framer-motion";
 import CartIcon from './CartIcon/CartIcon';
 import ModalCart from './ModalCart/ModalCart';
 
+import CerrarSesion from './CerrarSesion/cerrarSesion.jsx';
+
+
 
 
 const Navbar = () => { 
   const { clicked, handleClick, closeMenu } = useNavbarContext();  //accedo al contexto para trabajar con las fn que cree en el context.
+
 
  
   return (
@@ -64,14 +68,13 @@ const Navbar = () => {
       <UserAndCartNav>
         <NavLink
               className={({ isActive }) => isActive ? 'active' : ''}
-             to="/login" onClick={closeMenu}>
-              
-              INICIAR
+             to="/login" onClick={closeMenu}
+             >
+              INICIAR SESIÓN 
         </NavLink>
 
-        <FaUser className='IconsNav'/>
+        <CerrarSesion/>
 
-        
 
         <CartNavStyled>
                 
@@ -128,7 +131,7 @@ const UserAndCartNav = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
 
   a {
     text-decoration: none;
@@ -138,6 +141,7 @@ const UserAndCartNav = styled.div`
     font-family: var(--font-family); 
     gap: 2rem;
     font-weight: 700;
+
 
     &:hover {  /* cuando pase el cursor por el link */
       border-bottom: 3px solid greenyellow;  

@@ -152,7 +152,8 @@ export const HeroImageContainerStyles = styled.div`
     user-select: none;
     img{
 
-        width: 1000px;
+        width: 997px;
+        margin-top: 2.5rem;
         
         filter: drop-shadow(3px 3px 5px rgba (0, 0, 0, 0.2));
         
