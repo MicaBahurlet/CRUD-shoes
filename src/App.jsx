@@ -18,6 +18,8 @@ import Checkout from "./pags/Checkout/Checkout.jsx";
 import FinishCompra from "./pags/FinishCompra/FinishCompra.jsx";
 import Register from "./pags/Register/Register.jsx";
 
+import Validate from "./pags/Validate/Validate.jsx";
+
 
 
 function App() {
@@ -38,6 +40,7 @@ function App() {
                 <Route path="checkout" element={<Checkout/>}/>
                 <Route path="finish" element={<FinishCompra/>}/>
                 <Route path="register" element={<Register/>}/>
+                <Route path="validate" element={<Validate/>}/>
 
 
                 

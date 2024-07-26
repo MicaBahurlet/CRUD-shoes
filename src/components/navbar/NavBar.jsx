@@ -1,31 +1,25 @@
+
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { useNavbarContext } from './NavbarContext'; //importo el contexto
-
-
-import  {FaHome, FaUser } from 'react-icons/fa';
-
+import { useNavbarContext } from './NavbarContext'; // Importa el contexto
+import { useSelector } from 'react-redux'; // Importa useSelector para acceder al estado de Redux
+import { FaHome } from 'react-icons/fa';
 import { motion } from "framer-motion";
-
 import CartIcon from './CartIcon/CartIcon';
 import ModalCart from './ModalCart/ModalCart';
-
 import CerrarSesion from './CerrarSesion/cerrarSesion.jsx';
 
 
-
-
 const Navbar = () => { 
-  const { clicked, handleClick, closeMenu } = useNavbarContext();  //accedo al contexto para trabajar con las fn que cree en el context.
+  const { clicked, handleClick, closeMenu } = useNavbarContext(); // Accede al contexto
+  const currentUser = useSelector(state => state.user.currentUser); // Obtén el usuario actual del estado
 
 
- 
   return (
     <Nav>
       <ModalCart />
       <Logo>
-        {/* <img src={LogoImg} alt="Logo" /> */}
         <h1>CRUD | shoes</h1>
       </Logo>
       <Burger onClick={handleClick}> 
@@ -35,56 +29,56 @@ const Navbar = () => {
           <span></span>
         </div>
       </Burger>
-      <Menu clicked={clicked}> {/*AQUI VAN LOS LINKS, si yo usara "a" me recargaría react en cada navegación  $$ para agregar*/}
-          <NavLink 
-            className={({ isActive }) => isActive ? 'active' : ''} //si isActive es true, le pongo active, si no, no
-            to="/" onClick={closeMenu} >
-              <FaHome className='IconsNav'/>
-              HOME
-          </NavLink>
-
-          
-
-          <NavLink
-              className={({ isActive }) => isActive ? 'active' : ''}
-              to="/products" onClick={closeMenu}>
-              PRODUCTOS
-          </NavLink>
-
-          <NavLink
-              className={({ isActive }) => isActive ? 'active' : ''}
-             to="/about" onClick={closeMenu}>
-              NOSOTROS
-          </NavLink>
-
-          <NavLink
-              className={({ isActive }) => isActive ? 'active' : ''}
-             to="/contact" onClick={closeMenu}>
-              CONTACTO
-          </NavLink>
-
+      <Menu clicked={clicked}>
+        <NavLink 
+          className={({ isActive }) => isActive ? 'active' : ''}
+          to="/" onClick={closeMenu}>
+            <FaHome className='IconsNav'/>
+            HOME
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => isActive ? 'active' : ''}
+          to="/products" onClick={closeMenu}>
+          PRODUCTOS
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => isActive ? 'active' : ''}
+          to="/about" onClick={closeMenu}>
+          NOSOTROS
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => isActive ? 'active' : ''}
+          to="/contact" onClick={closeMenu}>
+          CONTACTO
+        </NavLink>
       </Menu>
 
       <UserAndCartNav>
-        <NavLink
-              className={({ isActive }) => isActive ? 'active' : ''}
-             to="/login" onClick={closeMenu}
-             >
-              INICIAR SESIÓN 
-        </NavLink>
-
-        <CerrarSesion/>
-
-
+        {currentUser ? (
+          <>
+            <UserGreeting>Hola, {currentUser.nombre}</UserGreeting>
+            <CerrarSesion />
+          </>
+        ) : (
+          <NavLink
+            className={({ isActive }) => isActive ? 'active' : ''}
+            to="/login" onClick={closeMenu}>
+            INICIAR SESIÓN
+          </NavLink>
+        )}
         <CartNavStyled>
-                
-                <CartIcon  />
+          <CartIcon />
         </CartNavStyled>
-
       </UserAndCartNav>
     </Nav>
   );
 };
+
+// Resto del código para los styled components
+
+
+// Resto del código para los styled components
+
 
 
 
@@ -148,6 +142,13 @@ const UserAndCartNav = styled.div`
     }
   }
 
+`;
+
+const UserGreeting = styled.span`
+  color: white;
+  font-size: 1.2rem;
+  font-family: var(--font-family);
+  font-weight: 700;
 `;
 
 const Burger = styled.div`

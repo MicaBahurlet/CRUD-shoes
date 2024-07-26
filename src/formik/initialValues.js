@@ -22,3 +22,7 @@ export const checkoutInitialValues = {
     email: "",
 };
   
+
+export const validateInitialValues = {
+  code: '',
+};
