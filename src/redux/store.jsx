@@ -20,22 +20,22 @@ const reducers = combineReducers({ //crea un objeto con todos los reducers que y
     products: productsReducer, 
     recommended: recommendedReducer,
     cart : cartReducer,
+    orders: ordersReducer, 
+    user: userReducer, 
     opiniones: opinionesReducer,
-    user: userReducer,
-    orders: ordersReducer,  
 });
 
 const persistConfig = {
     key: "root",
     storage,
-    whitelist: ["cart"], // array sólo con cart, que es lo que quiero persistir // todo aquello que quiero incluir en el storage.
+    whitelist: ["cart"], // array sólo con cart, que es lo que quiero persistir // todo aquello que quiero incluir en el storage después deberé poner "user"
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers); // recibe la configuracion y los reducers
 
 export const store = configureStore({ // acá había un problema con el persistor, hay que desactivar para los datos seriables. 
     reducer: persistedReducer,
-    middleware: (getDefaultMiddleware) =>
+    middleware: getDefaultMiddleware =>
       getDefaultMiddleware({
         serializableCheck: false,
       }),

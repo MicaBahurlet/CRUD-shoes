@@ -8,6 +8,8 @@ export const ValidateContainerStyled = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  font-family: var(--font-family);
+  height: 70vh;
 `;
 
 export const Form = styled(FormikForm)`
@@ -20,7 +22,7 @@ export const Form = styled(FormikForm)`
 `;
 
 export const ValidateEmailStyled = styled.p`
-  color: var(--orange);
+    
 
   :hover {
     text-decoration: underline;

@@ -41,7 +41,7 @@ const Login = () => {
           <Formik
             initialValues={loginInitialValues}
             validationSchema={loginValidationSchema}
-            onSubmit={async (values) => {
+            onSubmit={async values => {
               const user = await loginUser(values.email, values.password);
               if (user) {
                 dispatch(
