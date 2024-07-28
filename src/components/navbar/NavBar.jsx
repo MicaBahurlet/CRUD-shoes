@@ -1,9 +1,9 @@
 
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { useNavbarContext } from './NavbarContext'; // Importa el contexto
-import { useSelector } from 'react-redux'; // Importa useSelector para acceder al estado de Redux
+import { useSelector, useDispatch } from 'react-redux'; // Importa useSelector para acceder al estado de Redux
 import { FaHome } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import CartIcon from './CartIcon/CartIcon';
@@ -12,9 +12,9 @@ import CerrarSesion from './CerrarSesion/cerrarSesion.jsx';
 
 
 const Navbar = () => { 
-  const { clicked, handleClick, closeMenu } = useNavbarContext(); // Accede al contexto
   const currentUser = useSelector(state => state.user.currentUser); // Obtén el usuario actual del estado
-
+  const { clicked, handleClick, closeMenu } = useNavbarContext(); // Accede al contexto
+  
 
   return (
     <Nav>

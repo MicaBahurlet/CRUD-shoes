@@ -2,19 +2,24 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaUser } from 'react-icons/fa';
 import { useNavbarContext } from '../NavbarContext';
+import { useDispatch } from 'react-redux';
+import { logoutUser } from '../../../redux/user/userSlice'; 
 
 const UserDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { closeMenu } = useNavbarContext();
+  const dispatch = useDispatch();
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
   const handleLogout = () => {
-    // Aquí puedes agregar la lógica para cerrar sesión
     closeMenu();
+    dispatch(logoutUser()); // Acción para limpiar estado de usuario
+    localStorage.removeItem('token'); // Eliminar token del almacenamiento local
     console.log('Cerrar sesión');
+    window.location.href = '/login'; // Redirigir a la página de login. Ver si quiero dejar esta pag
   };
 
   return (
@@ -22,7 +27,8 @@ const UserDropdown = () => {
       <FaUser className="IconsNav" onClick={toggleDropdown} />
       {isOpen && (
         <DropdownMenu>
-          <DropdownItem onClick={handleLogout}>Cerrar sesión</DropdownItem>
+          <DropdownItem>Mis pedidos</DropdownItem>
+          <DropdownItem onClick={handleLogout}>Cerrar sesión</DropdownItem> 
         </DropdownMenu>
       )}
     </UserDropdownContainer>
@@ -30,7 +36,6 @@ const UserDropdown = () => {
 };
 
 export default UserDropdown;
-
 
 const UserDropdownContainer = styled.div`
   position: relative;

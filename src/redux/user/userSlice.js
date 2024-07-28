@@ -1,4 +1,3 @@
-
 import { createSlice } from '@reduxjs/toolkit';
 
 const INITIAL_STATE = {
@@ -27,12 +26,13 @@ const userSlice = createSlice({
         hiddenMenu: !state.hiddenMenu,
       };
     },
+    logoutUser: state => {
+      state.currentUser = null;
+    },
   },
 });
 
-export const { setCurrentUser, setVerified, toggleMenuHidden } =
-  userSlice.actions;
+export const { setCurrentUser, setVerified, toggleMenuHidden, logoutUser } = userSlice.actions;
 
 export default userSlice.reducer;
-
 
