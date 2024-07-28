@@ -11,13 +11,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { verifyUser } from '../../axios/axios-user';
 import { validateInitialValues } from '../../formik/initialValues';
 import { validateValidationSchema } from '../../formik/validationSchema';
-import { setVerified } from '../../redux/user/userSlice';
+import { setCurrentUser, setVerified } from '../../redux/user/userSlice';
 
-// import Navbar from '../../components/navbar/NavBar';
+import Navbar from '../../components/navbar/NavBar';
 import Footer from '../../components/footer/Footer';
 const Validate = () => {
 
-  // esta parte antes del return tengo un problema, si lo comento se carga la pag correctamente, pero no me valida al usuario
+  // esta parte antes del return tengo un problema, si lo comento se carga la pag correctamente, pero obviamente no me valida al usuario
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const currentUser = useSelector(state => state.user.currentUser);
@@ -33,7 +33,7 @@ const Validate = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <ValidateContainerStyled>
         <h1>Validar cuenta</h1>
         <Formik

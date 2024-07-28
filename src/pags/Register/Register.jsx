@@ -57,7 +57,7 @@ const Register = () => {
               <LoginEmailStyled to="/login">
                   <p>¿Ya tenes cuenta? Inicia sesión</p>
               </LoginEmailStyled>
-              <Submit onClick={() => window.location.href = "/validate"}  >Registrate</Submit>
+              <Submit onClick={() => window.location.href = "/validate"} >Registrate</Submit>
             </Form>
         </Formik>
       </LoginContainerStyled>

@@ -22,7 +22,7 @@ export const Form = styled(FormikForm)`
 `;
 
 export const ValidateEmailStyled = styled.p`
-    
+    color: green;
 
   :hover {
     text-decoration: underline;

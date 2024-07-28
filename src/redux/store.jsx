@@ -1,8 +1,8 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-
+import storage from "redux-persist/lib/storage";
 import persistReducer from "redux-persist/es/persistReducer";
 import persistStore from "redux-persist/lib/persistStore";
-import storage from "redux-persist/lib/storage";
+
 
 import categoriesReducer from "./categories/categoriesSlice.js";  
 import productsReducer from "./products/productsSlice.js";
@@ -28,7 +28,7 @@ const reducers = combineReducers({ //crea un objeto con todos los reducers que y
 const persistConfig = {
     key: "root",
     storage,
-    whitelist: ["cart"], // array sólo con cart, que es lo que quiero persistir // todo aquello que quiero incluir en el storage después deberé poner "user"
+    whitelist: ["cart", "user"], // array sólo con cart y user logueados, que es lo que quiero persistir 
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers); // recibe la configuracion y los reducers
