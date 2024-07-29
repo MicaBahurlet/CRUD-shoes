@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Formik } from 'formik';
 import { useNavigate } from 'react-router-dom';
 
@@ -15,14 +15,13 @@ import { setCurrentUser, setVerified } from '../../redux/user/userSlice';
 
 import Navbar from '../../components/navbar/NavBar';
 import Footer from '../../components/footer/Footer';
-const Validate = () => {
 
-  // esta parte antes del return tengo un problema, si lo comento se carga la pag correctamente, pero obviamente no me valida al usuario
+const Validate = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const currentUser = useSelector(state => state.user.currentUser);
+  const [error, setError] = useState(null);
 
-  // //   //si pongo /validate dentro de la ruta navigate si me carga la página, pero no me valida al usuario
   useEffect(() => {
     if (!currentUser) {
       navigate('/login');
@@ -35,21 +34,29 @@ const Validate = () => {
     <>
       <Navbar />
       <ValidateContainerStyled>
-        <h1>Validar cuenta</h1>
+        <h1>Valida tu cuenta</h1>
+        <p>Te enviamos un código de validación al email: {currentUser.email}</p>
         <Formik
           initialValues={validateInitialValues}
           validationSchema={validateValidationSchema}
-          onSubmit={async values => {
-            await verifyUser(currentUser.email, values.code);
-            dispatch(setVerified());
-            navigate('/');
+          onSubmit={async (values, { setSubmitting }) => {
+            try {
+              await verifyUser(currentUser.email, values.code);
+              dispatch(setVerified());
+              navigate('/');
+            } catch (error) {
+              setError(error.response.data.msg);
+              setSubmitting(false);
+            }
           }}
-          
         >
-          <Form>
-            <LoginInput name='code' type='code' placeholder='código' />
-            <Submit>Validar</Submit>
-          </Form>
+          {({ isSubmitting }) => (
+            <Form>
+              <LoginInput name='code' type='code' placeholder='código' />
+              {error && <div style={{ color: 'red' }}>{error}</div>}
+              <Submit disabled={isSubmitting}>Validar</Submit>
+            </Form>
+          )}
         </Formik>
       </ValidateContainerStyled>
       <Footer />
