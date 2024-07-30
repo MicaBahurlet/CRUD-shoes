@@ -2,12 +2,13 @@
 import { CardProducto } from "./CardsProductosStyles"
 import { BotonBuy } from "../recomendados/recomendados";
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart} from "../../redux/cart/cartSlice";
 
 function Productos ( {img,title,category,price,desc,id}) {
 
   const dispatch = useDispatch();
+  
 
   return (
     <CardProducto>

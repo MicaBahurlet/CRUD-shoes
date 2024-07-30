@@ -26,3 +26,12 @@ export const FinishMensaje = styled.div`
         max-width: 100px;
     }
 `
+
+export const ContainerBtn = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+`

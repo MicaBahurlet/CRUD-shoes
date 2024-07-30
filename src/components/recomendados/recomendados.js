@@ -15,8 +15,7 @@ export const RecomendadosWrapper = styled.div`
 
     h2 {
       margin-top: 4rem;
-        margin-bottom: 1rem;
-        
+        margin-bottom: 1rem; 
     }
     h3 {
         margin-bottom: 3rem;

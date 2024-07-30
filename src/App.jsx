@@ -14,6 +14,8 @@ import Checkout from "./pags/Checkout/Checkout.jsx";
 import FinishCompra from "./pags/FinishCompra/FinishCompra.jsx";
 import Nopage from "./pags/noPage/Nopage.jsx"; 
 
+import Orders from "./pags/Orders/Orders.jsx";
+
 // import ProtectedRoute from "./components/protectedRoute/ProtectedRoute.jsx";
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
                 <Route path="checkout" element={<Checkout/>}/>
                 <Route path="finish" element={<FinishCompra/>}/>
                 <Route path="*" element={<Nopage/>}/>
+                <Route path="orders" element={<Orders/>}/>
                 
           </Routes>
       

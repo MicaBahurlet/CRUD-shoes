@@ -5,10 +5,14 @@ import { useNavbarContext } from '../NavbarContext';
 import { useDispatch } from 'react-redux';
 import { logoutUser } from '../../../redux/user/userSlice'; 
 
+import { useNavigate } from 'react-router-dom';
+
 const UserDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { closeMenu } = useNavbarContext();
   const dispatch = useDispatch();
+
+  const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -22,12 +26,17 @@ const UserDropdown = () => {
     window.location.href = '/login'; // Redirigir a la página de login. Ver si quiero dejar esta pag
   };
 
+  const handleOrders = () => {
+    closeMenu();
+    navigate('/orders'); // Redirigir a la página de órdenes
+  };
+
   return (
     <UserDropdownContainer>
       <FaUser className="IconsNav" onClick={toggleDropdown} />
       {isOpen && (
         <DropdownMenu>
-          <DropdownItem>Mis pedidos</DropdownItem>
+          <DropdownItem onClick={handleOrders}>Mis pedidos</DropdownItem>
           <DropdownItem onClick={handleLogout}>Cerrar sesión</DropdownItem> 
         </DropdownMenu>
       )}

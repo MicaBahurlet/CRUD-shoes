@@ -14,7 +14,7 @@ function RecomendadosProduct() {
   const {recommended} = useSelector((state) => state.recommended);
   return (
     <RecomendadosWrapper>   
-      <h2>Zapatillas recomendadas para ti: </h2> 
+      <h2>Las últimas recomendaciones: </h2> 
       {/* <h3>Recomendaciones hechas para ti.</h3> */}
       <RecomendadosContainer> 
         {recommended.map(cat =>(  //antes estaba recomendados.map
