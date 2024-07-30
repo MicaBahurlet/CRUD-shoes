@@ -64,7 +64,7 @@ export const Input = styled.input`
 `;
 
 export const Textarea = styled.textarea`
-
+  resize: none;
   margin-bottom: 16px; 
   border-radius: 10px;
 `;

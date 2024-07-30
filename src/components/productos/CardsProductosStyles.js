@@ -87,3 +87,17 @@ export const CardProducto = styled.div`
 
 `;
 
+export const BotonBuy = styled.button`
+  background-color: ${(props) => (props.disabled ? "#ccc" : "#007bff")};
+  color: ${(props) => (props.disabled ? "#666" : "#fff")};
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
+  font-size: 16px;
+  margin-top: 10px;
+  
+  &:disabled {
+    cursor: not-allowed;
+  }
+`;
