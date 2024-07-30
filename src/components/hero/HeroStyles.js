@@ -16,9 +16,10 @@ export const HeroContainerStyles = styled.div`
     @media (max-width: 968px) {
         flex-direction: column;
         flex-direction: column;
-        margin-top: 4rem;
+
         gap: 20px;
         height: 84vh;
+
 
        
     }
@@ -41,7 +42,7 @@ export const HeroTextContainerStyles = styled.div`
         color: white;
         font-weight: 800;
         user-select: none; 
-        
+
 
     }
     
@@ -67,38 +68,47 @@ export const HeroTextContainerStyles = styled.div`
         justify-content: center;
         width: 70;
         margin-top: 2rem;
+        margin: 0 auto;
         h1{
             font-size: 3rem;
-            color: #1E1E1E;
+            color: white;
 
         }
         h2 {
             font-size: 1.5rem;
-            color: #1E1E1E;
+            color: white;
         }
         p {
             font-size: 1rem;
-            color: #1E1E1E;
+            color: white;
         }
     }
+    @media (max-width: 576px) {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 70;
+        margin-top: 2rem;
+
+    }
 
 `;
 
-export const ImputContainerStyles = styled.div`
+// export const ImputContainerStyles = styled.div`
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 1rem;
 
-    gap: 2rem;
+//     gap: 2rem;
     
 
-    @media (max-width: 968px) {
-        flex-direction: column;
+//     @media (max-width: 968px) {
+//         flex-direction: column;
         
-    }
-`;
+//     }
+// `;
 
 export const InputStyles = styled.input`
     align-items: center;
@@ -122,10 +132,7 @@ export const BotonInput = styled.div`
     border: 1px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
-  
-    /* background-color: var(--btn-Background); */
-    /* background-color:#30B7E7; */
-    background-color: greenyellow;
+    background-color: var( --btn-Background);
     
     color: #1E1E1E;
     font-weight: bold;

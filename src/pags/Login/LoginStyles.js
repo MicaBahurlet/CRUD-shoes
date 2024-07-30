@@ -19,10 +19,19 @@ export const MainContainer = styled.div`
     height: 100%;
     max-width: 380px;
   }
+  @media (max-width: 576px) {
+
+        max-width: 300px;
+        padding: 0 15px;
+        margin: 0 auto;
+
+  }
 `
 
 export const ImgInicioSesion = styled.div`
   margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
 
 
     img {
@@ -30,6 +39,15 @@ export const ImgInicioSesion = styled.div`
         max-width: 500px;
         user-select: none;
         pointer-events: none;
+
+      @media (max-width: 576px) {
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: auto;
+        margin: 0 auto;
+
+      }
     }
 
     @media (max-width: 768px) {
@@ -37,6 +55,7 @@ export const ImgInicioSesion = styled.div`
       justify-content: center;
       align-items: center;
     }
+
 `
 
 

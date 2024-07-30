@@ -30,7 +30,14 @@ export const RecomendadosWrapper = styled.div`
         text-align: center;
         width: 100%;
         max-width: 380px;
+
     };
+    @media (max-width: 576px) {
+        max-width: 300px;
+        padding: 0 15px;
+        margin: 0 auto;
+
+    }
 
 `;
 

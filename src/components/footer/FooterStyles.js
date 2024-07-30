@@ -8,7 +8,7 @@ export const FooterContainerStyles = styled.div`
     border-top: 1px solid black;
     padding: 1rem 4rem;
     background-color: black;
-    height: 6rem;
+    height: 11rem;
     
 
     img{
@@ -28,6 +28,10 @@ export const FooterContainerStyles = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         height: 20rem;
+    }
+    @media (max-width: 576px) {
+        flex-direction: column;
+        height: 25rem;
     }
 
 

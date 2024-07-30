@@ -1,18 +1,24 @@
+
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getOrders } from '../../axios/axios-orders';
 import { productos } from '../../data/productos'; 
+import { useNavigate } from 'react-router-dom'; 
 
 import Navbar from '../../components/navbar/NavBar';
 import Footer from '../../components/footer/Footer';
 
 import {
+    MainContainer,
     OrderContainer,
-    Order
+    Order,
+    NoOrdersMessage,
+    ButtonLink
 } from './OrderStyle';
 
 const Orders = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate(); 
   const { currentUser } = useSelector((state) => state.user);
   const { orders, loading, error } = useSelector((state) => state.orders);
 
@@ -26,17 +32,16 @@ const Orders = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <div>
+    <MainContainer>
       <Navbar />
 
       <OrderContainer>
         <h1>Mis pedidos:</h1>
           {orders && orders.length > 0 ? (
               <ul>
-                
                   {orders.map((order) => (
-                    <Order>
-                      <li key={order._id}>
+                    <Order key={order._id}>
+                      <li>
                       <h2>N° de orden: {order._id}</h2>
                       <h4>Total con envío incluido: ${order.total}</h4>
                       <h4>Envío: ${order.shippingCost}</h4>
@@ -56,16 +61,18 @@ const Orders = () => {
                       </li>
                     </Order>
                   ))}
-                
               </ul>
           ) : (
-              <p>Aún no has comprado nada</p> //boton que mande a productos
+              <NoOrdersMessage>
+                  <p>Aún no has comprado nada o bien no has iniciado sesión.</p>
+                  <ButtonLink onClick={() => navigate('/products')}>Ir a productos</ButtonLink>
+                  <ButtonLink onClick={() => navigate('/login')}>Iniciar sesión</ButtonLink>
+              </NoOrdersMessage>
           )}
-
       </OrderContainer>
 
       <Footer />
-    </div>
+    </MainContainer>
   );
 };
 

@@ -29,6 +29,7 @@ export const ContainerStyled = styled(motion.div)`
       
 
   }
+
 `;
 
 export const CloseButtonContainerStyled = styled.div`

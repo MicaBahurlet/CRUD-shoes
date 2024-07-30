@@ -12,7 +12,14 @@ export const CheckoutDatosStyled = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 4rem;
+  }
+  @media (max-width: 576px) {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 4rem auto;
   }
 
 `;
@@ -23,9 +30,16 @@ export const Formik = styled(FormikContainer)`
   flex-direction: column;
 
   @media (max-width: 768px) {
-
-    text-align: start;
+    flex-direction: column;
+    justify-content: center;
   }
+  @media (max-width: 576px) {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+  }
+  
 
 `;
 export const Form = styled(FormikForm)`
@@ -39,8 +53,13 @@ export const Form = styled(FormikForm)`
     justify-content: center;
     align-items: center;
     width: 100%;
-
-
+  }
+  @media (max-width: 576px) {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
   }
 
 `;

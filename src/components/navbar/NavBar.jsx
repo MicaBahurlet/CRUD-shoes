@@ -97,6 +97,13 @@ const Logo = styled.h1`
   gap: 2rem;
   color: white;
   user-select: none; 
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 576px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const UserAndCartNav = styled.div`
@@ -117,6 +124,13 @@ const UserAndCartNav = styled.div`
     &:hover {  
       border-bottom: 3px solid greenyellow;  
     }
+
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 0.8rem;
+    }
   }
 `;
 
@@ -125,6 +139,11 @@ const UserGreeting = styled.span`
   font-size: 1.2rem;
   font-family: var(--font-family);
   font-weight: 700;
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+
 `;
 
 const Burger = styled.div`
