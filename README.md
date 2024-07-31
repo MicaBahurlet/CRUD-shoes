@@ -1,17 +1,22 @@
 
-<h2 align="start">CRUD.</h2> 
-<hr>
-
-<!-- <h3 align="start">Lenguajes, herramientas y librerías utilizadas para el proyecto: </h3>  -->
+<h2 align="start">CRUD | Shoes</h2> 
 
 <p align="start">
-<img width="500px"  src="https://skillicons.dev/icons?i=html,css,js,react,vite,nodejs,styledcomponents,git,github,ps,perline=10"  />
+<img width="500px"  src="https://skillicons.dev/icons?i=html,css,js,react,redux,vite,nodejs,mongodb,express,styledcomponents,git,github,ps,perline=10"  />
 </p>
 
+Primer proyecto <strong> FULL STACK!</strong> se trata de un e-comerce que permite la compra de pares discontinuos de zapatillas originales. Las personas usuarias pueden registrarse, y una vez validada su cuenta podrán realizar la compra y tener además un historial de sus pedidos.
+
+<h4>&#128640;  Herramientas de desarrollo y ejecución:</h4>
 
 
+-   Me sirvo de <strong> Node.js </strong> como entorno de ejecución.  
+- <strong> Vite.js</strong> me ofrece un entorno de desarrollo  rápido y liviano. 
+- <strong> React.js </strong> para el desarrollo de la interfaz de usuario e interacción con el back. 
+- <strong> MongoDB y MongoAtlas</strong> para la creación de la base de datos NoSQL.
+- <strong> Express.js </strong> para poder utilizar la arquitectura de middlewares en las solicitudes HTTP al back. 
 
-Iniciando en el mundo back-end.  Se trata de un e-commerce de zapatillas deportivas, cumpliendo con las indicaciones del módulo de React de NUCBA. 
+
 <hr>
 
 <h3>Características del proyecto:</h3>
@@ -20,61 +25,56 @@ Iniciando en el mundo back-end.  Se trata de un e-commerce de zapatillas deporti
 - <b> Redux:</b> que me permite la gestión del estado global del sitio, facilitando la gestión de estados complejos.
 - <b>Renderizado dinámico en el DOM</b> de los productos.
 - <b>Diseño Responsive:</b> Todas las páginas son adaptables a diferentes dispositivos.
-- <b>Persistencia del Carrito:</b> Los productos del carrito se persisten para mantener la experiencia del usuario.
+- <b>Persistencia del carrito y de los datos de usuario:</b> Los productos del carrito se persisten para mantener la experiencia del usuario.
 - Implementación de <b>algorítmos</b> uno se encarga de renderizar productos recomendados de manera aleatoria y otro de mostrar opiniones de compra de distintas personas usuarias.
 
-<h4>&#128640;  Herramientas de desarrollo y ejecución:</h4>
 
-
--   Me sirvo de <strong> Node.js </strong> como entorno de ejecución.  
-- <strong> Vite.js</strong> me ofrece un entorno de desarrollo  rápido y liviano. 
 
 <h4>&#128193; Librerías utilizadas:</h4> 
 
 - <strong> Styled Component </strong> para el manejo de estilos,
 - <strong> Formik </strong> y <strong> Yup </strong> para validación de formularios,  
-- <strong> Framemotion </strong> para animaciones y transiciones. 
+- <strong> Framermotion </strong> para animaciones y transiciones. 
+- <strong> Icons </strong> para logos. 
 - <strong> Fontsource </strong> para la tipografía personalizada.
+- <strong> Axios </strong> para manejar las solicitudes HTTP desde el navegador y Node.js
+- <strong> Cors </strong> como middleware para facilitar y mejorar la configuración y gestión de las cabeceras CORS ya que utilizo Express.js.
+- <strong> Nodemailer + jsonwebtoken + express-validator </strong> para la verificación de las cuentas de usuario que deseen registrarse en el e-comerce.
 
 
 
 <h4>&#129309; Diseño del proyecto:</h4>
 
 - Diseño de logo
-- Diseño de Hero representativo, en la creación de la img principal utilicé el color verde, apelando a su connotación amable, de bienestar y estabilidad. 
+- Diseño de Hero representativo del comercio. 
 - Manejo los estilos del proyecto de manera global desde mi archivo <strong> GlobalStyles.js </strong> logrando por un lado mayor orden de código y por el otro, una escalabilidad a futuro.
 
 <h4>&#128248; Screens:</h4>
 
 Hero del sitio
 
-<img src="#" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
+<img src="./src/screensToReadme/Hero.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 <br>
-Algoritmo que renderiza experiencias de compra:
+Login:
 
 
-<img src="#" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
-
-<br>
-
-Categorias de compra:
-<img src="#" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
-
-Cards de productos:
-<img src="#" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
-
-
-Sección representativa de about:
-<img src="#" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
+<img src="./src/screensToReadme/Login.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 <br>
 
-El proyecto se encuentra desplegado en <b>Vercel</b>, puedes visitarlo <a href="#" target="_blank" >aquí</a>.
+Checkout de compra:
+
+<img src="./src//screensToReadme/CheckOut.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
+
+<br>
+Productos:
+
+<img src="./src//screensToReadme/Products.png" alt="Landing Page" style="max-width: 400px; border-radius: 10px;">
 
 
-URI DB: mongodb+srv://micabahurletgo:Crud-shoes@crud-shoes.x226hvy.mongodb.net/
+<br><br>
 
-pasword: Crud-shoes
+El proyecto se encuentra desplegado en <b>Vercel</b>, puedes visitarlo <a href="https://crud-shoes.vercel.app/" target="_blank" >aquí</a>.
 
-ip: 190.16.1.213
+
