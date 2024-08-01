@@ -25,6 +25,8 @@ import {
   TotalStyled,
 } from "./ModalCartStyles";
 
+import { formatPrice } from '../../../utils/constantes';
+
 import Link from "../../UI/Link/Link";
 
 const ModalCart = () => {
@@ -101,16 +103,16 @@ const ModalCart = () => {
             <PriceContainerStyled>
               <SubtotalStyled>
                 <p>Subtotal:</p>
-                <span>${totalPrice}</span>
+                <span>{formatPrice(totalPrice)}</span> 
               </SubtotalStyled>
               <EnvioStyled>
                 <p>Envío:</p>
-                <span>${shippingCost}</span>
+                <span>{formatPrice(shippingCost)}</span> 
               </EnvioStyled>
               <hr />
               <TotalStyled>
                 <p>Total:</p>
-                <PriceStyled>${totalPrice + shippingCost}</PriceStyled>
+                <PriceStyled>{formatPrice(totalPrice + shippingCost)}</PriceStyled> 
               </TotalStyled>
               <ButtonContainerStyled>
                 <Submit

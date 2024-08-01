@@ -98,7 +98,7 @@ export const productos = [
         img: Adidas1,
         category: "AdidasCategory",
         desc: "Talle 36, unisex - Running",
-        price: 2000,
+        price: 22000,
     },
     {
         id: 9,

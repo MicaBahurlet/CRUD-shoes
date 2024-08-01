@@ -1,73 +1,4 @@
 
-
-// import styled from "styled-components";
-
-// export const OrderContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center; 
-//   justify-content: center; 
-//   width: 100%;
-//   height: auto;
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 1rem;
-//   border-radius: 15px;
-//   cursor: pointer;
-//   font-family: var(--font-family);
-//   box-sizing: border-box;
-
-//   @media (max-width: 768px) {
-//     padding: 1rem;
-//     max-width: 100%; 
-//   }
-
-//   @media (max-width: 576px) {
-//     padding: 1rem;
-//     max-width: 100%;
-//   }
-// `;
-
-// export const Order = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   max-width: 600px; /* Ajusta el ancho máximo según lo necesites */
-//   margin: 0 auto;
-//   padding: 1rem;
-//   border-radius: 15px;
-//   border: 1px solid black;
-//   font-family: var(--font-family);
-//   margin-bottom: 1rem;
-//   border-bottom: 3px solid black;
-//   box-sizing: border-box;
-
-//   &:last-of-type {
-//     margin-bottom: 0;
-//   }
-
-//   h2 {
-//     font-family: var(--font-family);
-//     color: green;
-//     font-weight: 800;
-//   }
-
-//   @media (max-width: 768px) {
-//     max-width: 90%; 
-//     padding: 1rem;
-//   }
-
-//   @media (max-width: 576px) {
-//     justify-content: center;
-//     align-items: center;
-//     max-width: 100%;
-//     padding: 0.5rem;
-//   }
-// `;
-
-
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
@@ -87,7 +18,6 @@ export const OrderContainer = styled.div`
   margin: 0 auto;
   padding: 1rem;
   border-radius: 15px;
-  cursor: pointer;
   font-family: var(--font-family);
   box-sizing: border-box;
 
@@ -108,14 +38,14 @@ export const Order = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 600px; /* Ajusta el ancho máximo según lo necesites */
+  max-width: 600px;
   margin: 0 auto;
   padding: 1rem;
   border-radius: 15px;
   border: 1px solid black;
   font-family: var(--font-family);
   margin-bottom: 1rem;
-  border-bottom: 3px solid black;
+  border-bottom: 5px solid black;
   box-sizing: border-box;
 
   &:last-of-type {
@@ -126,6 +56,8 @@ export const Order = styled.div`
     font-family: var(--font-family);
     color: green;
     font-weight: 800;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+   
   }
 
   @media (max-width: 768px) {

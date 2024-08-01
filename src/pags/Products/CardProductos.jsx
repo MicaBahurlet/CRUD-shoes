@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../../redux/cart/cartSlice';
 import { ModalContainer, ModalContent } from './ModalStyles'; 
 import { CardProducto, BotonBuy, InfoContainer } from "./Product";
+import { formatPrice } from '../../utils/constantes';
+
 
 function Productos({ img, title, category, price, desc, id }) {
     const dispatch = useDispatch();
@@ -31,7 +33,7 @@ function Productos({ img, title, category, price, desc, id }) {
                 <InfoContainer>
                     <h3>{title}</h3>
                     <p>{desc}</p>
-                    <h4>${price}</h4>
+                    <h4>{formatPrice(price)}</h4>
                     <BotonBuy disabled={!currentUser} onClick={handleAddToCart}>
                         Comprar
                     </BotonBuy>

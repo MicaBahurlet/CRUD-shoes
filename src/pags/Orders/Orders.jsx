@@ -16,6 +16,8 @@ import {
     ButtonLink
 } from './OrderStyle';
 
+import { formatPrice } from '../../utils/constantes';
+
 const Orders = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate(); 
@@ -46,8 +48,8 @@ const Orders = () => {
                     <Order key={order._id}>
                       <li>
                       <h2>N° de orden: {order._id}</h2>
-                      <h4>Total con envío incluido: ${order.total}</h4>
-                      <h4>Envío: ${order.shippingCost}</h4>
+                      <h4>Total con envío incluido: {formatPrice(order.total)}</h4> 
+                      <h4>Envío: {formatPrice(order.shippingCost)}</h4> 
                       <h4>Fecha de compra: {new Date(order.createdAt).toLocaleDateString()}</h4>
                       <ul>
                           {order.items.map((item) => {
@@ -56,7 +58,7 @@ const Orders = () => {
                               <li key={item.id}>
                                   <p>Producto: {product.title}</p>
                                   <p>Cantidad: {item.quantity}</p>
-                                  <p>Precio unidad: ${item.price}</p>
+                                  <p>Precio unidad: {formatPrice(item.price)}</p> 
                               </li>
                           );
                           })}

@@ -19,6 +19,8 @@ import {
   TextStyled,
 } from "./ModalCartStyles";
 
+import { formatPrice } from '../../../utils/constantes';
+
 const ModalCartCard = ({img,title,desc,price,quantity,id}) => {
 
   const dispatch =useDispatch();
@@ -32,7 +34,7 @@ const ModalCartCard = ({img,title,desc,price,quantity,id}) => {
       <TextContainerStyled>
         <CardTitleStyled>{title}</CardTitleStyled>
         <TextStyled>{desc}</TextStyled>
-        <PriceStyled>${price}</PriceStyled>
+        <PriceStyled>{formatPrice(price)}</PriceStyled> 
       </TextContainerStyled>
       <QuantityContainerStyled>
         <Increase
