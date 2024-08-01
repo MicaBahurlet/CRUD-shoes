@@ -8,8 +8,8 @@ export const MainContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  height: 75vh;
   margin: 0 auto;
+  padding: 5rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -65,9 +65,9 @@ export const LoginContainerStyled = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 70vh; //a justar valor
+  height: auto; //a justar valor
   margin-top: 20px;
-  background-color: whitesmoke;
+
   color: black;
   font-family: var( --font-family );
 

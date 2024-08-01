@@ -1,20 +1,15 @@
+
 import { AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-
 import { IoMdTrash } from "react-icons/io";
 import { MdOutlineClose } from "react-icons/md";
-
-
 import Increase from "../../UI/Increase/Increase";
 import Submit from "../../UI/Submit/Submit";
 import ModalCartCard from "./ModalCartCard";
-
 import { ModalOverlayStyled } from "../NavBar";
-
 import { useEffect } from "react";
-import {useDispatch, useSelector} from "react-redux";
-import { clearCart,toggleHiddenCart, finalizePurchase } from "../../../redux/cart/cartSlice";
-
+import { useDispatch, useSelector } from "react-redux";
+import { clearCart, toggleHiddenCart, finalizePurchase } from "../../../redux/cart/cartSlice";
 import {
   ButtonContainerStyled,
   CloseButtonContainerStyled,
@@ -32,42 +27,39 @@ import {
 
 import Link from "../../UI/Link/Link";
 
-
 const ModalCart = () => {
-
-  const {cartItems,shippingCost} =useSelector((state)=>state.cart);
-
-  const hiddenCart = useSelector((state)=>state.cart.hidden);
-
+  const { cartItems, shippingCost } = useSelector((state) => state.cart);
+  const hiddenCart = useSelector((state) => state.cart.hidden);
+  const currentUser = useSelector((state) => state.user.currentUser); // Obtener el estado de currentUser
   const dispatch = useDispatch();
-
   const navigate = useNavigate();
 
   const finalizarCompra = () => {
-    dispatch(finalizePurchase());
-    alert("¡Gracias por tu compra! Mañana despacharemos tu pedido. Esperamos que disfrutes tus nuevas zapatillas.");
+    if (currentUser) {
+      dispatch(finalizePurchase());
+      alert("¡Gracias por tu compra! Mañana despacharemos tu pedido. Esperamos que disfrutes tus nuevas zapatillas.");
+    } else {
+      alert("Debes iniciar sesión para finalizar tu pedido.");
+    }
   };
 
-
-
-  useEffect(()=>{
-    if(!hiddenCart){
+  useEffect(() => {
+    if (!hiddenCart) {
       dispatch(toggleHiddenCart());
     }
-  },[dispatch])
+  }, [dispatch]);
 
-  const totalPrice= cartItems.reduce((acc,item)=>{
-    return (acc+=item.price * item.quantity);
-  },0)
-
+  const totalPrice = cartItems.reduce((acc, item) => {
+    return (acc += item.price * item.quantity);
+  }, 0);
 
   return (
     <>
       {!hiddenCart && (
-        <ModalOverlayStyled 
+        <ModalOverlayStyled
           onClick={() => dispatch(toggleHiddenCart())}
           isHidden={hiddenCart}
-        /> //este es el overlay, si toco guera se cierra. 
+        /> //este es el overlay, si toco fuera se cierra. 
       )}
       <AnimatePresence>
         {!hiddenCart && (
@@ -85,9 +77,8 @@ const ModalCart = () => {
                 onClick={() => dispatch(toggleHiddenCart())}
                 color="black"
                 fontWeight={"bold"}
-                
-              > 
-                <MdOutlineClose size="24px"  style={{ color: "black" }}  />
+              >
+                <MdOutlineClose size="24px" style={{ color: "black" }} />
               </CloseButtonStyled>
             </CloseButtonContainerStyled>
 
@@ -98,17 +89,12 @@ const ModalCart = () => {
 
               <ProductsWrapperStyled>
                 {cartItems.length ? (
-                    cartItems.map((item) => (
-                      <ModalCartCard key={item.id} {...item} />
-                    ))
-                  ) : (
-                    <p>No hay ningún producto en tu carrito, <b>explorá zapatillas en la página de productos</b></p>
-                    
-                  )}
-                  {/* <Link />  */}
-
-                    
-
+                  cartItems.map((item) => (
+                    <ModalCartCard key={item.id} {...item} />
+                  ))
+                ) : (
+                  <p>No hay ningún producto en tu carrito, <b> Inicia sesión y explorá zapatillas en la página de productos.</b></p>
+                )}
               </ProductsWrapperStyled>
             </MainContainerStyled>
 
@@ -116,7 +102,6 @@ const ModalCart = () => {
               <SubtotalStyled>
                 <p>Subtotal:</p>
                 <span>${totalPrice}</span>
-               
               </SubtotalStyled>
               <EnvioStyled>
                 <p>Envío:</p>
@@ -129,12 +114,16 @@ const ModalCart = () => {
               </TotalStyled>
               <ButtonContainerStyled>
                 <Submit
-                    onClick={() => {
+                  onClick={() => {
+                    if (currentUser) {
                       navigate("/checkout");
                       dispatch(toggleHiddenCart());
-                    }}
-                    disabled={!cartItems.length}
-                  >
+                    } else {
+                      alert("Debes iniciar sesión para iniciar el pedido.");
+                    }
+                  }}
+                  disabled={!currentUser || !cartItems.length}
+                >
                   Iniciar pedido
                 </Submit>
               </ButtonContainerStyled>

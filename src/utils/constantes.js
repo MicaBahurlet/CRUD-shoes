@@ -2,6 +2,8 @@ export const SHIPPING_COST = 7500; // Costo de envio por defecto
 export const INITIAL_LIMIT = 8; // Cantidad inicial de productos por defecto
 export const BASE_URL = "http://127.0.0.1:6060";
 
+// https://back-crud-api.vercel.app/
+
 
 
 // http://127.0.0.1:6060

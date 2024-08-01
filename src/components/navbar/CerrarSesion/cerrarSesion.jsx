@@ -4,6 +4,7 @@ import { FaUser } from 'react-icons/fa';
 import { useNavbarContext } from '../NavbarContext';
 import { useDispatch } from 'react-redux';
 import { logoutUser } from '../../../redux/user/userSlice'; 
+import { clearCart } from '../../../redux/cart/cartSlice';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -21,6 +22,7 @@ const UserDropdown = () => {
   const handleLogout = () => {
     closeMenu();
     dispatch(logoutUser()); // Acción para limpiar estado de usuario
+    dispatch(clearCart()); // Acción para vaciar el carrito
     localStorage.removeItem('token'); // Eliminar token del almacenamiento local
     console.log('Cerrar sesión');
     window.location.href = '/login'; // Redirigir a la página de login. Ver si quiero dejar esta pag

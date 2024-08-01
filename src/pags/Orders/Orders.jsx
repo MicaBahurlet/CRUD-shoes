@@ -28,8 +28,11 @@ const Orders = () => {
     }
   }, [dispatch, currentUser]);
 
-  if (loading) return <p>cargando...</p>;
+  if (loading) return <p>Cargando...</p>;
   if (error) return <p>{error}</p>;
+
+  // Ordenar las órdenes por fecha (más recientes primero)
+  const sortedOrders = orders?.slice().sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
   return (
     <MainContainer>
@@ -37,9 +40,9 @@ const Orders = () => {
 
       <OrderContainer>
         <h1>Mis pedidos:</h1>
-          {orders && orders.length > 0 ? (
+          {sortedOrders && sortedOrders.length > 0 ? (
               <ul>
-                  {orders.map((order) => (
+                  {sortedOrders.map((order) => (
                     <Order key={order._id}>
                       <li>
                       <h2>N° de orden: {order._id}</h2>

@@ -109,6 +109,7 @@ export const HistoriaAbout = styled.div`
     height: auto;
     max-width: 1200px;
     margin: 2rem auto;
+    gap: 3rem;
     
     h2{
         text-align: start;
@@ -253,6 +254,24 @@ export const BeneficiosImg = styled.div`
 
     @media (max-width: 968px) {
         max-width: 300px;
+    }
+
+`;
+
+
+export const opinionesContainer = styled.div`
+
+    display: flex;
+    width: 100%;
+
+    @media (max-width: 968px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 380px;
+        
+        
     }
 
 `;

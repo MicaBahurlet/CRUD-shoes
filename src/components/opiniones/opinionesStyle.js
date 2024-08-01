@@ -10,6 +10,9 @@ export const OpininonesWrapper = styled.div`
 
   h2 {
     color: #1E1E1E;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   @media (max-width: 768px) {
@@ -82,8 +85,8 @@ export const CardOpiniones = styled.div`
   }
 
   p {
-    color: #666;
-    font-weight: 300;
+    color: black;
+    font-weight: 400;
   }
 
   &:hover {

@@ -5,7 +5,8 @@ import {
     HistoriaAbout,
     MisionAbout,
     BeneficiosMusica,
-    BeneficiosImg 
+    BeneficiosImg,
+    opinionesContainer
     
 
 } from "./About";
@@ -16,6 +17,7 @@ import NavBar from "../../components/navbar/NavBar";
 import { Fade } from "react-awesome-reveal";
 import BeneficiosImgAbout from "../../data/imgProducts/Iconic3.png";
 
+import Opiniones from "../../components/opiniones/CardsOpiniones";
 
 
 
@@ -69,15 +71,14 @@ function About() {
                         <br /> Queremos que sea <strong>fácil, simple y rápido</strong>.
                     </p>
 
-                    
+                    <Opiniones/>
+ 
                 </HistoriaAbout>
 
                 <MisionAbout>
                     <h2>Nuestra misión:</h2>
                     <p>Queremos que encuentres las <strong>zapatillas perfectas</strong> en nuestra tienda, que pagues por ellas lo que <strong>realmente valen</strong> y que lleguen a la puerta de tu casa. Tú no tienes que moverte, solo espera a que llegue el paquete.</p>
-
                 </MisionAbout>
-
 
                 <Footer/>
 

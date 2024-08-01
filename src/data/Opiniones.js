@@ -51,7 +51,7 @@ export const opiniones = [
         id: 5,
         img: Trabajadora1,
         name: "Cristina Rosales",
-        desc: "Para disfrutar de la música de la mejor manera.",
+        desc: "Conseguí el par original que buscaba. Excelente!",
         Punt: Estrellas
     },
     {
@@ -65,7 +65,7 @@ export const opiniones = [
         id: 7,
         img: Trabajadora3,
         name: "Luna Hirigoyen",
-        desc: "Encontré los clasiquitos en Auris, estoy muy contenta",
+        desc: "Encontré las Vans que buscaba, estoy muy contenta",
         Punt: Estrellas
     },
     {
@@ -86,7 +86,6 @@ export const opiniones = [
         id: 10,
         img: Adolescente2,
         name: "Camilo Rodriguez",
-        
         desc: "Quedé re bien, el envío fue super rapido.",
         Punt: Estrellas2
     },
