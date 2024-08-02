@@ -53,28 +53,21 @@ export const CardOpiniones = styled.div`
   align-items: center;
   width: 360px;
   padding: 10px;
-
-  background-color: whitesmoke;
-  border-radius: 20px;
-  font-family: var(--font-family);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-
   flex-direction: row;
   text-align: left;
   font-family: var(--font-family);
+  margin-top: 2rem;
 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  transition: box-shadow 0.3s ease; 
-  border-bottom: 2px solid #abdb25;
-  border-top: 2px solid #abdb25 ;
 
 
   img {
     max-width: 90px;
-    border-radius: 10px;
+    border-radius: 50px;
     margin-right: 1.5rem;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    pointer-events: none;
+    user-select: none;
+
 
   }
 
@@ -89,9 +82,6 @@ export const CardOpiniones = styled.div`
     font-weight: 400;
   }
 
-  &:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  }
   @media (max-width: 768px) {
     margin-top: 2rem;
     max-width: 320px;
