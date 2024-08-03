@@ -30,7 +30,7 @@ const Navbar = () => {
         <NavLink 
           className={({ isActive }) => isActive ? 'active' : ''}
           to="/" onClick={closeMenu}>
-            <FaHome className='IconsNav'/>
+            {/* <FaHome className='IconsNav'/> */}
             HOME
         </NavLink>
         <NavLink
