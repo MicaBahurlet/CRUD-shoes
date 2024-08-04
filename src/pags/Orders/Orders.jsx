@@ -30,7 +30,7 @@ const Orders = () => {
     }
   }, [dispatch, currentUser]);
 
-  if (loading) return <p>Cargando...</p>;
+  if (loading) return <p> Cargando...</p>;
   if (error) return <p>{error}</p>;
 
   // Ordenar las órdenes por fecha (más recientes primero)
