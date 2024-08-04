@@ -5,14 +5,14 @@
 <img width="500px"  src="https://skillicons.dev/icons?i=html,css,js,react,redux,vite,nodejs,mongodb,express,styledcomponents,git,github,ps,perline=10"  />
 </p>
 
-Primer proyecto <strong> FULL STACK!</strong> se trata de un e-comerce que permite la compra de pares discontinuos de zapatillas originales. Las personas usuarias pueden registrarse, y una vez validada su cuenta podrán realizar la compra y tener además un historial de sus pedidos.
+Primer proyecto <strong> FULL STACK MERN</strong> se trata de un e-comerce que permite la compra de pares discontinuos de zapatillas originales. Las personas usuarias pueden registrarse, y una vez validada su cuenta podrán realizar la compra y tener además un historial de sus pedidos.
 
 <h4>&#128640;  Herramientas de desarrollo y ejecución:</h4>
 
 
 -   Me sirvo de <strong> Node.js </strong> como entorno de ejecución.  
 - <strong> Vite.js</strong> me ofrece un entorno de desarrollo  rápido y liviano. 
-- <strong> React.js </strong> para el desarrollo de la interfaz de usuario e interacción con el back. 
+- <strong> React.js </strong> para el desarrollo de la interfaz de usuario. 
 - <strong> MongoDB y MongoAtlas</strong> para la creación de la base de datos NoSQL.
 - <strong> Express.js </strong> para poder utilizar la arquitectura de middlewares en las solicitudes HTTP al back. 
 

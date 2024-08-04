@@ -1,7 +1,6 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik } from 'formik';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { registerInitialValues } from '../../formik/initialValues';
 import { registerValidationSchema } from '../../formik/validationSchema';
 
@@ -15,12 +14,13 @@ import { setCurrentUser } from '../../redux/user/userSlice';
 
 import Navbar from '../../components/navbar/NavBar';
 import Footer from '../../components/footer/Footer';
+import Loader from '../../components/UI/Loader/Loader';
 
 const Register = () => {
-  const { state } = useLocation();
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  
+
   return (
     <>
       <Navbar />
@@ -30,18 +30,20 @@ const Register = () => {
           initialValues={registerInitialValues}
           validationSchema={registerValidationSchema}
           onSubmit={async (values, actions) => {
+            setLoading(true);
             const user = await createUser(values.name, values.email, values.password);
             actions.resetForm();
+            setLoading(false);
             if (user) {
               console.log('User created:', user);
               dispatch(
                 setCurrentUser({
                   ...user.usuario,
                   token: user.token,
-                  verified: false,  // chequeo que verified esté en false
+                  verified: false,
                 })
               );
-              navigate('/validate');  // navegar a /validate después de establecer el usuario
+              navigate('/validate');
             } else {
               console.log('User creation failed');
             }
@@ -54,7 +56,9 @@ const Register = () => {
             <LoginEmailStyled to='/login'>
               <p>¿Ya tienes cuenta? Inicia sesión</p>
             </LoginEmailStyled>
-            <Submit>Registrate</Submit>
+            <Submit disabled={loading}>
+              {loading ? <Loader /> : 'Registrate'}
+            </Submit>
           </Form>
         </Formik>
       </LoginContainerStyled>
@@ -64,4 +68,3 @@ const Register = () => {
 };
 
 export default Register;
-
