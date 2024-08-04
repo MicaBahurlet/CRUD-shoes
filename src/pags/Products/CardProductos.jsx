@@ -42,7 +42,7 @@ function Productos({ img, title, category, price, desc, id }) {
 
             {/* Mostrar el modal cuando se agrega el producto al carrito */}
             {showModal && (
-                <ModalContainer className="addModal activeModal">
+                <ModalContainer className=" activeModal">
                     <ModalContent> &#9989; Producto agregado al carrito &#128293;</ModalContent>
                 </ModalContainer>
             )}

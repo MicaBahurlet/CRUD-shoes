@@ -9,11 +9,11 @@ export const LoaderContainer = styled.div`
 `;
 
 export const LoaderStyled = styled(motion.div)`
-  border: 2px dashed #d9d9d9;
+  border: 3px dashed #d9d9d9;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border-left-color: transparent;
+  border-left-color: black;
 
   ${({ args }) => css({ ...args })}
 `;

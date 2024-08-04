@@ -77,8 +77,18 @@ export const TitleStyled = styled.div`
   }
 `;
 
+//ver si acá solucioné lo del cart modal scroll
 export const MainContainerStyled = styled.div`
-  height: 50%;
+  height: auto;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    display: none;
+  }
 `;
 
 export const ProductsWrapperStyled = styled.div`
@@ -88,7 +98,7 @@ export const ProductsWrapperStyled = styled.div`
   gap: 20px;
 
   width: 100%;
-  height: 300px;
+  height: auto;
   margin: 0 auto;
   padding: 1rem;  
 
@@ -122,10 +132,11 @@ export const ProductContainerStyled = styled.div`
   width: 100%;
 
   max-width: 360px;
-  height: 200px;
+  height: 130px;
 
   background: var(--gray-bg);
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+  /* border : 0.5px solid black; */
   padding: 1rem;
   border-radius: 15px;
 
@@ -181,7 +192,7 @@ export const PriceStyled = styled.span`
 export const PriceContainerStyled = styled.div`
   z-index: 1000;
   background-color: whitesmoke;
-  margin-top: 2rem;
+
   & p {
     text-align: center;
     margin-bottom: 0;

@@ -18,6 +18,7 @@ import {
 
 import { formatPrice } from '../../utils/constantes';
 
+
 const Orders = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate(); 
@@ -30,7 +31,7 @@ const Orders = () => {
     }
   }, [dispatch, currentUser]);
 
-  if (loading) return <p> Cargando...</p>;
+  if (loading) return <p style={{ fontWeight: '800', color: 'green', marginTop: '3rem', padding: '1rem', fontSize: '1.5rem' }}> Cargando tus pedidos...</p>;
   if (error) return <p>{error}</p>;
 
   // Ordenar las órdenes por fecha (más recientes primero)
