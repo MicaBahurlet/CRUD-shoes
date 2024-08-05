@@ -65,7 +65,7 @@ export const ProductosContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -86,7 +86,7 @@ export const CardProducto = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   width: 214px;
   padding: 2px;
   background-color: whitesmoke;
