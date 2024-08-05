@@ -1,6 +1,8 @@
 
 <h2 align="start">CRUD | Shoes</h2> 
 
+<h4 align="start">Si lo clonas al menos regalame una estrellita en el repo ⭐️ </h4> 
+
 <p align="start">
 <img width="500px"  src="https://skillicons.dev/icons?i=html,css,js,react,redux,vite,nodejs,mongodb,express,styledcomponents,git,github,ps,perline=10"  />
 </p>
