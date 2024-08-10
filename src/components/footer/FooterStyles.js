@@ -31,7 +31,7 @@ export const FooterContainerStyles = styled.div`
     }
     @media (max-width: 576px) {
         flex-direction: column;
-        height: 25rem;
+        height: 30rem;
     }
 
 
@@ -56,6 +56,9 @@ export const PagosContainerStyles = styled.div`
     img {
         width: 50px;
         border-radius: 10px;
+    }
+    @media (max-width: 576px) {
+        flex-direction: column;
     }
 
 

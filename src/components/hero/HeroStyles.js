@@ -24,6 +24,18 @@ export const HeroContainerStyles = styled.div`
         align-items: center;
         justify-content: center;
     }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        max-width: 400px;
+        gap: 2rem;
+    }
+
+    @media (max-width: 576px) {
+        
+        flex-direction: column;
+        width: 100%;
+        max-width: 350px;
+    }
 `;
 
 export const HeroTextContainerStyles = styled.div`
@@ -91,7 +103,7 @@ export const HeroTextContainerStyles = styled.div`
         text-align: center;
         justify-content: center;
         width: 70;
-        margin-top: 2rem;
+        margin-top: 7rem;
 
     }
 

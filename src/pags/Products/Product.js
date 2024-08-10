@@ -80,6 +80,12 @@ export const ProductosContainer = styled.div`
     padding-top: 30px;
     text-align: center;
   }
+  @media (max-width: 576px) {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+    }
 `;
 
 export const CardProducto = styled.div`

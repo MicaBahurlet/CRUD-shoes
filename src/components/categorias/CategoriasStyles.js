@@ -28,40 +28,51 @@ export const CategoriasWrapper = styled.div`
         max-width: 390px;
         height: auto;
     };
+    @media (max-width: 576px) {
+       margin: 0 auto;
+
+    }
 
 `;
 
 export const CategoriasContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 20px; 
+  max-width: 1300px;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
 
-     display: grid;
-      grid-template-columns: repeat(1, 1fr); /* Por defecto, una columna en escritorio */
-      gap: 20px; /* Espacio entre las cards en escritorio */
-      max-width: 1300px;
-    justify-content: center;
-    align-items: center;
-    user-select:none;
+  img {
+    max-width: 150px;
+  }
+  img:hover {
+    transform: scale(1.2);
+  }
 
-    img{ 
-        max-width: 150px;
-    }
-    img:hover {
-        transform: scale(1.2); 
-    }
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
 
-    @media (max-width:768px){
+  @media (max-width: 576px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    gap: 3rem;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
 
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 3rem;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 1rem;
-
-      
-    };
-    
+    justify-items: center; 
+  }
 `;
-
 
 export const CardCategoria = styled.div`
   display: flex;

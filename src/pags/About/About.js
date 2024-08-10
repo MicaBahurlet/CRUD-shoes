@@ -20,19 +20,25 @@ export const AboutContainer = styled.div`
     gap: 2rem;
 
 
-    @media (max-width: 968px) {
+    @media (max-width:768px) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
         max-width: 380px;
-        
-        
+ 
+    }
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 380px;
+
     }
 
 `;
-
-
 
 export const AboutTextContainerStyles = styled.div`
     display: flex;
@@ -40,36 +46,42 @@ export const AboutTextContainerStyles = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 80%; //antes estaba 50%
-    h1{
+
+    h1 {
         font-size: 4rem;
         margin: 10px 0;
         font-family: var(--font-family);
         text-shadow: 1px 1px 1px #000;
-        
-
     }
     
-    h2{
+    h2 {
         font-size: 2rem;
         margin: 10px 0;
         font-family: var(--font-family);
         text-shadow: 0.5px 0.5px 0.5px #000;
     }
-    p{
+
+    p {
         font-size: 1.2rem;
         font-family: var(--font-family);
         line-height: 1.8;
     }
 
-
-    @media (max-width: 968px) {
-        align-items: start;
-        text-align: start;
-        width: 100%;
-        height: auto;
+    @media (max-width:768px) {
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: center;
+        text-align: left; 
         max-width: 380px;
     }
 
+    @media (max-width: 576px) {
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: center;
+        text-align: left; 
+        max-width: 380px;
+    }
 `;
 
 
@@ -124,7 +136,8 @@ export const HistoriaAbout = styled.div`
         line-height: 1.8;
     }
 
-    @media (max-width: 968px) {
+
+    @media (max-width:768px) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -136,6 +149,14 @@ export const HistoriaAbout = styled.div`
             height: auto;
             max-width: 380px;
         }
+    }
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: center;
+        text-align: left; 
+        max-width: 380px;
     }
 
 
