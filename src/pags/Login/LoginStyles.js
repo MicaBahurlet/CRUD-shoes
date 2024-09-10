@@ -59,43 +59,138 @@ export const ImgInicioSesion = styled.div`
 `
 
 
+// export const LoginContainerStyled = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   height: auto; 
+//   margin-top: 20px;
+
+//   color: black;
+//   font-family: var( --font-family );
+
+
+// `;
+
+// export const Form = styled(FormikForm)`
+//   display: flex;
+//   flex-direction: column; 
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   height: auto;
+//   max-width: 500px;
+//   gap: 2rem;
+//   background-color: whitesmoke;
+//   color: black;
+//   padding: 1rem;
+//   font-family: var( --font-family );
+// `;
+
+// export const LoginEmailStyled = styled.p`
+//   color: green;
+//   font-weight: 600;
+//   font-size: 1.3rem ;
+
+//   :hover {
+//     text-decoration: underline;
+//     transition: all 0.25s ease-out;
+//   }
+// `;
+// export const PasswordWrapper = styled.div`
+//   position: relative;
+//   width: 300px;
+//   align-items: center;
+//   justify-content: center;
+  
+//   input {
+//     width: 100%;
+//     padding-right: 2rem; 
+//   }
+// `;
+
+// export const PasswordIcon = styled.div`
+//   position: absolute;
+//   right: 10px;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   cursor: pointer;
+//   color: #333; 
+
+//   &:hover {
+//     color: green; 
+//   }
+// `;
+
 export const LoginContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto; //a justar valor
+  height: auto;
   margin-top: 20px;
-
   color: black;
-  font-family: var( --font-family );
-
-
+  font-family: var(--font-family);
 `;
 
 export const Form = styled(FormikForm)`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
   max-width: 500px;
   gap: 2rem;
   background-color: whitesmoke;
   color: black;
   padding: 1rem;
-  font-family: var( --font-family );
+  font-family: var(--font-family);
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 20px;
+  }
 `;
 
 export const LoginEmailStyled = styled.p`
   color: green;
   font-weight: 600;
-  font-size: 1.3rem ;
+  font-size: 1.3rem;
 
   :hover {
     text-decoration: underline;
     transition: all 0.25s ease-out;
+  }
+`;
+
+export const PasswordWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 275px;
+  align-items: center;
+  justify-content: center;
+  
+  input {
+    width: 100%;
+    padding-right: 2.5rem; 
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+`;
+
+export const PasswordIcon = styled.div`
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333; 
+  &:hover {
+    color: green; 
   }
 `;
