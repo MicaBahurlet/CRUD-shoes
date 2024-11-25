@@ -69,7 +69,7 @@ export const Textarea = styled.textarea`
   border-radius: 10px;
 `;
 
-export const BotonEnviar = styled.div`
+export const BotonEnviar = styled.button`
   padding: 10px 20px;
   font-size: 12px;
   background-color: var( --btn-Background);
@@ -82,7 +82,6 @@ export const BotonEnviar = styled.div`
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 1rem;
-  /* z-index: -2 ; */
 
 
 `;
