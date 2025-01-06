@@ -172,6 +172,7 @@ export const PasswordWrapper = styled.div`
   max-width: 275px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
   
   input {
     width: 100%;
@@ -186,7 +187,7 @@ export const PasswordWrapper = styled.div`
 export const PasswordIcon = styled.div`
   position: absolute;
   right: 10px;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   cursor: pointer;
   color: #333; 
